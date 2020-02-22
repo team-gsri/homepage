@@ -1,0 +1,79 @@
+body {
+    font-family: 'Source Sans Pro', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14pt;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bebas Neue';
+}
+
+img#logo {
+    position: absolute;
+    top: 4em;
+    right: 4em;
+}
+
+div#footer {
+    position: fixed;
+    bottom: 0;
+}
+
+div#footer>a {
+    width: 20%;
+}
+
+.w3-cell {
+    width: 33%;
+}
+
+header {
+    /* line-height: 1em; */
+    line-height: normal;
+}
+
+.fas>span,
+.fab>span {
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+}
+
+div.spacer {
+    height: 10em;
+}
+
+div.splitter {
+    border-left: 100vw solid transparent;
+    border-bottom: 6em solid white;
+}
+
+.content-parallaxed {
+    min-height: 80vh;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+}
+
+div.spacer-parallax {
+    height: 80vh;
+}
+
+.top-biseau {
+    border-top: 2em solid #0b1319;
+    border-right: 100vw solid transparent;
+}
+
+.bottom-biseau {
+    border-bottom: 2em solid #0b1319;
+    border-left: 100vw solid transparent;
+}

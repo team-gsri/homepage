@@ -2195,7 +2195,7 @@ h3.title,
   border-color: #0b1319 !important;
 }
 
-.w3-hover-theme:hover, .hero header .content a.main:hover, div#contact a:hover {
+.w3-hover-theme:hover, .hero header .content a.main:hover, div#contact a:hover, div#footer a:hover {
   color: #fff !important;
   background-color: #0b1319 !important;
 }

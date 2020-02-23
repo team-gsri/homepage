@@ -146,6 +146,7 @@ div#footer {
     a {
         @extend .w3-bar-item;
         @extend .w3-button;
+        @extend .w3-hover-theme;
         width: 20%;
         &.here {
             @extend .w3-theme-l2;

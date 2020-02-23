@@ -1,0 +1,147 @@
+@import "w3.scss";
+@import "theme.scss";
+body {
+    font-family: 'Source Sans Pro', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14pt;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bebas Neue';
+}
+
+.fas,
+.fab {
+    >span {
+        text-transform: uppercase;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: x-large;
+    }
+}
+
+.hero {
+    @extend .w3-display-container;
+    width: 100vw;
+    height: 100vh;
+    header {
+        @extend .w3-display-middle;
+        .logo {
+            @extend .w3-cell;
+            @extend .w3-hide-small;
+            @extend .w3-hide-medium;
+            width: 10%;
+            img {
+                @extend .w3-margin;
+            }
+        }
+        .content {
+            @extend .w3-cell;
+            @extend .w3-cell-middle;
+            p {
+                font-style: italic;
+            }
+            a.action {
+                @extend .w3-button;
+                @extend .w3-transparent;
+                @extend .w3-border;
+                @extend .w3-border-white;
+                @extend .w3-hover-white;
+            }
+            a.main {
+                @extend .w3-button;
+                @extend .w3-white;
+                @extend .w3-border;
+                @extend .w3-border-white;
+                @extend .w3-hover-theme;
+                @extend .w3-hover-border-theme;
+            }
+        }
+    }
+}
+
+div.spacer {
+    height: 10em;
+}
+
+div.splitter {
+    border-left: 100vw solid transparent;
+    border-bottom: 6em solid white;
+}
+
+div.top-biseau {
+    border-top: 2em solid #0b1319;
+    border-right: 100vw solid transparent;
+}
+
+div.bottom-biseau {
+    border-bottom: 2em solid #0b1319;
+    border-left: 100vw solid transparent;
+}
+
+h3.title {
+    @extend .w3-border-amber;
+    @extend .w3-leftbar;
+    @extend .w3-padding;
+    @extend .w3-theme-d5;
+    @extend .w3-content;
+    @extend .w3-panel;
+}
+
+.card {
+    @extend .w3-theme;
+    @extend .w3-padding;
+    @extend .w3-card;
+    @extend .w3-panel;
+    @extend .w3-display-container;
+    header {
+        @extend .w3-panel;
+        @extend .w3-center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    p {
+        height: 25em;
+        display: table-cell;
+        vertical-align: middle;
+        @extend .w3-justify;
+        @extend .w3-margin;
+    }
+    a {
+        @extend .w3-button;
+        @extend .w3-theme-l2;
+        @extend .w3-hover-blue-gray;
+        @extend .w3-margin;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+div#contact a {
+    @extend .w3-button;
+    @extend .w3-hover-theme;
+    @extend .w3-quarter;
+}
+
+div#footer {
+    @extend .w3-bar;
+    @extend .w3-black;
+    position: fixed;
+    bottom: 0;
+    a {
+        @extend .w3-bar-item;
+        @extend .w3-button;
+        @extend .w3-hover-theme;
+        width: 20%;
+        &.here {
+            @extend .w3-theme-l2;
+        }
+    }
+}

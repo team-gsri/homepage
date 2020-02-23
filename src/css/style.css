@@ -651,12 +651,12 @@ div#footer .w3-dropdown-click {
 .w3-container:before,
 .w3-panel:after,
 h3.title:after,
-.card:after,
 .card header:after,
+.card p:after,
 .w3-panel:before,
 h3.title:before,
-.card:before,
 .card header:before,
+.card p:before,
 .w3-row:after,
 .w3-row:before,
 .w3-row-padding:after,
@@ -866,7 +866,8 @@ div#contact a {
 }
 
 .w3-show-block,
-.w3-show {
+.w3-show,
+.card a {
   display: block !important;
 }
 
@@ -1126,16 +1127,16 @@ div#contact .w3-row-padding > a,
 .w3-container,
 .w3-panel,
 h3.title,
-.card,
-.card header {
+.card header,
+.card p {
   padding: 0.01em 16px;
 }
 
 
 .w3-panel,
 h3.title,
-.card,
-.card header {
+.card header,
+.card p {
   margin-top: 16px;
   margin-bottom: 16px;
 }
@@ -1549,7 +1550,7 @@ h3.title,
   margin-bottom: 16px !important;
 }
 
-.w3-margin, .hero header .logo img, .card p, .card a {
+.w3-margin, .hero header .logo img {
   margin: 16px !important;
 }
 
@@ -1573,7 +1574,7 @@ h3.title,
   padding: 4px 8px !important;
 }
 
-.w3-padding, h3.title, .card {
+.w3-padding, h3.title {
   padding: 8px 16px !important;
 }
 
@@ -2121,7 +2122,7 @@ h3.title,
   background-color: #ebf2f6 !important;
 }
 
-.w3-theme-l4 {
+.w3-theme-l4, .card:hover {
   color: #000 !important;
   background-color: #bdd2e2 !important;
 }
@@ -2194,7 +2195,7 @@ h3.title,
   border-color: #0b1319 !important;
 }
 
-.w3-hover-theme:hover, .hero header .content a.main:hover, div#contact a:hover, div#footer a:hover {
+.w3-hover-theme:hover, .hero header .content a.main:hover, div#contact a:hover {
   color: #fff !important;
   background-color: #0b1319 !important;
 }
@@ -2208,7 +2209,7 @@ h3.title,
 }
 
 body {
-  font-family: 'Source Sans Pro', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
   font-size: 14pt;
 }
 
@@ -2260,24 +2261,43 @@ div.bottom-biseau {
   border-left: 100vw solid transparent;
 }
 
-.card header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+@-webkit-keyframes smallmove {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: -5px;
+    top: -5px;
+  }
+}
+
+@keyframes smallmove {
+  from {
+    left: 0px;
+    top: 0px;
+  }
+  to {
+    left: -5px;
+    top: -5px;
+  }
+}
+
+.card {
+  position: relative;
+}
+
+.card:hover {
+  -webkit-animation: smallmove 1s;
+          animation: smallmove 1s;
+  left: -5px;
+  top: -5px;
 }
 
 .card p {
-  height: 25em;
+  height: 16em;
   display: table-cell;
   vertical-align: middle;
-}
-
-.card a {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 
 div#footer {

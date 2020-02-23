@@ -1,7 +1,7 @@
 @import "w3.scss";
 @import "theme.scss";
 body {
-    font-family: 'Source Sans Pro', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
     font-size: 14pt;
 }
 
@@ -91,43 +91,51 @@ h3.title {
     @extend .w3-panel;
 }
 
+@keyframes smallmove {
+    from {
+        left: 0px;
+        top: 0px;
+    }
+    to {
+        left: -5px;
+        top: -5px;
+    }
+}
+
 .card {
     @extend .w3-theme;
-    @extend .w3-padding;
     @extend .w3-card;
-    @extend .w3-panel;
     @extend .w3-display-container;
+    position: relative;
+    &:hover {
+        @extend .w3-theme-l4;
+        animation: smallmove 1s;
+        left: -5px;
+        top: -5px;
+    }
     header {
         @extend .w3-panel;
         @extend .w3-center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
     }
     p {
-        height: 25em;
+        height: 16em;
         display: table-cell;
         vertical-align: middle;
         @extend .w3-justify;
-        @extend .w3-margin;
+        @extend .w3-panel;
     }
     a {
         @extend .w3-button;
         @extend .w3-theme-l2;
         @extend .w3-hover-blue-gray;
-        @extend .w3-margin;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        @extend .w3-show;
     }
 }
 
 div#contact a {
     @extend .w3-button;
-    @extend .w3-hover-theme;
     @extend .w3-quarter;
+    @extend .w3-hover-theme;
 }
 
 div#footer {
@@ -138,7 +146,6 @@ div#footer {
     a {
         @extend .w3-bar-item;
         @extend .w3-button;
-        @extend .w3-hover-theme;
         width: 20%;
         &.here {
             @extend .w3-theme-l2;

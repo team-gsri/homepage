@@ -1,0 +1,54 @@
+name: Build www-dev
+
+on:
+  push:
+    branches:
+      - dev
+    paths:
+      - 'src/*'
+      - 'stack/*'
+
+jobs:
+  build:
+    name: Continuous delivery of www-dev
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout source files
+        uses: actions/checkout@v1
+
+      - name: Build docker image
+        run: |
+          docker build ./src --file ./src/Dockerfile \
+            --tag docker.pkg.github.com/team-gsri/homepage/homepage:$(date +%s) \
+            --tag docker.pkg.github.com/team-gsri/homepage/homepage:git-$(git rev-parse --short "$GITHUB_SHA") \
+            --tag docker.pkg.github.com/team-gsri/homepage/homepage:dev
+             
+      - name: Push docker image
+        run: |
+          docker login docker.pkg.github.com --username team-gsri --password ${{ secrets.GITHUB_TOKEN }}
+          docker push docker.pkg.github.com/team-gsri/homepage/homepage
+          
+      - name: Copy stack file
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          source: "./stack/*"
+          target: "~/stacks/homepage-dev"
+          overwrite: true
+          rm: true
+          strip_components: 1
+
+      - name: Redeploy stack on swarm
+        uses: appleboy/ssh-action@master
+        env:
+          GITHUB_USERNAME: team-gsri
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          envs: GITHUB_USERNAME,GITHUB_TOKEN
+          script: /opt/docker-tools-master/docker-stack-deploy.sh homepage

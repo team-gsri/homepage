@@ -1,0 +1,5 @@
+**/*.scss
+**/*.mp4
+**/*.md
+LICENSE
+Dockerfile

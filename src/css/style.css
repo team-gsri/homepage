@@ -650,11 +650,11 @@ div#footer .w3-dropdown-click {
 .w3-container:after,
 .w3-container:before,
 .w3-panel:after,
-h3.title:after,
+h2.title:after,
 .card header:after,
 .card p:after,
 .w3-panel:before,
-h3.title:before,
+h2.title:before,
 .card header:before,
 .card p:before,
 .w3-row:after,
@@ -826,13 +826,13 @@ div#contact a {
   margin-right: -16px;
 }
 
-.w3-content, h3.title,
+.w3-content, h2.title,
 .w3-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.w3-content, h3.title {
+.w3-content, h2.title {
   max-width: 980px;
 }
 
@@ -1126,7 +1126,7 @@ div#contact .w3-row-padding > a,
 
 .w3-container,
 .w3-panel,
-h3.title,
+h2.title,
 .card header,
 .card p {
   padding: 0.01em 16px;
@@ -1134,7 +1134,7 @@ h3.title,
 
 
 .w3-panel,
-h3.title,
+h2.title,
 .card header,
 .card p {
   margin-top: 16px;
@@ -1536,7 +1536,7 @@ h3.title,
   border-bottom: 6px solid #ccc !important;
 }
 
-.w3-leftbar, h3.title {
+.w3-leftbar, h2.title {
   border-left: 6px solid #ccc !important;
 }
 
@@ -1574,7 +1574,7 @@ h3.title,
   padding: 4px 8px !important;
 }
 
-.w3-padding, h3.title {
+.w3-padding, h2.title {
   padding: 8px 16px !important;
 }
 
@@ -1959,7 +1959,7 @@ h3.title,
   color: #3a3a3a !important;
 }
 
-.w3-border-amber, h3.title,
+.w3-border-amber, h2.title,
 .w3-hover-border-amber:hover {
   border-color: #ffc107 !important;
 }
@@ -2162,7 +2162,7 @@ h3.title,
   background-color: #070b0f !important;
 }
 
-.w3-theme-d5, h3.title {
+.w3-theme-d5, h2.title {
   color: #fff !important;
   background-color: #05090c !important;
 }

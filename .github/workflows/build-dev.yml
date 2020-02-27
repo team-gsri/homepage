@@ -51,4 +51,4 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           envs: GITHUB_USERNAME,GITHUB_TOKEN
-          script: /opt/docker-tools-master/docker-stack-deploy.sh homepage
+          script: /opt/docker-tools-master/docker-stack-deploy.sh homepage-dev

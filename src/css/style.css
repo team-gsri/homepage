@@ -351,8 +351,8 @@ a {
 
 .w3-btn,
 .w3-button,
-.hero header .content a.action,
-.hero header .content a.main,
+a.action,
+a.main,
 .card a,
 div#contact a,
 div#footer a {
@@ -376,8 +376,8 @@ div#footer a {
 
 .w3-btn,
 .w3-button,
-.hero header .content a.action,
-.hero header .content a.main,
+a.action,
+a.main,
 .card a,
 div#contact a,
 div#footer a {
@@ -391,8 +391,8 @@ div#footer a {
 .w3-disabled,
 .w3-btn:disabled,
 .w3-button:disabled,
-.hero header .content a.action:disabled,
-.hero header .content a.main:disabled,
+a.action:disabled,
+a.main:disabled,
 .card a:disabled,
 div#contact a:disabled,
 div#footer a:disabled {
@@ -496,10 +496,10 @@ div#footer a:disabled {
   color: #000;
 }
 
-.w3-dropdown-hover:hover > .w3-button:first-child, .hero header .content .w3-dropdown-hover:hover > a.action:first-child, .hero header .content .w3-dropdown-hover:hover > a.main:first-child, .card .w3-dropdown-hover:hover > a:first-child, div#contact .w3-dropdown-hover:hover > a:first-child, div#footer .w3-dropdown-hover:hover > a:first-child,
+.w3-dropdown-hover:hover > .w3-button:first-child, .w3-dropdown-hover:hover > a.action:first-child, .w3-dropdown-hover:hover > a.main:first-child, .card .w3-dropdown-hover:hover > a:first-child, div#contact .w3-dropdown-hover:hover > a:first-child, div#footer .w3-dropdown-hover:hover > a:first-child,
 .w3-dropdown-click:hover > .w3-button:first-child,
-.hero header .content .w3-dropdown-click:hover > a.action:first-child,
-.hero header .content .w3-dropdown-click:hover > a.main:first-child,
+.w3-dropdown-click:hover > a.action:first-child,
+.w3-dropdown-click:hover > a.main:first-child,
 .card .w3-dropdown-click:hover > a:first-child,
 div#contact .w3-dropdown-click:hover > a:first-child,
 div#footer .w3-dropdown-click:hover > a:first-child {
@@ -546,12 +546,10 @@ div#footer .w3-dropdown-click:hover > a:first-child {
   min-width: 100%;
 }
 
-.w3-bar-block .w3-dropdown-hover .w3-button, .w3-bar-block .w3-dropdown-hover .hero header .content a.action, .hero header .content .w3-bar-block .w3-dropdown-hover a.action, .w3-bar-block .w3-dropdown-hover .hero header .content a.main, .hero header .content .w3-bar-block .w3-dropdown-hover a.main, .w3-bar-block .w3-dropdown-hover .card a, .card .w3-bar-block .w3-dropdown-hover a, .w3-bar-block .w3-dropdown-hover div#contact a, div#contact .w3-bar-block .w3-dropdown-hover a, .w3-bar-block .w3-dropdown-hover div#footer a, div#footer .w3-bar-block .w3-dropdown-hover a,
+.w3-bar-block .w3-dropdown-hover .w3-button, .w3-bar-block .w3-dropdown-hover a.action, .w3-bar-block .w3-dropdown-hover a.main, .w3-bar-block .w3-dropdown-hover .card a, .card .w3-bar-block .w3-dropdown-hover a, .w3-bar-block .w3-dropdown-hover div#contact a, div#contact .w3-bar-block .w3-dropdown-hover a, .w3-bar-block .w3-dropdown-hover div#footer a, div#footer .w3-bar-block .w3-dropdown-hover a,
 .w3-bar-block .w3-dropdown-click .w3-button,
-.w3-bar-block .w3-dropdown-click .hero header .content a.action,
-.hero header .content .w3-bar-block .w3-dropdown-click a.action,
-.w3-bar-block .w3-dropdown-click .hero header .content a.main,
-.hero header .content .w3-bar-block .w3-dropdown-click a.main,
+.w3-bar-block .w3-dropdown-click a.action,
+.w3-bar-block .w3-dropdown-click a.main,
 .w3-bar-block .w3-dropdown-click .card a,
 .card .w3-bar-block .w3-dropdown-click a,
 .w3-bar-block .w3-dropdown-click div#contact a,
@@ -618,7 +616,7 @@ div#footer .w3-dropdown-click {
   float: left;
 }
 
-.w3-bar .w3-button, div#footer .w3-button, .w3-bar .hero header .content a.action, .hero header .content .w3-bar a.action, .w3-bar .hero header .content a.main, .hero header .content .w3-bar a.main, .w3-bar .card a, .card .w3-bar a, .w3-bar div#contact a, div#contact .w3-bar a, div#footer a {
+.w3-bar .w3-button, div#footer .w3-button, .w3-bar a.action, .w3-bar a.main, .w3-bar .card a, .card .w3-bar a, .w3-bar div#contact a, div#contact .w3-bar a, div#footer a {
   white-space: normal;
 }
 
@@ -650,11 +648,11 @@ div#footer .w3-dropdown-click {
 .w3-container:after,
 .w3-container:before,
 .w3-panel:after,
-h2.title:after,
+.title:after,
 .card header:after,
 .card p:after,
 .w3-panel:before,
-h2.title:before,
+.title:before,
 .card header:before,
 .card p:before,
 .w3-row:after,
@@ -826,13 +824,13 @@ div#contact a {
   margin-right: -16px;
 }
 
-.w3-content, h2.title,
+.w3-content, .title,
 .w3-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.w3-content, h2.title {
+.w3-content, .title {
   max-width: 980px;
 }
 
@@ -908,10 +906,8 @@ div#contact a {
   .w3-dropdown-hover.w3-mobile,
   .w3-dropdown-hover.w3-mobile .w3-btn,
   .w3-dropdown-hover.w3-mobile .w3-button,
-  .w3-dropdown-hover.w3-mobile .hero header .content a.action,
-  .hero header .content .w3-dropdown-hover.w3-mobile a.action,
-  .w3-dropdown-hover.w3-mobile .hero header .content a.main,
-  .hero header .content .w3-dropdown-hover.w3-mobile a.main,
+  .w3-dropdown-hover.w3-mobile a.action,
+  .w3-dropdown-hover.w3-mobile a.main,
   .w3-dropdown-hover.w3-mobile .card a,
   .card .w3-dropdown-hover.w3-mobile a,
   .w3-dropdown-hover.w3-mobile div#contact a,
@@ -921,10 +917,8 @@ div#contact a {
   .w3-dropdown-click.w3-mobile,
   .w3-dropdown-click.w3-mobile .w3-btn,
   .w3-dropdown-click.w3-mobile .w3-button,
-  .w3-dropdown-click.w3-mobile .hero header .content a.action,
-  .hero header .content .w3-dropdown-click.w3-mobile a.action,
-  .w3-dropdown-click.w3-mobile .hero header .content a.main,
-  .hero header .content .w3-dropdown-click.w3-mobile a.main,
+  .w3-dropdown-click.w3-mobile a.action,
+  .w3-dropdown-click.w3-mobile a.main,
   .w3-dropdown-click.w3-mobile .card a,
   .card .w3-dropdown-click.w3-mobile a,
   .w3-dropdown-click.w3-mobile div#contact a,
@@ -1126,7 +1120,7 @@ div#contact .w3-row-padding > a,
 
 .w3-container,
 .w3-panel,
-h2.title,
+.title,
 .card header,
 .card p {
   padding: 0.01em 16px;
@@ -1134,7 +1128,7 @@ h2.title,
 
 
 .w3-panel,
-h2.title,
+.title,
 .card header,
 .card p {
   margin-top: 16px;
@@ -1508,7 +1502,7 @@ h2.title,
   border: 0 !important;
 }
 
-.w3-border, .hero header .content a.action, .hero header .content a.main {
+.w3-border, a.action, a.main {
   border: 1px solid #ccc !important;
 }
 
@@ -1536,7 +1530,7 @@ h2.title,
   border-bottom: 6px solid #ccc !important;
 }
 
-.w3-leftbar, h2.title {
+.w3-leftbar, .title {
   border-left: 6px solid #ccc !important;
 }
 
@@ -1574,7 +1568,7 @@ h2.title,
   padding: 4px 8px !important;
 }
 
-.w3-padding, h2.title {
+.w3-padding, .title {
   padding: 8px 16px !important;
 }
 
@@ -1615,12 +1609,12 @@ h2.title,
   float: right !important;
 }
 
-.w3-button:hover, .hero header .content a.action:hover, .hero header .content a.main:hover, .card a:hover, div#contact a:hover, div#footer a:hover {
+.w3-button:hover, a.action:hover, a.main:hover, .card a:hover, div#contact a:hover, div#footer a:hover {
   color: #000 !important;
   background-color: #ccc !important;
 }
 
-.w3-transparent, .hero header .content a.action,
+.w3-transparent, a.action,
 .w3-hover-none:hover {
   background-color: transparent !important;
 }
@@ -1760,9 +1754,9 @@ h2.title,
   background-color: #ffeb3b !important;
 }
 
-.w3-white, .hero header .content a.main,
+.w3-white, a.main,
 .w3-hover-white:hover,
-.hero header .content a.action:hover {
+a.action:hover {
   color: #000 !important;
   background-color: #fff !important;
 }
@@ -1959,7 +1953,7 @@ h2.title,
   color: #3a3a3a !important;
 }
 
-.w3-border-amber, h2.title,
+.w3-border-amber, .title,
 .w3-hover-border-amber:hover {
   border-color: #ffc107 !important;
 }
@@ -2066,7 +2060,7 @@ h2.title,
   border-color: #ffeb3b !important;
 }
 
-.w3-border-white, .hero header .content a.action, .hero header .content a.main,
+.w3-border-white, a.action, a.main,
 .w3-hover-border-white:hover {
   border-color: #fff !important;
 }
@@ -2162,7 +2156,7 @@ h2.title,
   background-color: #070b0f !important;
 }
 
-.w3-theme-d5, h2.title {
+.w3-theme-d5, .title {
   color: #fff !important;
   background-color: #05090c !important;
 }
@@ -2195,7 +2189,7 @@ h2.title,
   border-color: #0b1319 !important;
 }
 
-.w3-hover-theme:hover, .hero header .content a.main:hover, div#contact a:hover, div#footer a:hover {
+.w3-hover-theme:hover, a.main:hover, div#contact a:hover, div#footer a:hover {
   color: #fff !important;
   background-color: #0b1319 !important;
 }
@@ -2204,7 +2198,7 @@ h2.title,
   color: #0b1319 !important;
 }
 
-.w3-hover-border-theme:hover, .hero header .content a.main:hover {
+.w3-hover-border-theme:hover, a.main:hover {
   border-color: #0b1319 !important;
 }
 

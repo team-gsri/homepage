@@ -44,23 +44,25 @@ h6 {
             p {
                 font-style: italic;
             }
-            a.action {
-                @extend .w3-button;
-                @extend .w3-transparent;
-                @extend .w3-border;
-                @extend .w3-border-white;
-                @extend .w3-hover-white;
-            }
-            a.main {
-                @extend .w3-button;
-                @extend .w3-white;
-                @extend .w3-border;
-                @extend .w3-border-white;
-                @extend .w3-hover-theme;
-                @extend .w3-hover-border-theme;
-            }
         }
     }
+}
+
+a.action {
+    @extend .w3-button;
+    @extend .w3-transparent;
+    @extend .w3-border;
+    @extend .w3-border-white;
+    @extend .w3-hover-white;
+}
+
+a.main {
+    @extend .w3-button;
+    @extend .w3-white;
+    @extend .w3-border;
+    @extend .w3-border-white;
+    @extend .w3-hover-theme;
+    @extend .w3-hover-border-theme;
 }
 
 div.spacer {
@@ -82,7 +84,7 @@ div.bottom-biseau {
     border-left: 100vw solid transparent;
 }
 
-h2.title {
+.title {
     @extend .w3-border-amber;
     @extend .w3-leftbar;
     @extend .w3-padding;

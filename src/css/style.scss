@@ -3,6 +3,7 @@
 body {
     font-family: 'Roboto Condensed', Arial, sans-serif;
     font-size: 14pt;
+    margin-bottom: 3em;
 }
 
 h1,
@@ -82,6 +83,8 @@ div.top-biseau {
 div.bottom-biseau {
     border-bottom: 2em solid #0b1319;
     border-left: 100vw solid transparent;
+    bottom: 0;
+    position: absolute;
 }
 
 .title {
@@ -109,12 +112,12 @@ div.bottom-biseau {
     @extend .w3-card;
     @extend .w3-display-container;
     position: relative;
-    &:hover {
-        @extend .w3-theme-l4;
-        animation: smallmove 1s;
-        left: -5px;
-        top: -5px;
-    }
+    // &:hover {
+    //     @extend .w3-theme-l4;
+    //     animation: smallmove 1s;
+    //     left: -5px;
+    //     top: -5px;
+    // }
     header {
         @extend .w3-panel;
         @extend .w3-center;
@@ -154,4 +157,48 @@ div#footer {
             @extend .w3-theme-l2;
         }
     }
+}
+
+.gsri-card {
+    @extend .w3-card;
+    @extend .w3-hover-greyscale;
+    height: 30em;
+    position: relative;
+    .gsri-overlay {
+        @extend .w3-padding;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        bottom: 0;
+        min-height: 50%;
+        width: 100%;
+    }
+    p {
+        @extend .w3-justify;
+    }
+    a {
+        @extend .w3-button;
+        @extend .w3-theme-l2;
+        @extend .w3-hover-blue-gray;
+        position: absolute;
+        bottom: 1em;
+        left: 1em;
+        right: 1em;
+        &::after {
+            content: ' \2192';
+        }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-transform: uppercase;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: x-large;
+    }
+}
+
+.striped {
+    background: repeating-linear-gradient(-45deg, #333, #333 10px, transparent 10px, transparent 20px);
 }

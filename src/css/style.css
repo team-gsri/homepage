@@ -683,8 +683,7 @@ div#footer:after {
 .w3-third,
 .w3-twothird,
 .w3-threequarter,
-.w3-quarter,
-div#contact a {
+.w3-quarter {
   float: left;
   width: 100%;
 }
@@ -745,8 +744,7 @@ div#contact a {
     width: 16.66666%;
   }
   .w3-col.m3,
-  .w3-quarter,
-  div#contact a {
+  .w3-quarter {
     width: 24.99999%;
   }
   .w3-col.m4,
@@ -893,44 +891,56 @@ div#contact a {
   .w3-modal {
     padding-top: 30px;
   }
-  .w3-dropdown-hover.w3-mobile .w3-dropdown-content,
-  .w3-dropdown-click.w3-mobile .w3-dropdown-content {
+  .w3-dropdown-hover.w3-mobile .w3-dropdown-content, div#contact a.w3-dropdown-hover .w3-dropdown-content,
+  .w3-dropdown-click.w3-mobile .w3-dropdown-content,
+  div#contact a.w3-dropdown-click .w3-dropdown-content {
     position: relative;
   }
   .w3-hide-small, .hero header .logo {
     display: none !important;
   }
-  .w3-mobile {
+  .w3-mobile, div#contact a {
     display: block;
     width: 100% !important;
   }
-  .w3-bar-item.w3-mobile, div#footer a.w3-mobile,
+  .w3-bar-item.w3-mobile, div#contact a.w3-bar-item, div#contact div#footer a, div#footer div#contact a, div#footer a.w3-mobile,
   .w3-dropdown-hover.w3-mobile,
-  .w3-dropdown-click.w3-mobile {
+  div#contact a.w3-dropdown-hover,
+  .w3-dropdown-click.w3-mobile,
+  div#contact a.w3-dropdown-click {
     text-align: center;
   }
+  
   .w3-dropdown-hover.w3-mobile,
+  div#contact a.w3-dropdown-hover,
   .w3-dropdown-hover.w3-mobile .w3-btn,
+  div#contact a.w3-dropdown-hover .w3-btn,
   .w3-dropdown-hover.w3-mobile .w3-button,
+  div#contact a.w3-dropdown-hover .w3-button,
   .w3-dropdown-hover.w3-mobile a.action,
   .w3-dropdown-hover.w3-mobile a.main,
   .w3-dropdown-hover.w3-mobile .card a,
   .card .w3-dropdown-hover.w3-mobile a,
   .w3-dropdown-hover.w3-mobile div#contact a,
   div#contact .w3-dropdown-hover.w3-mobile a,
+  div#contact a.w3-dropdown-hover a,
   .w3-dropdown-hover.w3-mobile div#footer a,
   div#footer .w3-dropdown-hover.w3-mobile a,
   .w3-dropdown-hover.w3-mobile .gsri-card a,
   .gsri-card .w3-dropdown-hover.w3-mobile a,
   .w3-dropdown-click.w3-mobile,
+  div#contact a.w3-dropdown-click,
   .w3-dropdown-click.w3-mobile .w3-btn,
+  div#contact a.w3-dropdown-click .w3-btn,
   .w3-dropdown-click.w3-mobile .w3-button,
+  div#contact a.w3-dropdown-click .w3-button,
   .w3-dropdown-click.w3-mobile a.action,
   .w3-dropdown-click.w3-mobile a.main,
   .w3-dropdown-click.w3-mobile .card a,
   .card .w3-dropdown-click.w3-mobile a,
   .w3-dropdown-click.w3-mobile div#contact a,
   div#contact .w3-dropdown-click.w3-mobile a,
+  div#contact a.w3-dropdown-click a,
   .w3-dropdown-click.w3-mobile div#footer a,
   div#footer .w3-dropdown-click.w3-mobile a,
   .w3-dropdown-click.w3-mobile .gsri-card a,
@@ -1123,7 +1133,6 @@ div#contact a {
 .w3-row-padding > .w3-twothird,
 .w3-row-padding > .w3-threequarter,
 .w3-row-padding > .w3-quarter,
-div#contact .w3-row-padding > a,
 .w3-row-padding > .w3-col {
   padding: 0 8px;
 }
@@ -2300,6 +2309,14 @@ div.bottom-biseau {
   height: 16em;
   display: table-cell;
   vertical-align: middle;
+}
+
+div#contact {
+  text-align: center;
+}
+
+div#contact a {
+  text-align: left;
 }
 
 div#footer {

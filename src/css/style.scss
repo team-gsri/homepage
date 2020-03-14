@@ -137,10 +137,14 @@ div.bottom-biseau {
     }
 }
 
-div#contact a {
-    @extend .w3-button;
-    @extend .w3-quarter;
-    @extend .w3-hover-theme;
+div#contact {
+    text-align: center;
+    a {
+        @extend .w3-button;
+        @extend .w3-hover-theme;
+        @extend .w3-mobile;
+        text-align: left;
+    }
 }
 
 div#footer {

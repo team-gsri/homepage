@@ -1,9 +1,9 @@
 @import "w3.scss";
 @import "theme.scss";
 body {
+    @extend .w3-theme;
     font-family: 'Roboto Condensed', Arial, sans-serif;
     font-size: 14pt;
-    margin-bottom: 3em;
 }
 
 h1,
@@ -21,6 +21,7 @@ h6 {
         text-transform: uppercase;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: x-large;
+        font-weight: 300;
     }
 }
 
@@ -66,27 +67,6 @@ a.main {
     @extend .w3-hover-border-theme;
 }
 
-div.spacer {
-    height: 10em;
-}
-
-div.splitter {
-    border-left: 100vw solid transparent;
-    border-bottom: 6em solid white;
-}
-
-div.top-biseau {
-    border-top: 2em solid #0b1319;
-    border-right: 100vw solid transparent;
-}
-
-div.bottom-biseau {
-    border-bottom: 2em solid #0b1319;
-    border-left: 100vw solid transparent;
-    bottom: 0;
-    position: absolute;
-}
-
 .title {
     @extend .w3-border-amber;
     @extend .w3-leftbar;
@@ -96,48 +76,8 @@ div.bottom-biseau {
     @extend .w3-panel;
 }
 
-@keyframes smallmove {
-    from {
-        left: 0px;
-        top: 0px;
-    }
-    to {
-        left: -5px;
-        top: -5px;
-    }
-}
-
-.card {
-    @extend .w3-theme;
-    @extend .w3-card;
-    @extend .w3-display-container;
-    position: relative;
-    // &:hover {
-    //     @extend .w3-theme-l4;
-    //     animation: smallmove 1s;
-    //     left: -5px;
-    //     top: -5px;
-    // }
-    header {
-        @extend .w3-panel;
-        @extend .w3-center;
-    }
-    p {
-        height: 16em;
-        display: table-cell;
-        vertical-align: middle;
-        @extend .w3-justify;
-        @extend .w3-panel;
-    }
-    a {
-        @extend .w3-button;
-        @extend .w3-theme-l2;
-        @extend .w3-hover-blue-gray;
-        @extend .w3-show;
-    }
-}
-
 div#contact {
+    @extend .w3-white;
     text-align: center;
     a {
         @extend .w3-button;
@@ -168,14 +108,6 @@ div#footer {
     @extend .w3-hover-greyscale;
     height: 30em;
     position: relative;
-    .gsri-overlay {
-        @extend .w3-padding;
-        background-color: rgba(0, 0, 0, 0.6);
-        position: absolute;
-        bottom: 0;
-        min-height: 50%;
-        width: 100%;
-    }
     p {
         @extend .w3-justify;
     }
@@ -201,6 +133,91 @@ div#footer {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: x-large;
     }
+}
+
+.gsri-overlay {
+    @extend .w3-padding;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    min-height: 50%;
+    width: 100%;
+}
+
+.gsri-region {
+    @extend .w3-display-container;
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+
+.gsri-splitter {
+    position: relative;
+    float: left;
+    width: 100vw;
+    height: 3em;
+    top: -1.5em;
+    z-index: 1000;
+    transform: skew(0, -1.5deg);
+}
+
+.gsri-toplay {
+    @extend .w3-display-container;
+    height: 40vh;
+    width: 100vw;
+}
+
+.gsri-grade-0,
+.gsri-grade-1,
+.gsri-grade-2,
+.gsri-grade-3,
+.gsri-grade-4,
+.gsri-grade-5,
+.gsri-grade-6 {
+    list-style: none;
+    clear: both;
+    @extend .w3-xxlarge;
+    &::before {
+        @extend .w3-hide-small;
+        margin: 0 1em;
+        float: left;
+    }
+    span {
+        display: block;
+        @extend .w3-large;
+        @extend .w3-text-light-blue;
+    }
+}
+
+.gsri-grade-0::before {
+    content: url(https://www.gsri.team/wp-content/uploads/grade_0.png);
+}
+
+.gsri-grade-1::before {
+    content: url(https://www.gsri.team/wp-content/uploads/grade_1.png);
+}
+
+.gsri-grade-2::before {
+    content: url(https://www.gsri.team/wp-content/uploads/grade_2.png);
+}
+
+.gsri-grade-3::before {
+    content: url(https://www.gsri.team/wp-content/uploads/grade_3.png);
+}
+
+.gsri-grade-4::before {
+    content: url(https://www.gsri.team/wp-content/uploads/grade_4.png);
+}
+
+.gsri-grade-5::before {
+    content: url(https://www.gsri.team/wp-content/uploads/grade_5.png);
+}
+
+.gsri-grade-6::before {
+    content: url(https://www.gsri.team/wp-content/uploads/grade_6.png);
+}
+
+.gsri-unite {
+    @extend .w3-bar;
 }
 
 .striped {

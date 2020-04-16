@@ -353,7 +353,6 @@ a {
 .w3-button,
 a.action,
 a.main,
-.card a,
 div#contact a,
 div#footer a,
 .gsri-card a {
@@ -379,7 +378,6 @@ div#footer a,
 .w3-button,
 a.action,
 a.main,
-.card a,
 div#contact a,
 div#footer a,
 .gsri-card a {
@@ -395,7 +393,6 @@ div#footer a,
 .w3-button:disabled,
 a.action:disabled,
 a.main:disabled,
-.card a:disabled,
 div#contact a:disabled,
 div#footer a:disabled,
 .gsri-card a:disabled {
@@ -446,7 +443,8 @@ div#footer a:disabled,
 .w3-tooltip,
 .w3-display-container,
 .hero,
-.card {
+.gsri-region,
+.gsri-toplay {
   position: relative;
 }
 
@@ -499,11 +497,10 @@ div#footer a:disabled,
   color: #000;
 }
 
-.w3-dropdown-hover:hover > .w3-button:first-child, .w3-dropdown-hover:hover > a.action:first-child, .w3-dropdown-hover:hover > a.main:first-child, .card .w3-dropdown-hover:hover > a:first-child, div#contact .w3-dropdown-hover:hover > a:first-child, div#footer .w3-dropdown-hover:hover > a:first-child, .gsri-card .w3-dropdown-hover:hover > a:first-child,
+.w3-dropdown-hover:hover > .w3-button:first-child, .w3-dropdown-hover:hover > a.action:first-child, .w3-dropdown-hover:hover > a.main:first-child, div#contact .w3-dropdown-hover:hover > a:first-child, div#footer .w3-dropdown-hover:hover > a:first-child, .gsri-card .w3-dropdown-hover:hover > a:first-child,
 .w3-dropdown-click:hover > .w3-button:first-child,
 .w3-dropdown-click:hover > a.action:first-child,
 .w3-dropdown-click:hover > a.main:first-child,
-.card .w3-dropdown-click:hover > a:first-child,
 div#contact .w3-dropdown-click:hover > a:first-child,
 div#footer .w3-dropdown-click:hover > a:first-child,
 .gsri-card .w3-dropdown-click:hover > a:first-child {
@@ -550,12 +547,10 @@ div#footer .w3-dropdown-click:hover > a:first-child,
   min-width: 100%;
 }
 
-.w3-bar-block .w3-dropdown-hover .w3-button, .w3-bar-block .w3-dropdown-hover a.action, .w3-bar-block .w3-dropdown-hover a.main, .w3-bar-block .w3-dropdown-hover .card a, .card .w3-bar-block .w3-dropdown-hover a, .w3-bar-block .w3-dropdown-hover div#contact a, div#contact .w3-bar-block .w3-dropdown-hover a, .w3-bar-block .w3-dropdown-hover div#footer a, div#footer .w3-bar-block .w3-dropdown-hover a, .w3-bar-block .w3-dropdown-hover .gsri-card a, .gsri-card .w3-bar-block .w3-dropdown-hover a,
+.w3-bar-block .w3-dropdown-hover .w3-button, .w3-bar-block .w3-dropdown-hover a.action, .w3-bar-block .w3-dropdown-hover a.main, .w3-bar-block .w3-dropdown-hover div#contact a, div#contact .w3-bar-block .w3-dropdown-hover a, .w3-bar-block .w3-dropdown-hover div#footer a, div#footer .w3-bar-block .w3-dropdown-hover a, .w3-bar-block .w3-dropdown-hover .gsri-card a, .gsri-card .w3-bar-block .w3-dropdown-hover a,
 .w3-bar-block .w3-dropdown-click .w3-button,
 .w3-bar-block .w3-dropdown-click a.action,
 .w3-bar-block .w3-dropdown-click a.main,
-.w3-bar-block .w3-dropdown-click .card a,
-.card .w3-bar-block .w3-dropdown-click a,
 .w3-bar-block .w3-dropdown-click div#contact a,
 div#contact .w3-bar-block .w3-dropdown-click a,
 .w3-bar-block .w3-dropdown-click div#footer a,
@@ -596,17 +591,17 @@ div#footer .w3-bar-block .w3-dropdown-click a,
   width: 600px;
 }
 
-.w3-bar, div#footer {
+.w3-bar, div#footer, .gsri-unite {
   width: 100%;
   overflow: hidden;
 }
 
-.w3-center .w3-bar, .card header .w3-bar, .w3-center div#footer, .card header div#footer {
+.w3-center .w3-bar, .w3-center div#footer, .w3-center .gsri-unite {
   display: inline-block;
   width: auto;
 }
 
-.w3-bar .w3-bar-item, div#footer .w3-bar-item, div#footer a {
+.w3-bar .w3-bar-item, div#footer .w3-bar-item, .gsri-unite .w3-bar-item, div#footer a {
   padding: 8px 16px;
   float: left;
   width: auto;
@@ -615,14 +610,15 @@ div#footer .w3-bar-block .w3-dropdown-click a,
   outline: 0;
 }
 
-.w3-bar .w3-dropdown-hover, div#footer .w3-dropdown-hover,
+.w3-bar .w3-dropdown-hover, div#footer .w3-dropdown-hover, .gsri-unite .w3-dropdown-hover,
 .w3-bar .w3-dropdown-click,
-div#footer .w3-dropdown-click {
+div#footer .w3-dropdown-click,
+.gsri-unite .w3-dropdown-click {
   position: static;
   float: left;
 }
 
-.w3-bar .w3-button, div#footer .w3-button, .w3-bar a.action, .w3-bar a.main, .w3-bar .card a, .card .w3-bar a, .w3-bar div#contact a, div#contact .w3-bar a, div#footer a, .w3-bar .gsri-card a, .gsri-card .w3-bar a {
+.w3-bar .w3-button, div#footer .w3-button, .gsri-unite .w3-button, .w3-bar a.action, .gsri-unite a.action, .w3-bar a.main, .gsri-unite a.main, .w3-bar div#contact a, div#contact .w3-bar a, .gsri-unite div#contact a, div#contact .gsri-unite a, div#footer a, .w3-bar .gsri-card a, .gsri-card .w3-bar a, .gsri-unite .gsri-card a, .gsri-card .gsri-unite a {
   white-space: normal;
 }
 
@@ -637,7 +633,7 @@ div#footer .w3-dropdown-click {
   outline: 0;
 }
 
-.w3-bar-block.w3-center .w3-bar-item, .card header.w3-bar-block .w3-bar-item, .w3-bar-block.w3-center div#footer a, div#footer .w3-bar-block.w3-center a, .card header.w3-bar-block div#footer a, div#footer .card header.w3-bar-block a {
+.w3-bar-block.w3-center .w3-bar-item, .w3-bar-block.w3-center div#footer a, div#footer .w3-bar-block.w3-center a {
   text-align: center;
 }
 
@@ -655,12 +651,8 @@ div#footer .w3-dropdown-click {
 .w3-container:before,
 .w3-panel:after,
 .title:after,
-.card header:after,
-.card p:after,
 .w3-panel:before,
 .title:before,
-.card header:before,
-.card p:before,
 .w3-row:after,
 .w3-row:before,
 .w3-row-padding:after,
@@ -671,8 +663,10 @@ div#footer .w3-dropdown-click {
 .w3-clear:before,
 .w3-bar:before,
 div#footer:before,
+.gsri-unite:before,
 .w3-bar:after,
-div#footer:after {
+div#footer:after,
+.gsri-unite:after {
   content: "";
   display: table;
   clear: both;
@@ -868,8 +862,7 @@ div#footer:after {
 }
 
 .w3-show-block,
-.w3-show,
-.card a {
+.w3-show {
   display: block !important;
 }
 
@@ -896,7 +889,13 @@ div#footer:after {
   div#contact a.w3-dropdown-click .w3-dropdown-content {
     position: relative;
   }
-  .w3-hide-small, .hero header .logo {
+  .w3-hide-small, .hero header .logo, .gsri-grade-0::before,
+  .gsri-grade-1::before,
+  .gsri-grade-2::before,
+  .gsri-grade-3::before,
+  .gsri-grade-4::before,
+  .gsri-grade-5::before,
+  .gsri-grade-6::before {
     display: none !important;
   }
   .w3-mobile, div#contact a {
@@ -919,8 +918,6 @@ div#footer:after {
   div#contact a.w3-dropdown-hover .w3-button,
   .w3-dropdown-hover.w3-mobile a.action,
   .w3-dropdown-hover.w3-mobile a.main,
-  .w3-dropdown-hover.w3-mobile .card a,
-  .card .w3-dropdown-hover.w3-mobile a,
   .w3-dropdown-hover.w3-mobile div#contact a,
   div#contact .w3-dropdown-hover.w3-mobile a,
   div#contact a.w3-dropdown-hover a,
@@ -936,8 +933,6 @@ div#footer:after {
   div#contact a.w3-dropdown-click .w3-button,
   .w3-dropdown-click.w3-mobile a.action,
   .w3-dropdown-click.w3-mobile a.main,
-  .w3-dropdown-click.w3-mobile .card a,
-  .card .w3-dropdown-click.w3-mobile a,
   .w3-dropdown-click.w3-mobile div#contact a,
   div#contact .w3-dropdown-click.w3-mobile a,
   div#contact a.w3-dropdown-click a,
@@ -1086,11 +1081,11 @@ div#footer:after {
   -ms-transform: translate(-50%, 0%);
 }
 
-.w3-display-container:hover .w3-display-hover, .hero:hover .w3-display-hover, .card:hover .w3-display-hover {
+.w3-display-container:hover .w3-display-hover, .hero:hover .w3-display-hover, .gsri-region:hover .w3-display-hover, .gsri-toplay:hover .w3-display-hover {
   display: block;
 }
 
-.w3-display-container:hover span.w3-display-hover, .hero:hover span.w3-display-hover, .card:hover span.w3-display-hover {
+.w3-display-container:hover span.w3-display-hover, .hero:hover span.w3-display-hover, .gsri-region:hover span.w3-display-hover, .gsri-toplay:hover span.w3-display-hover {
   display: inline-block;
 }
 
@@ -1139,17 +1134,13 @@ div#footer:after {
 
 .w3-container,
 .w3-panel,
-.title,
-.card header,
-.card p {
+.title {
   padding: 0.01em 16px;
 }
 
 
 .w3-panel,
-.title,
-.card header,
-.card p {
+.title {
   margin-top: 16px;
   margin-bottom: 16px;
 }
@@ -1176,7 +1167,7 @@ div#footer:after {
   font-size: 110%;
 }
 
-.w3-card, .card, .gsri-card,
+.w3-card, .gsri-card,
 .w3-card-2 {
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -1482,7 +1473,13 @@ div#footer:after {
   font-size: 15px !important;
 }
 
-.w3-large {
+.w3-large, .gsri-grade-0 span,
+.gsri-grade-1 span,
+.gsri-grade-2 span,
+.gsri-grade-3 span,
+.gsri-grade-4 span,
+.gsri-grade-5 span,
+.gsri-grade-6 span {
   font-size: 18px !important;
 }
 
@@ -1490,7 +1487,13 @@ div#footer:after {
   font-size: 24px !important;
 }
 
-.w3-xxlarge {
+.w3-xxlarge, .gsri-grade-0,
+.gsri-grade-1,
+.gsri-grade-2,
+.gsri-grade-3,
+.gsri-grade-4,
+.gsri-grade-5,
+.gsri-grade-6 {
   font-size: 36px !important;
 }
 
@@ -1510,11 +1513,11 @@ div#footer:after {
   text-align: right !important;
 }
 
-.w3-justify, .card p, .gsri-card p {
+.w3-justify, .gsri-card p {
   text-align: justify !important;
 }
 
-.w3-center, .card header {
+.w3-center {
   text-align: center !important;
 }
 
@@ -1588,7 +1591,7 @@ div#footer:after {
   padding: 4px 8px !important;
 }
 
-.w3-padding, .title, .gsri-card .gsri-overlay {
+.w3-padding, .title, .gsri-overlay {
   padding: 8px 16px !important;
 }
 
@@ -1629,7 +1632,7 @@ div#footer:after {
   float: right !important;
 }
 
-.w3-button:hover, a.action:hover, a.main:hover, .card a:hover, div#contact a:hover, div#footer a:hover, .gsri-card a:hover {
+.w3-button:hover, a.action:hover, a.main:hover, div#contact a:hover, div#footer a:hover, .gsri-card a:hover {
   color: #000 !important;
   background-color: #ccc !important;
 }
@@ -1685,7 +1688,6 @@ div#footer:after {
 .w3-hover-blue-grey:hover,
 .w3-blue-gray,
 .w3-hover-blue-gray:hover,
-.card a:hover,
 .gsri-card a:hover {
   color: #fff !important;
   background-color: #607d8b !important;
@@ -1775,7 +1777,7 @@ div#footer:after {
   background-color: #ffeb3b !important;
 }
 
-.w3-white, a.main,
+.w3-white, a.main, div#contact,
 .w3-hover-white:hover,
 a.action:hover {
   color: #000 !important;
@@ -1851,7 +1853,13 @@ a.action:hover {
   color: #2196F3 !important;
 }
 
-.w3-text-light-blue,
+.w3-text-light-blue, .gsri-grade-0 span,
+.gsri-grade-1 span,
+.gsri-grade-2 span,
+.gsri-grade-3 span,
+.gsri-grade-4 span,
+.gsri-grade-5 span,
+.gsri-grade-6 span,
 .w3-hover-text-light-blue:hover {
   color: #87CEEB !important;
 }
@@ -2147,7 +2155,7 @@ a.action:hover {
   background-color: #7ba5c5 !important;
 }
 
-.w3-theme-l2, .card a, div#footer a.here, .gsri-card a {
+.w3-theme-l2, div#footer a.here, .gsri-card a {
   color: #fff !important;
   background-color: #45779d !important;
 }
@@ -2197,7 +2205,7 @@ a.action:hover {
   background-color: #05090c !important;
 }
 
-.w3-theme, .card {
+.w3-theme, body {
   color: #fff !important;
   background-color: #0b1319 !important;
 }
@@ -2226,7 +2234,6 @@ a.action:hover {
 body {
   font-family: 'Roboto Condensed', Arial, sans-serif;
   font-size: 14pt;
-  margin-bottom: 3em;
 }
 
 h1,
@@ -2243,6 +2250,7 @@ h6 {
   text-transform: uppercase;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: x-large;
+  font-weight: 300;
 }
 
 .hero {
@@ -2256,59 +2264,6 @@ h6 {
 
 .hero header .content p {
   font-style: italic;
-}
-
-div.spacer {
-  height: 10em;
-}
-
-div.splitter {
-  border-left: 100vw solid transparent;
-  border-bottom: 6em solid white;
-}
-
-div.top-biseau {
-  border-top: 2em solid #0b1319;
-  border-right: 100vw solid transparent;
-}
-
-div.bottom-biseau {
-  border-bottom: 2em solid #0b1319;
-  border-left: 100vw solid transparent;
-  bottom: 0;
-  position: absolute;
-}
-
-@-webkit-keyframes smallmove {
-  from {
-    left: 0px;
-    top: 0px;
-  }
-  to {
-    left: -5px;
-    top: -5px;
-  }
-}
-
-@keyframes smallmove {
-  from {
-    left: 0px;
-    top: 0px;
-  }
-  to {
-    left: -5px;
-    top: -5px;
-  }
-}
-
-.card {
-  position: relative;
-}
-
-.card p {
-  height: 16em;
-  display: table-cell;
-  vertical-align: middle;
 }
 
 div#contact {
@@ -2333,14 +2288,6 @@ div#footer a {
   position: relative;
 }
 
-.gsri-card .gsri-overlay {
-  background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  bottom: 0;
-  min-height: 50%;
-  width: 100%;
-}
-
 .gsri-card a {
   position: absolute;
   bottom: 1em;
@@ -2361,6 +2308,95 @@ div#footer a {
   text-transform: uppercase;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: x-large;
+}
+
+.gsri-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  min-height: 50%;
+  width: 100%;
+}
+
+.gsri-region {
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+.gsri-splitter {
+  position: relative;
+  float: left;
+  width: 100vw;
+  height: 3em;
+  top: -1.5em;
+  z-index: 1000;
+  -webkit-transform: skew(0, -1.5deg);
+          transform: skew(0, -1.5deg);
+}
+
+.gsri-toplay {
+  height: 40vh;
+  width: 100vw;
+}
+
+.gsri-grade-0,
+.gsri-grade-1,
+.gsri-grade-2,
+.gsri-grade-3,
+.gsri-grade-4,
+.gsri-grade-5,
+.gsri-grade-6 {
+  list-style: none;
+  clear: both;
+}
+
+.gsri-grade-0::before,
+.gsri-grade-1::before,
+.gsri-grade-2::before,
+.gsri-grade-3::before,
+.gsri-grade-4::before,
+.gsri-grade-5::before,
+.gsri-grade-6::before {
+  margin: 0 1em;
+  float: left;
+}
+
+.gsri-grade-0 span,
+.gsri-grade-1 span,
+.gsri-grade-2 span,
+.gsri-grade-3 span,
+.gsri-grade-4 span,
+.gsri-grade-5 span,
+.gsri-grade-6 span {
+  display: block;
+}
+
+.gsri-grade-0::before {
+  content: url(https://www.gsri.team/wp-content/uploads/grade_0.png);
+}
+
+.gsri-grade-1::before {
+  content: url(https://www.gsri.team/wp-content/uploads/grade_1.png);
+}
+
+.gsri-grade-2::before {
+  content: url(https://www.gsri.team/wp-content/uploads/grade_2.png);
+}
+
+.gsri-grade-3::before {
+  content: url(https://www.gsri.team/wp-content/uploads/grade_3.png);
+}
+
+.gsri-grade-4::before {
+  content: url(https://www.gsri.team/wp-content/uploads/grade_4.png);
+}
+
+.gsri-grade-5::before {
+  content: url(https://www.gsri.team/wp-content/uploads/grade_5.png);
+}
+
+.gsri-grade-6::before {
+  content: url(https://www.gsri.team/wp-content/uploads/grade_6.png);
 }
 
 .striped {

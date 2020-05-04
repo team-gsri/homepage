@@ -596,7 +596,7 @@ div#footer .w3-bar-block .w3-dropdown-click a,
   overflow: hidden;
 }
 
-.w3-center .w3-bar, .w3-center div#footer, .w3-center .gsri-unite {
+.w3-center .w3-bar, div#contact a .w3-bar, .w3-center div#footer, div#contact a div#footer, .w3-center .gsri-unite, div#contact a .gsri-unite {
   display: inline-block;
   width: auto;
 }
@@ -633,7 +633,7 @@ div#footer .w3-dropdown-click,
   outline: 0;
 }
 
-.w3-bar-block.w3-center .w3-bar-item, .w3-bar-block.w3-center div#footer a, div#footer .w3-bar-block.w3-center a {
+.w3-bar-block.w3-center .w3-bar-item, div#contact a.w3-bar-block .w3-bar-item, .w3-bar-block.w3-center div#footer a, div#footer .w3-bar-block.w3-center a, div#contact a.w3-bar-block div#footer a, div#footer div#contact a.w3-bar-block a {
   text-align: center;
 }
 
@@ -675,6 +675,7 @@ div#footer:after,
 .w3-col,
 .w3-half,
 .w3-third,
+div#contact a,
 .w3-twothird,
 .w3-threequarter,
 .w3-quarter {
@@ -742,7 +743,8 @@ div#footer:after,
     width: 24.99999%;
   }
   .w3-col.m4,
-  .w3-third {
+  .w3-third,
+  div#contact a {
     width: 33.33333%;
   }
   .w3-col.m5 {
@@ -1125,6 +1127,7 @@ div#footer:after,
 .w3-row-padding,
 .w3-row-padding > .w3-half,
 .w3-row-padding > .w3-third,
+div#contact .w3-row-padding > a,
 .w3-row-padding > .w3-twothird,
 .w3-row-padding > .w3-threequarter,
 .w3-row-padding > .w3-quarter,
@@ -1517,7 +1520,7 @@ div#footer:after,
   text-align: justify !important;
 }
 
-.w3-center {
+.w3-center, div#contact a {
   text-align: center !important;
 }
 
@@ -2274,8 +2277,13 @@ div#contact a {
   text-align: left;
 }
 
+div#contact a::before {
+  float: left;
+}
+
 div#footer {
   position: fixed;
+  z-index: 2000;
   bottom: 0;
 }
 

@@ -83,7 +83,12 @@ div#contact {
         @extend .w3-button;
         @extend .w3-hover-theme;
         @extend .w3-mobile;
+        @extend .w3-center;
+        @extend .w3-third;
         text-align: left;
+        &::before {
+            float: left;
+        }
     }
 }
 
@@ -91,6 +96,7 @@ div#footer {
     @extend .w3-bar;
     @extend .w3-black;
     position: fixed;
+    z-index: 2000;
     bottom: 0;
     a {
         @extend .w3-bar-item;
@@ -146,6 +152,7 @@ div#footer {
 
 .gsri-region {
     @extend .w3-display-container;
+    // background-image: url(./img/default.jpg);
     padding-top: 6em;
     padding-bottom: 6em;
 }

@@ -351,3 +351,10 @@ MigrationBackup/
 
 # Content ignore
 *.mp4
+
+# Ignore W3CSS files
+src/css/theme.css
+src/css/w3.css
+
+# Ignore act used to test workflows
+act

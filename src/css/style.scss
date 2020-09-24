@@ -19,6 +19,23 @@ h6 {
     }
 }
 
+table {
+    width: 100%;
+    border: 1px solid white;
+    tr {
+        @extend .w3-cell-row;
+        td,
+        th {
+            @extend .w3-cell;
+            text-align: center;
+            @extend .w3-third;
+        }
+        th {
+            @extend .w3-white;
+        }
+    }
+}
+
 .fas,
 .fab {
     >span {

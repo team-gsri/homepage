@@ -654,8 +654,10 @@ div#footer .w3-dropdown-click,
 .w3-row-padding:after,
 .w3-row-padding:before,
 .w3-cell-row:before,
+table tr:before,
 .hero header:before,
 .w3-cell-row:after,
+table tr:after,
 .hero header:after,
 .w3-clear:after,
 .w3-clear:before,
@@ -673,6 +675,8 @@ div#footer:after,
 .w3-col,
 .w3-half,
 .w3-third,
+table tr td,
+table tr th,
 div#contact a,
 .w3-twothird,
 .w3-threequarter,
@@ -742,6 +746,8 @@ div#contact a,
   }
   .w3-col.m4,
   .w3-third,
+  table tr td,
+  table tr th,
   div#contact a {
     width: 33.33333%;
   }
@@ -836,12 +842,13 @@ div#contact a,
   max-width: 1140px;
 }
 
-.w3-cell-row, .hero header {
+.w3-cell-row, table tr, .hero header {
   display: table;
   width: 100%;
 }
 
-.w3-cell, .hero header .logo, .hero header .content, .gsri-card div {
+.w3-cell, table tr td,
+table tr th, .hero header .logo, .hero header .content, .gsri-card div {
   display: table-cell;
 }
 
@@ -1127,6 +1134,8 @@ div#contact a,
 .w3-row-padding,
 .w3-row-padding > .w3-half,
 .w3-row-padding > .w3-third,
+table tr .w3-row-padding > td,
+table tr .w3-row-padding > th,
 div#contact .w3-row-padding > a,
 .w3-row-padding > .w3-twothird,
 .w3-row-padding > .w3-threequarter,
@@ -1779,7 +1788,8 @@ div#contact .w3-row-padding > a,
   background-color: #ffeb3b !important;
 }
 
-.w3-white, a.main, div#contact,
+.w3-white,
+table tr th, a.main, div#contact,
 .w3-hover-white:hover,
 a.action:hover {
   color: #000 !important;
@@ -2256,6 +2266,16 @@ h4.spacer,
 h5.spacer,
 h6.spacer {
   margin-top: 8em;
+}
+
+table {
+  width: 100%;
+  border: 1px solid white;
+}
+
+table tr td,
+table tr th {
+  text-align: center;
 }
 
 .fas > span,

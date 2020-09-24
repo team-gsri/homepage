@@ -13,6 +13,10 @@ h4,
 h5,
 h6 {
     font-family: 'Bebas Neue';
+    clear: both;
+    &.spacer {
+        margin-top: 8em;
+    }
 }
 
 .fas,
@@ -31,11 +35,17 @@ h6 {
     height: 100vh;
     header {
         @extend .w3-display-middle;
+        @extend .w3-cell-row;
+        @extend .w3-content;
+        // @extend .w3-round-xxlarge;
+        // @extend .w3-card;
+        // background: rgba($color: $theme, $alpha: 0.8);
+        // border: 1px solid rgba($color: $theme, $alpha: 1);
         .logo {
             @extend .w3-cell;
+            @extend .w3-right;
             @extend .w3-hide-small;
             @extend .w3-hide-medium;
-            width: 10%;
             img {
                 @extend .w3-margin;
             }
@@ -43,9 +53,12 @@ h6 {
         .content {
             @extend .w3-cell;
             @extend .w3-cell-middle;
-            p {
-                font-style: italic;
-            }
+            text-align: center;
+            padding: 3em;
+            min-width: 40em;
+        }
+        a {
+            min-width: 7em;
         }
     }
 }
@@ -65,6 +78,7 @@ a.main {
     @extend .w3-border-white;
     @extend .w3-hover-theme;
     @extend .w3-hover-border-theme;
+    @extend .w3-card;
 }
 
 .title {
@@ -106,48 +120,40 @@ div#footer {
         &.here {
             @extend .w3-theme-l2;
         }
+        span {
+            @extend .w3-hide-small;
+            @extend .w3-hide-medium;
+        }
     }
 }
 
 .gsri-card {
-    @extend .w3-card;
-    @extend .w3-hover-greyscale;
-    height: 30em;
-    position: relative;
-    p {
-        @extend .w3-justify;
-    }
-    a {
-        @extend .w3-button;
-        @extend .w3-theme-l2;
-        @extend .w3-hover-blue-gray;
-        position: absolute;
-        bottom: 1em;
-        left: 1em;
-        right: 1em;
-        &::after {
-            content: ' \2192';
+    @extend .w3-row;
+    @extend .w3-hover-dark-gray;
+    padding: 1em;
+    height: 15em;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    div {
+        &:first-child {
+            width: 25%;
+            text-align: center;
+            @extend .w3-hide-small;
+        }
+        @extend .w3-cell-middle;
+        @extend .w3-cell;
+        height: 15em;
+        h3 {
+            text-transform: uppercase;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: x-large;
+        }
+        h3,
+        p {
+            @extend .w3-margin;
+            float: left;
         }
     }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        text-transform: uppercase;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: x-large;
-    }
-}
-
-.gsri-overlay {
-    @extend .w3-padding;
-    background-color: rgba(0, 0, 0, 0.6);
-    position: absolute;
-    bottom: 0;
-    min-height: 50%;
-    width: 100%;
 }
 
 .gsri-region {
@@ -165,6 +171,7 @@ div#footer {
     top: -1.5em;
     z-index: 1000;
     transform: skew(0, -1.5deg);
+    clear: both;
 }
 
 .gsri-toplay {
@@ -182,9 +189,10 @@ div#footer {
 .gsri-grade-6 {
     list-style: none;
     clear: both;
-    @extend .w3-xxlarge;
+    @extend .w3-xlarge;
     &::before {
         @extend .w3-hide-small;
+        @extend .w3-hide-medium;
         margin: 0 1em;
         float: left;
     }
@@ -196,35 +204,43 @@ div#footer {
 }
 
 .gsri-grade-0::before {
-    content: url(https://www.gsri.team/wp-content/uploads/grade_0.png);
+    content: url(../img/grades/grade_0.png);
 }
 
 .gsri-grade-1::before {
-    content: url(https://www.gsri.team/wp-content/uploads/grade_1.png);
+    content: url(../img/grades/grade_1.png);
 }
 
 .gsri-grade-2::before {
-    content: url(https://www.gsri.team/wp-content/uploads/grade_2.png);
+    content: url(../img/grades/grade_2.png);
 }
 
 .gsri-grade-3::before {
-    content: url(https://www.gsri.team/wp-content/uploads/grade_3.png);
+    content: url(../img/grades/grade_3.png);
 }
 
 .gsri-grade-4::before {
-    content: url(https://www.gsri.team/wp-content/uploads/grade_4.png);
+    content: url(../img/grades/grade_4.png);
 }
 
 .gsri-grade-5::before {
-    content: url(https://www.gsri.team/wp-content/uploads/grade_5.png);
+    content: url(../img/grades/grade_5.png);
 }
 
 .gsri-grade-6::before {
-    content: url(https://www.gsri.team/wp-content/uploads/grade_6.png);
+    content: url(../img/grades/grade_6.png);
 }
 
 .gsri-unite {
     @extend .w3-bar;
+    h2 {
+        @extend .w3-padding;
+        margin-top: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    @extend .w3-dark-grey;
+    border: 1px solid black;
+    min-width: 470px;
 }
 
 .striped {

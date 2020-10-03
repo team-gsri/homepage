@@ -74,8 +74,16 @@ table {
             padding: 3em;
             min-width: 40em;
         }
-        a {
+        #cta a {
             min-width: 7em;
+        }
+        #social {
+            margin-top: 1em;
+            a {
+                @extend .w3-hover-text-theme-light;
+                padding: 0.25em;
+                text-decoration: none;
+            }
         }
     }
 }
@@ -94,7 +102,7 @@ a.main {
     @extend .w3-border;
     @extend .w3-border-white;
     @extend .w3-hover-theme;
-    @extend .w3-hover-border-theme;
+    @extend .w3-hover-border-white;
     @extend .w3-card;
 }
 
@@ -108,7 +116,7 @@ a.main {
 }
 
 div#contact {
-    @extend .w3-white;
+    @extend .w3-theme-l4;
     text-align: center;
     a {
         @extend .w3-button;

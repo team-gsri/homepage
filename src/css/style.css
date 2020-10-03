@@ -1789,7 +1789,7 @@ div#contact .w3-row-padding > a,
 }
 
 .w3-white,
-table tr th, a.main, div#contact,
+table tr th, a.main,
 .w3-hover-white:hover,
 a.action:hover {
   color: #000 !important;
@@ -2103,7 +2103,8 @@ a.action:hover {
 }
 
 .w3-border-white, a.action, a.main,
-.w3-hover-border-white:hover {
+.w3-hover-border-white:hover,
+a.main:hover {
   border-color: #fff !important;
 }
 
@@ -2158,7 +2159,7 @@ a.action:hover {
   background-color: #ebf2f6 !important;
 }
 
-.w3-theme-l4 {
+.w3-theme-l4, div#contact {
   color: #000 !important;
   background-color: #bdd2e2 !important;
 }
@@ -2240,7 +2241,15 @@ a.action:hover {
   color: #0b1319 !important;
 }
 
-.w3-hover-border-theme:hover, a.main:hover {
+.w3-hover-text-theme-light:hover, .hero header #social a:hover {
+  color: #45779d !important;
+}
+
+.w3-hover-text-theme-dark:hover {
+  color: #05090c !important;
+}
+
+.w3-hover-border-theme:hover {
   border-color: #0b1319 !important;
 }
 
@@ -2297,8 +2306,17 @@ table tr th {
   min-width: 40em;
 }
 
-.hero header a {
+.hero header #cta a {
   min-width: 7em;
+}
+
+.hero header #social {
+  margin-top: 1em;
+}
+
+.hero header #social a {
+  padding: 0.25em;
+  text-decoration: none;
 }
 
 div#contact {

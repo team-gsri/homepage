@@ -6,9 +6,11 @@
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -21,16 +23,25 @@
             </video>
         </div>
         <header>
-            <div class="logo">
+            <div class="logo" data-aos="fade-up" data-aos-mirror="true" data-aos-duration="2000">
                 <img src="./img/logo.png" id="logo" alt="" />
             </div>
-            <div class="content">
+            <div class="content" data-aos="fade-up" data-aos-mirror="true" data-aos-duration="2000">
                 <h1>Groupe Spécial de Reconnaissance et d'Intervention</h1>
                 <p lang="fr">Une équipe de simulation militaire francophone sur Arma 3</p>
                 <p lang="en">A french-speaking milsim unit playing Arma 3</p>
-                <nav>
+                <nav id="cta">
                     <a href="./#" class="action">English</a>
                     <a href="./#jouer" class="main">Jouer</a>
+                </nav>
+                <nav id="social">
+                    <!-- data-aos="zoom-out" data-aos-mirror="true"> -->
+                    <a class="fab fa-2x fa-discord" href="https://discord.gg/bhMn4jd" data-aos="fade-right" data-aos-delay="2000"></a>
+                    <a class="fab fa-2x fa-twitter" href="https://twitter.com/Team_GSRI" data-aos="fade-right" data-aos-delay="1900"></a>
+                    <a class="fab fa-2x fa-facebook" href="https://www.facebook.com/TeamGSRI/" data-aos="fade-right" data-aos-delay="1800"></a>
+                    <a class="fab fa-2x fa-steam" href="https://steamcommunity.com/groups/gsri_arma" data-aos="fade-right" data-aos-delay="1700"></a>
+                    <a class="fas fa-2x fa-shield-alt" href="https://units.arma3.com/unit/gsri" data-aos="fade-right" data-aos-delay="1600"></a>
+                    <a class="fas fa-2x fa-calendar-alt" href="https://cloud.gsri.team/index.php/apps/calendar/p/LPpXWBF74DgYax6x/Calendrier-GSRI" data-aos="fade-right" data-aos-delay="1500"></a>
                 </nav>
             </div>
         </header>
@@ -43,7 +54,7 @@
         <div class="w3-content">
 
             <a href="./doctrine.html">
-                <section class="gsri-card">
+                <section class="gsri-card" data-aos="fade-right">
                     <div>
                         <i class="fas fa-book fa-8x"></i>
                     </div>
@@ -58,7 +69,7 @@
             </a>
 
             <a href="./histoire.html">
-                <section class="gsri-card">
+                <section class="gsri-card" data-aos="fade-right">
                     <div>
                         <i class="fas fa-history fa-8x"></i>
                     </div>
@@ -73,7 +84,7 @@
             </a>
 
             <a href="./fonctionnement.html">
-                <section class="gsri-card">
+                <section class="gsri-card" data-aos="fade-right">
                     <div>
                         <i class="fas fa-cogs fa-8x"></i>
                     </div>
@@ -87,7 +98,7 @@
             </a>
 
             <a href="./structure.html">
-                <section class="gsri-card">
+                <section class="gsri-card" data-aos="fade-right">
                     <div>
                         <i class="fas fa-sitemap fa-8x"></i>
                     </div>
@@ -102,7 +113,7 @@
             </a>
 
             <a href="./effectifs.html">
-                <section class="gsri-card">
+                <section class="gsri-card" data-aos="fade-right">
                     <div>
                         <i class="fas fa-users fa-8x"></i>
                     </div>
@@ -116,7 +127,7 @@
             </a>
 
             <a href="./partenaires.html">
-                <section class="gsri-card">
+                <section class="gsri-card" data-aos="fade-right">
                     <div>
                         <i class="fas fa-hands-helping fa-8x"></i>
                     </div>
@@ -146,7 +157,7 @@
 
 
             <a href="./gameplay.html">
-                <section class="gsri-card">
+                <section class="gsri-card" data-aos="fade-right">
                     <div>
                         <i class="fas fa-gamepad fa-8x"></i>
                     </div>
@@ -160,7 +171,7 @@
             </a>
 
             <a href="./regles.html">
-                <section class="gsri-card">
+                <section class="gsri-card" data-aos="fade-right">
                     <div>
                         <i class="fas fa-book fa-8x"></i>
                     </div>
@@ -174,7 +185,7 @@
             </a>
 
             <a href="./installer.html">
-                <section class="gsri-card">
+                <section class="gsri-card" data-aos="fade-right">
                     <div>
                         <i class="fas fa-download fa-8x"></i>
                     </div>
@@ -198,7 +209,7 @@
         <div class="w3-row w3-content">
 
             <a href="./procedure.html">
-                <section class="gsri-card">
+                <section class="gsri-card" data-aos="fade-right">
                     <div>
                         <i class="fas fa-user-plus fa-8x"></i>
                     </div>
@@ -214,11 +225,11 @@
         </div>
     </div>
 
-    <div class="gsri-splitter w3-white"></div>
+    <div class="gsri-splitter w3-theme-l4"></div>
 
     <div class="gsri-region" id="contact">
         <h2 class="title">Contact</h2>
-        <div class="w3-content w3-row">
+        <div class="w3-content w3-row" data-aos="zoom-out">
 
             <a class="fab fa-2x fa-discord" href="https://discord.gg/bhMn4jd">
                 <span>Discord</span> </a>
@@ -249,8 +260,12 @@
             naturalWidth: 1280,
             naturalHeight: 720
         });
+        $('#contact').parallax({
+            naturalWidth: 1280,
+            naturalHeight: 720
+        });
+        AOS.init();
     </script>
-
 </body>
 
 </html>

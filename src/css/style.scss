@@ -36,6 +36,13 @@ table {
     }
 }
 
+p.w3-center {
+    display: table-cell;
+    vertical-align: middle;
+    width: 33.33333%;
+    height: 4em;
+}
+
 .fas,
 .fab {
     >span {

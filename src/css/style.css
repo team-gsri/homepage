@@ -2287,6 +2287,13 @@ table tr th {
   text-align: center;
 }
 
+p.w3-center {
+  display: table-cell;
+  vertical-align: middle;
+  width: 33.33333%;
+  height: 4em;
+}
+
 .fas > span,
 .fab > span {
   text-transform: uppercase;

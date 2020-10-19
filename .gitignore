@@ -358,3 +358,6 @@ src/css/w3.css
 
 # Ignore act used to test workflows
 act
+
+# Ignore 3rd party libs sources
+lib

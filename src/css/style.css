@@ -1524,7 +1524,7 @@ div#contact .w3-row-padding > a,
   text-align: right !important;
 }
 
-.w3-justify {
+.w3-justify, .gsri-region {
   text-align: justify !important;
 }
 

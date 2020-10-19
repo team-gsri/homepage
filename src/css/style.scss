@@ -183,7 +183,7 @@ div#footer {
 
 .gsri-region {
     @extend .w3-display-container;
-    // background-image: url(./img/default.jpg);
+    @extend .w3-justify;
     padding-top: 6em;
     padding-bottom: 6em;
 }

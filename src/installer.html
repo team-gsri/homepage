@@ -6,97 +6,97 @@
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="w3-theme">
+<body>
 
-    <div class="gsri-toplay" data-image-src="./img/groupe.jpg" data-parallax="scroll"></div>
+    <div class="gsri-toplay" data-image-src="./img/plongeurs.jpg" data-parallax="scroll">
+        <div class="parallax-slider w3-opacity-max">
+            <video autoplay muted loop width="100%" style="margin-top: 400px;">
+                <source src="https://cdn.gsri.team:8443/videos/insertion.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
     <div class="gsri-splitter w3-theme"></div>
-    <div class="gsri-region w3-content w3-justify">
+    <div class="gsri-region">
+        <div class="w3-content">
 
-        <h1 class="title">Installer et jouer</h1>
+            <h1 class="title">Installer et jouer</h1>
 
-        <h2 class="title">Prérequis</h2>
-        <p>
-            Pour pouvoir jouer à n'importe quelle mission avec le GSRI, quelques éléments sont requis :
-        </p>
-        <ul>
-            <li>
-                <a href="https://arma3.com/requirements">
-                        Un ordinateur adapté à Arma 3
-                    </a>
-            </li>
-            <li>
-                <a href="https://support.steampowered.com/kb_article.php?ref=7849-RADZ-6869#whatisvac">
-                    Un compte Steam en règle VAC
-                </a>
-            </li>
-            <li>
-                <a href="https://store.steampowered.com/app/107410/Arma_3/">
-                    Une licence Arma 3 valide
-                </a>
-            </li>
-            <li>
-                <a href="https://store.steampowered.com/app/395180/Arma_3_Apex/">
-                        Le DLC Apex est recommandé
-                    </a>
-            </li>
-            <li>
-                Un micro-casque de qualité correcte
-            </li>
-            <li>
-                <a href="https://www.teamspeak.com/en/downloads/">
-                    Le logiciel Teamspeak 3 est requis
-                </a>
-            </li>
-            <li>
-                Une connexion internet haut débit
-            </li>
-            <li>
-                De l’espace disque disponible :
+            <div>
+
+                <p>
+                    Pour pouvoir jouer à n'importe quelle mission avec le GSRI, quelques éléments sont requis :
+                </p>
                 <ul>
                     <li>
-                        25 Go pour le jeu de base
+                        <a href="https://arma3.com/requirements">
+                            Un ordinateur adapté à Arma 3
+                        </a>
                     </li>
                     <li>
-                        5 Go pour les mods obligatoires
+                        <a href="https://support.steampowered.com/kb_article.php?ref=7849-RADZ-6869#whatisvac">
+                            Un compte Steam en règle VAC
+                        </a>
                     </li>
                     <li>
-                        30 Go pour les mods optionnels
+                        <a href="https://store.steampowered.com/app/107410/Arma_3/">
+                            Une licence Arma 3 valide
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://store.steampowered.com/app/395180/Arma_3_Apex/">
+                            Le DLC Apex est recommandé
+                        </a>
+                    </li>
+                    <li>
+                        Un micro-casque de qualité correcte
+                    </li>
+                    <li>
+                        <a href="https://www.teamspeak.com/en/downloads/">
+                            Le logiciel Teamspeak 3 est requis
+                        </a>
+                    </li>
+                    <li>
+                        Une connexion internet haut débit
+                    </li>
+                    <li>
+                        De l’espace disque disponible :
+                        <ul>
+                            <li>
+                                25 Go pour le jeu de base
+                            </li>
+                            <li>
+                                5 Go pour les mods obligatoires
+                            </li>
+                            <li>
+                                30 Go pour les mods optionnels
+                            </li>
+                        </ul>
                     </li>
                 </ul>
-            </li>
-        </ul>
-
-        <h2 class="title spacer">Obtenir de l'aide</h2>
-        <p>
-            Discord est une plateforme de communication conçue pour les communautés en ligne. C’est la plateforme principale sur laquelle le GSRI se retrouve et organise ses événements. Avant de débuter votre installation, vous pouvez vous y connecter pour obtenir
-            plus d’informations sur le fonctionnement de notre équipe, demander de l’aide si vous êtes bloqué, ou tout simplement tailler la bavette pendant que l’installation se poursuit.
-        </p>
-        <div class="w3-center">
-            <a href="https://discord.gg/bhMn4jd" class="w3-button w3-red">Se connecter au Discord GSRI</a>
+            </div>
         </div>
-
-        <h2 class="title spacer">Installation</h2>
-        <p>
-            Pour faciliter l'installation et la connexion à nos serveurs de jeu, nous avons développé notre propre launcher. Celui-ci installera les mods requis pour jouer sur nos serveurs et vous permettra de vous connecter en un clic au serveur vocal et au serveur
-            de jeu. Les mises à jour de notre modpack seront automatiquement installées afin de vous garantir de pouvoir lancer une partie à n'importe quel moment.
-        </p>
-        <div class="w3-center">
-            <a href="https://www.microsoft.com/store/apps/9NCKCT4M3S0R" class="w3-button w3-red">Installer le GsriSync avec Microsoft</a>
-        </div>
-
     </div>
 
     <div class="gsri-splitter w3-theme"></div>
     <div class="hero" data-image-src="./img/rejoindre.jpg" data-parallax="scroll">
+
         <header>
-            <div class="content">
-                <a href="./regles.html" class="main">Relire les règles du jeu qui s'appliquent à nos serveurs</a>
+            <div class="content" data-aos="zoom-in">
+                <p>
+                    <a href="https://www.microsoft.com/store/apps/9NCKCT4M3S0R" class="w3-button w3-red w3-hover-theme">Installer le GsriSync sur le Microsoft Store</a>
+                </p>
+                <p>
+                    <a href="https://discord.gg/bhMn4jd" class="w3-button w3-white w3-hover-theme">Obtenir de l'aide sur le Discord GSRI</a>
+                </p>
             </div>
         </header>
     </div>
@@ -108,7 +108,10 @@
         <a class="fas fa-2x fa-signature" href="./#rejoindre"> <span class="w3-hide-small">Rejoindre</span></a>
         <a class="fas fa-2x fa-calendar-alt" href="./#"></a>
     </div>
-</body>
 
+    <script>
+        AOS.init();
+    </script>
+</body>
 
 </html>

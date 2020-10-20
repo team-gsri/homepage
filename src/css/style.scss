@@ -122,6 +122,18 @@ a.main {
     @extend .w3-panel;
 }
 
+#monthly {
+    position: fixed;
+    right: 1em;
+    z-index: 2000;
+    @extend h3;
+    @extend .w3-button;
+    @extend .w3-red;
+    @extend .w3-panel;
+    @extend .w3-margin;
+    @extend .w3-hover-theme;
+}
+
 div#contact {
     @extend .w3-theme-l4;
     text-align: center;

@@ -239,7 +239,7 @@ h2 {
   font-size: 30px;
 }
 
-h3 {
+h3, #monthly {
   font-size: 24px;
 }
 
@@ -260,8 +260,7 @@ h6 {
 }
 
 h1,
-h2,
-h3,
+h2, h3, #monthly,
 h4,
 h5,
 h6 {
@@ -353,6 +352,7 @@ a {
 .w3-button,
 a.action,
 a.main,
+#monthly,
 div#contact a,
 div#footer a {
   border: none;
@@ -377,6 +377,7 @@ div#footer a {
 .w3-button,
 a.action,
 a.main,
+#monthly,
 div#contact a,
 div#footer a {
   -webkit-touch-callout: none;
@@ -391,6 +392,7 @@ div#footer a {
 .w3-button:disabled,
 a.action:disabled,
 a.main:disabled,
+#monthly:disabled,
 div#contact a:disabled,
 div#footer a:disabled {
   cursor: not-allowed;
@@ -494,10 +496,11 @@ div#footer a:disabled {
   color: #000;
 }
 
-.w3-dropdown-hover:hover > .w3-button:first-child, .w3-dropdown-hover:hover > a.action:first-child, .w3-dropdown-hover:hover > a.main:first-child, div#contact .w3-dropdown-hover:hover > a:first-child, div#footer .w3-dropdown-hover:hover > a:first-child,
+.w3-dropdown-hover:hover > .w3-button:first-child, .w3-dropdown-hover:hover > a.action:first-child, .w3-dropdown-hover:hover > a.main:first-child, .w3-dropdown-hover:hover > #monthly:first-child, div#contact .w3-dropdown-hover:hover > a:first-child, div#footer .w3-dropdown-hover:hover > a:first-child,
 .w3-dropdown-click:hover > .w3-button:first-child,
 .w3-dropdown-click:hover > a.action:first-child,
 .w3-dropdown-click:hover > a.main:first-child,
+.w3-dropdown-click:hover > #monthly:first-child,
 div#contact .w3-dropdown-click:hover > a:first-child,
 div#footer .w3-dropdown-click:hover > a:first-child {
   background-color: #ccc;
@@ -543,10 +546,11 @@ div#footer .w3-dropdown-click:hover > a:first-child {
   min-width: 100%;
 }
 
-.w3-bar-block .w3-dropdown-hover .w3-button, .w3-bar-block .w3-dropdown-hover a.action, .w3-bar-block .w3-dropdown-hover a.main, .w3-bar-block .w3-dropdown-hover div#contact a, div#contact .w3-bar-block .w3-dropdown-hover a, .w3-bar-block .w3-dropdown-hover div#footer a, div#footer .w3-bar-block .w3-dropdown-hover a,
+.w3-bar-block .w3-dropdown-hover .w3-button, .w3-bar-block .w3-dropdown-hover a.action, .w3-bar-block .w3-dropdown-hover a.main, .w3-bar-block .w3-dropdown-hover #monthly, .w3-bar-block .w3-dropdown-hover div#contact a, div#contact .w3-bar-block .w3-dropdown-hover a, .w3-bar-block .w3-dropdown-hover div#footer a, div#footer .w3-bar-block .w3-dropdown-hover a,
 .w3-bar-block .w3-dropdown-click .w3-button,
 .w3-bar-block .w3-dropdown-click a.action,
 .w3-bar-block .w3-dropdown-click a.main,
+.w3-bar-block .w3-dropdown-click #monthly,
 .w3-bar-block .w3-dropdown-click div#contact a,
 div#contact .w3-bar-block .w3-dropdown-click a,
 .w3-bar-block .w3-dropdown-click div#footer a,
@@ -612,7 +616,7 @@ div#footer .w3-dropdown-click,
   float: left;
 }
 
-.w3-bar .w3-button, div#footer .w3-button, .gsri-unite .w3-button, .w3-bar a.action, .gsri-unite a.action, .w3-bar a.main, .gsri-unite a.main, .w3-bar div#contact a, div#contact .w3-bar a, .gsri-unite div#contact a, div#contact .gsri-unite a, div#footer a {
+.w3-bar .w3-button, div#footer .w3-button, .gsri-unite .w3-button, .w3-bar a.action, .gsri-unite a.action, .w3-bar a.main, .gsri-unite a.main, .w3-bar #monthly, div#footer #monthly, .gsri-unite #monthly, .w3-bar div#contact a, div#contact .w3-bar a, .gsri-unite div#contact a, div#contact .gsri-unite a, div#footer a {
   white-space: normal;
 }
 
@@ -645,8 +649,10 @@ div#footer .w3-dropdown-click,
 .w3-container:before,
 .w3-panel:after,
 .title:after,
+#monthly:after,
 .w3-panel:before,
 .title:before,
+#monthly:before,
 .w3-row:after,
 .gsri-card:after,
 .w3-row:before,
@@ -925,6 +931,8 @@ table tr th, .hero header .logo, .hero header .content, .gsri-card div {
   div#contact a.w3-dropdown-hover .w3-button,
   .w3-dropdown-hover.w3-mobile a.action,
   .w3-dropdown-hover.w3-mobile a.main,
+  .w3-dropdown-hover.w3-mobile #monthly,
+  div#contact a.w3-dropdown-hover #monthly,
   .w3-dropdown-hover.w3-mobile div#contact a,
   div#contact .w3-dropdown-hover.w3-mobile a,
   div#contact a.w3-dropdown-hover a,
@@ -938,6 +946,8 @@ table tr th, .hero header .logo, .hero header .content, .gsri-card div {
   div#contact a.w3-dropdown-click .w3-button,
   .w3-dropdown-click.w3-mobile a.action,
   .w3-dropdown-click.w3-mobile a.main,
+  .w3-dropdown-click.w3-mobile #monthly,
+  div#contact a.w3-dropdown-click #monthly,
   .w3-dropdown-click.w3-mobile div#contact a,
   div#contact .w3-dropdown-click.w3-mobile a,
   div#contact a.w3-dropdown-click a,
@@ -1146,13 +1156,15 @@ div#contact .w3-row-padding > a,
 
 .w3-container,
 .w3-panel,
-.title {
+.title,
+#monthly {
   padding: 0.01em 16px;
 }
 
 
 .w3-panel,
-.title {
+.title,
+#monthly {
   margin-top: 16px;
   margin-bottom: 16px;
 }
@@ -1578,7 +1590,7 @@ div#contact .w3-row-padding > a,
   margin-bottom: 16px !important;
 }
 
-.w3-margin, .hero header .logo img, .gsri-card div h3,
+.w3-margin, .hero header .logo img, #monthly, .gsri-card div h3,
 .gsri-card div p {
   margin: 16px !important;
 }
@@ -1644,7 +1656,7 @@ div#contact .w3-row-padding > a,
   float: right !important;
 }
 
-.w3-button:hover, a.action:hover, a.main:hover, div#contact a:hover, div#footer a:hover {
+.w3-button:hover, a.action:hover, a.main:hover, #monthly:hover, div#contact a:hover, div#footer a:hover {
   color: #000 !important;
   background-color: #ccc !important;
 }
@@ -1764,7 +1776,7 @@ div#contact .w3-row-padding > a,
   background-color: #673ab7 !important;
 }
 
-.w3-red,
+.w3-red, #monthly,
 .w3-hover-red:hover {
   color: #fff !important;
   background-color: #f44336 !important;
@@ -2232,7 +2244,7 @@ a.main:hover {
   border-color: #0b1319 !important;
 }
 
-.w3-hover-theme:hover, a.main:hover, div#contact a:hover, div#footer a:hover {
+.w3-hover-theme:hover, a.main:hover, #monthly:hover, div#contact a:hover, div#footer a:hover {
   color: #fff !important;
   background-color: #0b1319 !important;
 }
@@ -2259,8 +2271,7 @@ body {
 }
 
 h1,
-h2,
-h3,
+h2, h3, #monthly,
 h4,
 h5,
 h6 {
@@ -2271,6 +2282,7 @@ h6 {
 h1.spacer,
 h2.spacer,
 h3.spacer,
+.spacer#monthly,
 h4.spacer,
 h5.spacer,
 h6.spacer {
@@ -2326,6 +2338,12 @@ p.w3-center {
   text-decoration: none;
 }
 
+#monthly {
+  position: fixed;
+  right: 1em;
+  z-index: 2000;
+}
+
 div#contact {
   text-align: center;
 }
@@ -2364,13 +2382,13 @@ div#footer a {
   text-align: center;
 }
 
-.gsri-card div h3 {
+.gsri-card div h3, .gsri-card div #monthly {
   text-transform: uppercase;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: x-large;
 }
 
-.gsri-card div h3,
+.gsri-card div h3, .gsri-card div #monthly,
 .gsri-card div p {
   float: left;
 }

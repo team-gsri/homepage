@@ -4,11 +4,13 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -28,7 +30,7 @@
             <h1 class="title"> Les règles de jeu du GSRI </h1>
 
             <p>
-                Tous les joueurs souhaitant participer à nos missions ouvertes au public, sont priés de respecter les règles suivantes :
+                Le GSRI organise une mission publique chaque mois. Tous les joueurs souhaitant participer doivent respecter ces règles :
             </p>
             <ul>
                 <li>Les communications textuelles sont exceptionnelles et réservées pour des messages de service hors jeu</li>
@@ -40,7 +42,10 @@
                 <li>Garder le silence et favoriser la communication par gestes en infiltration</li>
             </ul>
 
-            <p>Note: le chef de section peut décider ponctuellement de lever certaines restrictions</p>
+            <p class="w3-panel">
+                <i class="fas fa-info-circle w3-left w3-padding"></i> Le chef de section peut décider ponctuellement de lever certaines restrictions.
+            </p>
+
         </div>
     </div>
     <div class="gsri-region">
@@ -79,6 +84,10 @@
         <a class="fas fa-2x fa-signature" href="./#rejoindre"> <span class="w3-hide-small">Rejoindre</span></a>
         <a class="fas fa-2x fa-calendar-alt" href="./#"></a>
     </div>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

@@ -361,3 +361,6 @@ act
 
 # Ignore 3rd party libs sources
 lib
+
+# Ignore old rank images
+src/img/grades_*

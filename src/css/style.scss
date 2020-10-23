@@ -231,19 +231,28 @@ div#footer {
 .gsri-grade-4,
 .gsri-grade-5,
 .gsri-grade-6 {
+    @extend .w3-text-theme-l3;
     list-style: none;
     clear: both;
-    @extend .w3-xlarge;
     &::before {
         @extend .w3-hide-small;
         @extend .w3-hide-medium;
-        margin: 0 1em;
         float: left;
+        margin-right: 1em;
     }
-    span {
-        display: block;
-        @extend .w3-large;
-        @extend .w3-text-light-blue;
+    p {
+        margin: 0;
+    }
+    .pseudo {
+        @extend .w3-xlarge;
+        @extend .w3-text-white;
+    }
+    &.vacant {
+        @extend .w3-greyscale-max;
+        .pseudo {
+            font-style: italic;
+            color: #666 !important;
+        }
     }
 }
 
@@ -276,17 +285,28 @@ div#footer {
 }
 
 .gsri-unite {
-    @extend .w3-bar;
+    @extend .w3-quarter;
+    display: inline-block;
+    border: .5em solid transparent;
     h2 {
         @extend .w3-padding;
-        margin-top: 0;
-        background-color: rgba(0, 0, 0, 0.6);
+        @extend .title;
+        // background-color: rgba(0, 0, 0, 0.6);
     }
-    @extend .w3-dark-grey;
-    border: 1px solid black;
-    min-width: 470px;
+    &:nth-child(1) {
+        @extend .w3-half;
+    }
+    &:nth-child(2),
+    &:nth-child(6) {
+        clear: both;
+    }
 }
 
 .striped {
     background: repeating-linear-gradient(-45deg, #333, #333 10px, transparent 10px, transparent 20px);
 }
+
+// #effectifs {
+//     display: grid;
+//     grid-template-areas: ". kilo kilo ." "d1 d2 d3 d4" "d5 golf sierra charlie";
+// }

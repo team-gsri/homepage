@@ -171,6 +171,11 @@ div#footer {
     }
 }
 
+ul#effectifs {
+    @extend .w3-content;
+    padding: 0;
+}
+
 .gsri-card {
     @extend .w3-row;
     @extend .w3-hover-dark-gray;
@@ -224,38 +229,6 @@ div#footer {
     width: 100vw;
 }
 
-.gsri-grade-0,
-.gsri-grade-1,
-.gsri-grade-2,
-.gsri-grade-3,
-.gsri-grade-4,
-.gsri-grade-5,
-.gsri-grade-6 {
-    @extend .w3-text-theme-l3;
-    list-style: none;
-    clear: both;
-    &::before {
-        @extend .w3-hide-small;
-        @extend .w3-hide-medium;
-        float: left;
-        margin-right: 1em;
-    }
-    p {
-        margin: 0;
-    }
-    .pseudo {
-        @extend .w3-xlarge;
-        @extend .w3-text-white;
-    }
-    &.vacant {
-        @extend .w3-greyscale-max;
-        .pseudo {
-            font-style: italic;
-            color: #666 !important;
-        }
-    }
-}
-
 .gsri-grade-0::before {
     content: url(../img/grades/grade_0.png);
 }
@@ -284,29 +257,80 @@ div#footer {
     content: url(../img/grades/grade_6.png);
 }
 
+.gsri-grade-0,
+.gsri-grade-1,
+.gsri-grade-2,
+.gsri-grade-3,
+.gsri-grade-4,
+.gsri-grade-5,
+.gsri-grade-6 {
+    &::before {
+        // @extend .w3-hide-small;
+        @extend .w3-hide-medium;
+        // float: left;
+        margin-right: 1em;
+    }
+}
+
 .gsri-unite {
-    @extend .w3-quarter;
-    display: inline-block;
-    border: .5em solid transparent;
+    list-style: none;
     h2 {
-        @extend .w3-padding;
         @extend .title;
-        // background-color: rgba(0, 0, 0, 0.6);
+    }
+    ul {
+        @extend .w3-row;
+        list-style: none;
+        padding: 0;
+    }
+    li {
+        @extend .w3-theme-l2;
+        @extend .w3-padding;
+        @extend .w3-col;
+        @extend .w3-mobile;
+        display: inline-block;
+        // margin: 0.5em;
+        width: 20%;
+        height: 11em;
+        text-align: center;
+        border: 1px solid transparent;
+        background-clip: padding-box;
+        &.lead {
+            @extend .w3-theme-l1;
+        }
+        .pseudo {
+            @extend .w3-xlarge;
+            @extend .w3-text-white;
+        }
+        &.vacant {
+            @extend .w3-greyscale-max;
+            .pseudo {
+                font-style: italic;
+            }
+        }
     }
     &:nth-child(1) {
-        @extend .w3-half;
+        li {
+            @extend .w3-half;
+        }
     }
-    &:nth-child(2),
-    &:nth-child(6) {
-        clear: both;
+    &.inser {
+        li {
+            background-color: #484 !important;
+            &.lead {
+                background-color: #242 !important;
+            }
+        }
+    }
+    &.corens {
+        li {
+            background-color: #884 !important;
+            &.lead {
+                background-color: #442 !important;
+            }
+        }
     }
 }
 
 .striped {
     background: repeating-linear-gradient(-45deg, #333, #333 10px, transparent 10px, transparent 20px);
 }
-
-// #effectifs {
-//     display: grid;
-//     grid-template-areas: ". kilo kilo ." "d1 d2 d3 d4" "d5 golf sierra charlie";
-// }

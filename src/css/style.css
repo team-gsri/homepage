@@ -656,8 +656,10 @@ div#footer .w3-dropdown-click {
 #monthly:before,
 .w3-row:after,
 .gsri-card:after,
+.gsri-unite ul:after,
 .w3-row:before,
 .gsri-card:before,
+.gsri-unite ul:before,
 .w3-row-padding:after,
 .w3-row-padding:before,
 .w3-cell-row:before,
@@ -677,153 +679,151 @@ div#footer:after {
   clear: both;
 }
 
-.w3-col,
+.w3-col, .gsri-unite li,
 .w3-half,
-.gsri-unite:nth-child(1),
+.gsri-unite:nth-child(1) li,
 .w3-third,
 table tr td,
 table tr th,
 div#contact a,
 .w3-twothird,
 .w3-threequarter,
-.w3-quarter,
-.gsri-unite {
+.w3-quarter {
   float: left;
   width: 100%;
 }
 
-.w3-col.s1 {
+.w3-col.s1, .gsri-unite li.s1 {
   width: 8.33333%;
 }
 
-.w3-col.s2 {
+.w3-col.s2, .gsri-unite li.s2 {
   width: 16.66666%;
 }
 
-.w3-col.s3 {
+.w3-col.s3, .gsri-unite li.s3 {
   width: 24.99999%;
 }
 
-.w3-col.s4 {
+.w3-col.s4, .gsri-unite li.s4 {
   width: 33.33333%;
 }
 
-.w3-col.s5 {
+.w3-col.s5, .gsri-unite li.s5 {
   width: 41.66666%;
 }
 
-.w3-col.s6 {
+.w3-col.s6, .gsri-unite li.s6 {
   width: 49.99999%;
 }
 
-.w3-col.s7 {
+.w3-col.s7, .gsri-unite li.s7 {
   width: 58.33333%;
 }
 
-.w3-col.s8 {
+.w3-col.s8, .gsri-unite li.s8 {
   width: 66.66666%;
 }
 
-.w3-col.s9 {
+.w3-col.s9, .gsri-unite li.s9 {
   width: 74.99999%;
 }
 
-.w3-col.s10 {
+.w3-col.s10, .gsri-unite li.s10 {
   width: 83.33333%;
 }
 
-.w3-col.s11 {
+.w3-col.s11, .gsri-unite li.s11 {
   width: 91.66666%;
 }
 
-.w3-col.s12 {
+.w3-col.s12, .gsri-unite li.s12 {
   width: 99.99999%;
 }
 
 @media (min-width: 601px) {
-  .w3-col.m1 {
+  .w3-col.m1, .gsri-unite li.m1 {
     width: 8.33333%;
   }
-  .w3-col.m2 {
+  .w3-col.m2, .gsri-unite li.m2 {
     width: 16.66666%;
   }
-  .w3-col.m3,
-  .w3-quarter,
-  .gsri-unite {
+  .w3-col.m3, .gsri-unite li.m3,
+  .w3-quarter {
     width: 24.99999%;
   }
-  .w3-col.m4,
+  .w3-col.m4, .gsri-unite li.m4,
   .w3-third,
   table tr td,
   table tr th,
   div#contact a {
     width: 33.33333%;
   }
-  .w3-col.m5 {
+  .w3-col.m5, .gsri-unite li.m5 {
     width: 41.66666%;
   }
-  .w3-col.m6,
+  .w3-col.m6, .gsri-unite li.m6,
   .w3-half,
-  .gsri-unite:nth-child(1) {
+  .gsri-unite:nth-child(1) li {
     width: 49.99999%;
   }
-  .w3-col.m7 {
+  .w3-col.m7, .gsri-unite li.m7 {
     width: 58.33333%;
   }
-  .w3-col.m8,
+  .w3-col.m8, .gsri-unite li.m8,
   .w3-twothird {
     width: 66.66666%;
   }
-  .w3-col.m9,
+  .w3-col.m9, .gsri-unite li.m9,
   .w3-threequarter {
     width: 74.99999%;
   }
-  .w3-col.m10 {
+  .w3-col.m10, .gsri-unite li.m10 {
     width: 83.33333%;
   }
-  .w3-col.m11 {
+  .w3-col.m11, .gsri-unite li.m11 {
     width: 91.66666%;
   }
-  .w3-col.m12 {
+  .w3-col.m12, .gsri-unite li.m12 {
     width: 99.99999%;
   }
 }
 
 @media (min-width: 993px) {
-  .w3-col.l1 {
+  .w3-col.l1, .gsri-unite li.l1 {
     width: 8.33333%;
   }
-  .w3-col.l2 {
+  .w3-col.l2, .gsri-unite li.l2 {
     width: 16.66666%;
   }
-  .w3-col.l3 {
+  .w3-col.l3, .gsri-unite li.l3 {
     width: 24.99999%;
   }
-  .w3-col.l4 {
+  .w3-col.l4, .gsri-unite li.l4 {
     width: 33.33333%;
   }
-  .w3-col.l5 {
+  .w3-col.l5, .gsri-unite li.l5 {
     width: 41.66666%;
   }
-  .w3-col.l6 {
+  .w3-col.l6, .gsri-unite li.l6 {
     width: 49.99999%;
   }
-  .w3-col.l7 {
+  .w3-col.l7, .gsri-unite li.l7 {
     width: 58.33333%;
   }
-  .w3-col.l8 {
+  .w3-col.l8, .gsri-unite li.l8 {
     width: 66.66666%;
   }
-  .w3-col.l9 {
+  .w3-col.l9, .gsri-unite li.l9 {
     width: 74.99999%;
   }
-  .w3-col.l10 {
+  .w3-col.l10, .gsri-unite li.l10 {
     width: 83.33333%;
   }
-  .w3-col.l11 {
+  .w3-col.l11, .gsri-unite li.l11 {
     width: 91.66666%;
   }
-  .w3-col.l12 {
+  .w3-col.l12, .gsri-unite li.l12 {
     width: 99.99999%;
   }
 }
@@ -837,13 +837,13 @@ div#contact a,
   margin-right: -16px;
 }
 
-.w3-content, .hero header, .title, .gsri-unite h2,
+.w3-content, .hero header, .title, .gsri-unite h2, ul#effectifs,
 .w3-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.w3-content, .hero header, .title, .gsri-unite h2 {
+.w3-content, .hero header, .title, .gsri-unite h2, ul#effectifs {
   max-width: 980px;
 }
 
@@ -900,62 +900,79 @@ table tr th, .hero header .logo, .hero header .content, .gsri-card div {
   .w3-modal {
     padding-top: 30px;
   }
-  .w3-dropdown-hover.w3-mobile .w3-dropdown-content, div#contact a.w3-dropdown-hover .w3-dropdown-content,
+  .w3-dropdown-hover.w3-mobile .w3-dropdown-content, div#contact a.w3-dropdown-hover .w3-dropdown-content, .gsri-unite li.w3-dropdown-hover .w3-dropdown-content,
   .w3-dropdown-click.w3-mobile .w3-dropdown-content,
-  div#contact a.w3-dropdown-click .w3-dropdown-content {
+  div#contact a.w3-dropdown-click .w3-dropdown-content,
+  .gsri-unite li.w3-dropdown-click .w3-dropdown-content {
     position: relative;
   }
-  .w3-hide-small, .hero header .logo, div#footer a span, .gsri-card div:first-child, .gsri-grade-0::before,
-  .gsri-grade-1::before,
-  .gsri-grade-2::before,
-  .gsri-grade-3::before,
-  .gsri-grade-4::before,
-  .gsri-grade-5::before,
-  .gsri-grade-6::before {
+  .w3-hide-small, .hero header .logo, div#footer a span, .gsri-card div:first-child {
     display: none !important;
   }
-  .w3-mobile, div#contact a {
+  .w3-mobile, div#contact a, .gsri-unite li {
     display: block;
     width: 100% !important;
   }
-  .w3-bar-item.w3-mobile, div#contact a.w3-bar-item, div#contact div#footer a, div#footer div#contact a, div#footer a.w3-mobile,
+  .w3-bar-item.w3-mobile, div#contact a.w3-bar-item, div#contact div#footer a, div#footer div#contact a, div#footer a.w3-mobile, .gsri-unite li.w3-bar-item,
   .w3-dropdown-hover.w3-mobile,
   div#contact a.w3-dropdown-hover,
+  .gsri-unite li.w3-dropdown-hover,
   .w3-dropdown-click.w3-mobile,
-  div#contact a.w3-dropdown-click {
+  div#contact a.w3-dropdown-click,
+  .gsri-unite li.w3-dropdown-click {
     text-align: center;
   }
   
   .w3-dropdown-hover.w3-mobile,
   div#contact a.w3-dropdown-hover,
+  .gsri-unite li.w3-dropdown-hover,
   .w3-dropdown-hover.w3-mobile .w3-btn,
   div#contact a.w3-dropdown-hover .w3-btn,
+  .gsri-unite li.w3-dropdown-hover .w3-btn,
   .w3-dropdown-hover.w3-mobile .w3-button,
   div#contact a.w3-dropdown-hover .w3-button,
+  .gsri-unite li.w3-dropdown-hover .w3-button,
   .w3-dropdown-hover.w3-mobile a.action,
+  .gsri-unite li.w3-dropdown-hover a.action,
   .w3-dropdown-hover.w3-mobile a.main,
+  .gsri-unite li.w3-dropdown-hover a.main,
   .w3-dropdown-hover.w3-mobile #monthly,
   div#contact a.w3-dropdown-hover #monthly,
+  .gsri-unite li.w3-dropdown-hover #monthly,
   .w3-dropdown-hover.w3-mobile div#contact a,
   div#contact .w3-dropdown-hover.w3-mobile a,
   div#contact a.w3-dropdown-hover a,
+  .gsri-unite li.w3-dropdown-hover div#contact a,
+  div#contact .gsri-unite li.w3-dropdown-hover a,
   .w3-dropdown-hover.w3-mobile div#footer a,
   div#footer .w3-dropdown-hover.w3-mobile a,
+  .gsri-unite li.w3-dropdown-hover div#footer a,
+  div#footer .gsri-unite li.w3-dropdown-hover a,
   .w3-dropdown-click.w3-mobile,
   div#contact a.w3-dropdown-click,
+  .gsri-unite li.w3-dropdown-click,
   .w3-dropdown-click.w3-mobile .w3-btn,
   div#contact a.w3-dropdown-click .w3-btn,
+  .gsri-unite li.w3-dropdown-click .w3-btn,
   .w3-dropdown-click.w3-mobile .w3-button,
   div#contact a.w3-dropdown-click .w3-button,
+  .gsri-unite li.w3-dropdown-click .w3-button,
   .w3-dropdown-click.w3-mobile a.action,
+  .gsri-unite li.w3-dropdown-click a.action,
   .w3-dropdown-click.w3-mobile a.main,
+  .gsri-unite li.w3-dropdown-click a.main,
   .w3-dropdown-click.w3-mobile #monthly,
   div#contact a.w3-dropdown-click #monthly,
+  .gsri-unite li.w3-dropdown-click #monthly,
   .w3-dropdown-click.w3-mobile div#contact a,
   div#contact .w3-dropdown-click.w3-mobile a,
   div#contact a.w3-dropdown-click a,
+  .gsri-unite li.w3-dropdown-click div#contact a,
+  div#contact .gsri-unite li.w3-dropdown-click a,
   .w3-dropdown-click.w3-mobile div#footer a,
-  div#footer .w3-dropdown-click.w3-mobile a {
+  div#footer .w3-dropdown-click.w3-mobile a,
+  .gsri-unite li.w3-dropdown-click div#footer a,
+  div#footer .gsri-unite li.w3-dropdown-click a {
     width: 100%;
   }
 }
@@ -1146,7 +1163,7 @@ table tr th, .hero header .logo, .hero header .content, .gsri-card div {
 
 .w3-row-padding,
 .w3-row-padding > .w3-half,
-.w3-row-padding > .gsri-unite:nth-child(1),
+.gsri-unite:nth-child(1) .w3-row-padding > li,
 .w3-row-padding > .w3-third,
 table tr .w3-row-padding > td,
 table tr .w3-row-padding > th,
@@ -1154,8 +1171,8 @@ div#contact .w3-row-padding > a,
 .w3-row-padding > .w3-twothird,
 .w3-row-padding > .w3-threequarter,
 .w3-row-padding > .w3-quarter,
-.w3-row-padding > .gsri-unite,
-.w3-row-padding > .w3-col {
+.w3-row-padding > .w3-col,
+.gsri-unite .w3-row-padding > li {
   padding: 0 8px;
 }
 
@@ -1455,13 +1472,7 @@ div#contact .w3-row-padding > a,
   opacity: 0.75;
 }
 
-.w3-greyscale-max, .gsri-grade-0.vacant,
-.gsri-grade-1.vacant,
-.gsri-grade-2.vacant,
-.gsri-grade-3.vacant,
-.gsri-grade-4.vacant,
-.gsri-grade-5.vacant,
-.gsri-grade-6.vacant,
+.w3-greyscale-max, .gsri-unite li.vacant,
 .w3-grayscale-max,
 .w3-hover-greyscale:hover,
 .w3-hover-grayscale:hover {
@@ -1513,13 +1524,7 @@ div#contact .w3-row-padding > a,
   font-size: 18px !important;
 }
 
-.w3-xlarge, .gsri-grade-0 .pseudo,
-.gsri-grade-1 .pseudo,
-.gsri-grade-2 .pseudo,
-.gsri-grade-3 .pseudo,
-.gsri-grade-4 .pseudo,
-.gsri-grade-5 .pseudo,
-.gsri-grade-6 .pseudo {
+.w3-xlarge, .gsri-unite li .pseudo {
   font-size: 24px !important;
 }
 
@@ -1622,7 +1627,7 @@ div#contact .w3-row-padding > a,
   padding: 4px 8px !important;
 }
 
-.w3-padding, .title, .gsri-unite h2 {
+.w3-padding, .title, .gsri-unite h2, .gsri-unite li {
   padding: 8px 16px !important;
 }
 
@@ -1977,13 +1982,7 @@ a.action:hover {
   color: #d2be0e !important;
 }
 
-.w3-text-white, .gsri-grade-0 .pseudo,
-.gsri-grade-1 .pseudo,
-.gsri-grade-2 .pseudo,
-.gsri-grade-3 .pseudo,
-.gsri-grade-4 .pseudo,
-.gsri-grade-5 .pseudo,
-.gsri-grade-6 .pseudo,
+.w3-text-white, .gsri-unite li .pseudo,
 .w3-hover-text-white:hover {
   color: #fff !important;
 }
@@ -2244,13 +2243,7 @@ a.main:hover {
   background-color: #7ba5c5 !important;
 }
 
-.w3-text-theme-l3, .gsri-grade-0,
-.gsri-grade-1,
-.gsri-grade-2,
-.gsri-grade-3,
-.gsri-grade-4,
-.gsri-grade-5,
-.gsri-grade-6 {
+.w3-text-theme-l3 {
   color: #7ba5c5;
 }
 
@@ -2267,7 +2260,7 @@ a.main:hover {
   color: #7ba5c5 !important;
 }
 
-.w3-theme-l2, div#footer a.here {
+.w3-theme-l2, div#footer a.here, .gsri-unite li {
   color: white;
   background-color: #45779d !important;
 }
@@ -2289,7 +2282,7 @@ a.main:hover {
   color: #45779d !important;
 }
 
-.w3-theme-l1 {
+.w3-theme-l1, .gsri-unite li.lead {
   color: white;
   background-color: #28455b !important;
 }
@@ -2588,6 +2581,10 @@ div#footer a {
   width: 20%;
 }
 
+ul#effectifs {
+  padding: 0;
+}
+
 .gsri-card {
   padding: 1em;
   height: 15em;
@@ -2637,49 +2634,6 @@ div#footer a {
   width: 100vw;
 }
 
-.gsri-grade-0,
-.gsri-grade-1,
-.gsri-grade-2,
-.gsri-grade-3,
-.gsri-grade-4,
-.gsri-grade-5,
-.gsri-grade-6 {
-  list-style: none;
-  clear: both;
-}
-
-.gsri-grade-0::before,
-.gsri-grade-1::before,
-.gsri-grade-2::before,
-.gsri-grade-3::before,
-.gsri-grade-4::before,
-.gsri-grade-5::before,
-.gsri-grade-6::before {
-  float: left;
-  margin-right: 1em;
-}
-
-.gsri-grade-0 p,
-.gsri-grade-1 p,
-.gsri-grade-2 p,
-.gsri-grade-3 p,
-.gsri-grade-4 p,
-.gsri-grade-5 p,
-.gsri-grade-6 p {
-  margin: 0;
-}
-
-.gsri-grade-0.vacant .pseudo,
-.gsri-grade-1.vacant .pseudo,
-.gsri-grade-2.vacant .pseudo,
-.gsri-grade-3.vacant .pseudo,
-.gsri-grade-4.vacant .pseudo,
-.gsri-grade-5.vacant .pseudo,
-.gsri-grade-6.vacant .pseudo {
-  font-style: italic;
-  color: #666 !important;
-}
-
 .gsri-grade-0::before {
   content: url(../img/grades/grade_0.png);
 }
@@ -2708,13 +2662,52 @@ div#footer a {
   content: url(../img/grades/grade_6.png);
 }
 
-.gsri-unite {
-  display: inline-block;
-  border: .5em solid transparent;
+.gsri-grade-0::before,
+.gsri-grade-1::before,
+.gsri-grade-2::before,
+.gsri-grade-3::before,
+.gsri-grade-4::before,
+.gsri-grade-5::before,
+.gsri-grade-6::before {
+  margin-right: 1em;
 }
 
-.gsri-unite:nth-child(2), .gsri-unite:nth-child(6) {
-  clear: both;
+.gsri-unite {
+  list-style: none;
+}
+
+.gsri-unite ul {
+  list-style: none;
+  padding: 0;
+}
+
+.gsri-unite li {
+  display: inline-block;
+  width: 20%;
+  height: 11em;
+  text-align: center;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+
+.gsri-unite li.vacant .pseudo {
+  font-style: italic;
+}
+
+.gsri-unite.inser li {
+  background-color: #484 !important;
+}
+
+.gsri-unite.inser li.lead {
+  background-color: #242 !important;
+}
+
+.gsri-unite.corens li {
+  background-color: #884 !important;
+}
+
+.gsri-unite.corens li.lead {
+  background-color: #442 !important;
 }
 
 .striped {

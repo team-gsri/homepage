@@ -999,13 +999,7 @@ table tr th, .hero header .logo, .hero header .content, .gsri-card div {
 }
 
 @media (max-width: 992px) and (min-width: 601px) {
-  .w3-hide-medium, .hero header .logo, div#footer a span, .gsri-grade-0::before,
-  .gsri-grade-1::before,
-  .gsri-grade-2::before,
-  .gsri-grade-3::before,
-  .gsri-grade-4::before,
-  .gsri-grade-5::before,
-  .gsri-grade-6::before {
+  .w3-hide-medium, .hero header .logo, div#footer a span, .gsri-grade-0::before, .gsri-grade-1::before, .gsri-grade-2::before, .gsri-grade-3::before, .gsri-grade-4::before, .gsri-grade-5::before, .gsri-grade-6::before, .gsri-grade-7::before, .gsri-grade-8::before, .gsri-grade-9::before, .gsri-grade-10::before, .gsri-grade-11::before {
     display: none !important;
   }
 }
@@ -2635,41 +2629,63 @@ ul#effectifs {
 }
 
 .gsri-grade-0::before {
+  margin-right: 1em;
   content: url(../img/grades/grade_0.png);
 }
 
 .gsri-grade-1::before {
+  margin-right: 1em;
   content: url(../img/grades/grade_1.png);
 }
 
 .gsri-grade-2::before {
+  margin-right: 1em;
   content: url(../img/grades/grade_2.png);
 }
 
 .gsri-grade-3::before {
+  margin-right: 1em;
   content: url(../img/grades/grade_3.png);
 }
 
 .gsri-grade-4::before {
+  margin-right: 1em;
   content: url(../img/grades/grade_4.png);
 }
 
 .gsri-grade-5::before {
+  margin-right: 1em;
   content: url(../img/grades/grade_5.png);
 }
 
 .gsri-grade-6::before {
+  margin-right: 1em;
   content: url(../img/grades/grade_6.png);
 }
 
-.gsri-grade-0::before,
-.gsri-grade-1::before,
-.gsri-grade-2::before,
-.gsri-grade-3::before,
-.gsri-grade-4::before,
-.gsri-grade-5::before,
-.gsri-grade-6::before {
+.gsri-grade-7::before {
   margin-right: 1em;
+  content: url(../img/grades/grade_7.png);
+}
+
+.gsri-grade-8::before {
+  margin-right: 1em;
+  content: url(../img/grades/grade_8.png);
+}
+
+.gsri-grade-9::before {
+  margin-right: 1em;
+  content: url(../img/grades/grade_9.png);
+}
+
+.gsri-grade-10::before {
+  margin-right: 1em;
+  content: url(../img/grades/grade_10.png);
+}
+
+.gsri-grade-11::before {
+  margin-right: 1em;
+  content: url(../img/grades/grade_11.png);
 }
 
 .gsri-unite {

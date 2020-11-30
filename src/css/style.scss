@@ -229,46 +229,13 @@ ul#effectifs {
     width: 100vw;
 }
 
-.gsri-grade-0::before {
-    content: url(../img/grades/grade_0.png);
-}
-
-.gsri-grade-1::before {
-    content: url(../img/grades/grade_1.png);
-}
-
-.gsri-grade-2::before {
-    content: url(../img/grades/grade_2.png);
-}
-
-.gsri-grade-3::before {
-    content: url(../img/grades/grade_3.png);
-}
-
-.gsri-grade-4::before {
-    content: url(../img/grades/grade_4.png);
-}
-
-.gsri-grade-5::before {
-    content: url(../img/grades/grade_5.png);
-}
-
-.gsri-grade-6::before {
-    content: url(../img/grades/grade_6.png);
-}
-
-.gsri-grade-0,
-.gsri-grade-1,
-.gsri-grade-2,
-.gsri-grade-3,
-.gsri-grade-4,
-.gsri-grade-5,
-.gsri-grade-6 {
-    &::before {
-        // @extend .w3-hide-small;
-        @extend .w3-hide-medium;
-        // float: left;
-        margin-right: 1em;
+@for $i from 0 through 11 {
+    .gsri-grade-#{$i} {
+        &::before {
+            @extend .w3-hide-medium;
+            margin-right: 1em;
+            content: url(../img/grades/grade_#{$i}.png);
+        }
     }
 }
 

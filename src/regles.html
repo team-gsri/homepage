@@ -4,21 +4,23 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/import-load-from.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body class="w3-theme">
 
     <header data-parallax="scroll">
         <div class="parallax-slider w3-opacity-max">
-            <video autoplay muted loop width="100%" style="margin-top: 400px;">
+            <video autoplay muted loop>
                 <source src="https://cdn.gsri.team:8443/videos/insertion.mp4" type="video/mp4" />
             </video>
         </div>
@@ -54,7 +56,7 @@
                 <li> Pendant les missions planifiées, la mort est définitive : vous pouvez seulement observer une fois décédé </li>
             </ul>
             <div class="warning">
-                <p> Sur tous nos serveurs et toutes nos missions, m'emploi du matériel est réglementé. Les joueurs qui feront usage du matériel suivant sans autorisation pourront être sanctionnés : </p>
+                <p> Sur tous nos serveurs et toutes nos missions, l'emploi du matériel est réglementé. Les joueurs qui feront usage du matériel suivant sans autorisation pourront être sanctionnés : </p>
             </div>
             <ul>
                 <li> Armement de calibre supérieur au 5,56 &times; 45 mm OTAN </li>
@@ -65,7 +67,6 @@
                 <li> Tout moyen de désignation : accessoire laser, désignateur, muntions IR, traçante ou éclairante </li>
                 <li> Tout moyen de télémétrie : Vector 21, ATragMX, Kestrel </li>
                 <li> Kits de premiers soins ACE medical </li>
-                <li> Outil de tranchée </li>
             </ul>
         </div>
     </section>
@@ -91,21 +92,8 @@
         </div>
     </section>
 
-    <section class="hero" data-image-src="./img/walls/rejoindre.jpg" data-parallax="scroll">
-        <div data-aos="zoom-in">
-            <a href="./installer.html" class="main"> Télécharger notre pack de mods </a>
-        </div>
-    </section>
+    <div id="menu" data-load-from="./fragments/menu.html"></div>
 
-    <div id="footer">
-        <a class="fas fa-2x fa-home" href="./#"> </a>
-        <a class="fas fa-2x fa-users" href="./#groupe"> <span class="w3-hide-small">Le groupe</span></a>
-        <a class="fas fa-2x fa-gamepad" href="./#jouer"> <span class="w3-hide-small">Jouer</span></a>
-        <a class="fas fa-2x fa-signature" href="./#rejoindre"> <span class="w3-hide-small">Rejoindre</span></a>
-        <a class="fas fa-2x fa-calendar-alt" href="./#"></a>
-    </div>
-
-    <script src="./js/import-scripts.js"></script>
 </body>
 
 </html>

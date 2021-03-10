@@ -4,36 +4,43 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/import-load-from.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="w3-theme">
 
-    <div class="gsri-toplay" data-image-src="./img/parajump.jpg" data-parallax="scroll"></div>
-    <div class="gsri-splitter w3-theme"></div>
-    <div class="gsri-region w3-justify" data-parallax="scroll">
+
+    <header data-parallax="scroll">
         <div class="parallax-slider w3-opacity-max">
-            <img src="img/plongeurs.jpg" style="width: 100%; margin-top: 400px;" />
+            <video autoplay muted loop>
+                <source src="https://cdn.gsri.team:8443/videos/intervention.mp4" type="video/mp4" />
+            </video>
         </div>
-        <div class="w3-content">
+        <h1>Rejoindre le GSRI</h1>
+    </header>
 
-            <h1 class="title"> Rejoindre le GSRI </h1>
-            <h2 class="title"> Pourquoi rejoindre le groupe </h2>
-
+    <section>
+        <h2 class="title"> Pourquoi rejoindre le groupe </h2>
+        <div data-aos="fade-up" data-aos-mirror="true">
             <p>
                 Le GSRI est un groupe dont <a href="./doctrine.html">la doctrine de fonctionnement</a> repose sur l'acquisition de compétences avancées par l'ensemble de ses oéprateurs (la qualité plutôt que le nombre). Dans ce contexte, il n'est pas
                 possible de remplir efficacement nos missions en présence d'un nombre important d'invités, par nature peu expérimentés dans l'utilisation de notre matériel ou nos techniques d'intervention. Nous restons toutefois très ouverts à la présence
                 d'une communauté d'invités, qui gravitent autour de l'équipe et participent occasionellement à nos missions publiques ou impromptues. Cependant, la majorité des contenus de l'équipe sont réservés à nos membres, afin de favoriser le développement
                 personnel des opérateurs, et donc la progression collective du groupe.
             </p>
+        </div>
+    </section>
 
+    <section data-parallax="scroll" data-image-src="./img/walls/plongeurs.jpg">
+        <div data-aos="fade-left" data-aos-mirror="true">
             <h3> Contenus accessibles à tous </h3>
             <ul>
                 <li> Une mission mensuelle, parfois scénarisée, ouverte à tous sans condition de niveau technique </li>
@@ -41,7 +48,8 @@
                 <li> Des missions impromptues avec sous la présence des membres du GSRI </li>
                 <li> Des séances d'initiation à Arma 3 facultatives, d'une durée d'1 heure </li>
             </ul>
-
+        </div>
+        <div data-aos="fade-right" data-aos-mirror="true">
             <h3> Contenus réservés aux membres GSRI </h3>
             <ul>
                 <li> Une à trois missions hebdomadaires, parfois scénarisées, toujours exigeantes sur le plan tactique </li>
@@ -54,18 +62,13 @@
                 <li> Le pouvoir de proposer des améliorations et de décider collectivement sur le fonctionnement de l'équipe </li>
                 <li> Une culture de l'avancement basée sur la compétence plutôt que sur l'ancienneté des joueurs </li>
             </ul>
-
-            <p> L'adhésion à l'équipe est gratuite, et sans prérequis de niveau de jeu. </p>
-
         </div>
-    </div>
+        </div>
+    </section>
 
-    <div class="gsri-splitter w3-theme"></div>
-    <div class="gsri-region w3-justify" data-image-src="img/default.jpg" data-parallax="scroll">
-        <div class="w3-content">
-
-            <h2 class="title"> Qualités requises </h2>
-
+    <section>
+        <h2> Qualités requises </h2>
+        <div data-aos="fade-up" data-aos-mirror="true">
             <p>
                 L'expérience de jeu du GSRI oscille entre des phases de combat très intenses, et d'autres qui nécessitent une grande patience. Notre approche de la milsim est basée sur l'idée de franchir les obstacles en se surpassant, et de surmonter les difficultés
                 par une attitude collective, basée sur la coopération et la synchronisation entre les éléments. Cela nécessite des candidats au recrutement trois qualités intrinsèques : implication, assiduité, et persévérance.
@@ -98,221 +101,114 @@
                     </p>
                 </div>
             </div>
-
         </div>
-    </div>
+    </section>
 
-    <div class="gsri-splitter w3-theme"></div>
-    <div class="gsri-region w3-justify w3-content">
+    <section data-parallax="scroll" data-image-src="./img/walls/default.jpg">
+        <h2> Conditions d'accès </h2>
+        <div data-aos="fade-up" data-aos-mirror="true">
+            <p> L'adhésion à l'équipe est gratuite, et sans prérequis de niveau de jeu. </p>
+            <p> Nous demandons aux joueurs de respecter les conditions suivantes avant de déposer une candidature : </p>
+            <ul>
+                <li> Se présenter sur le serveur Discord </li>
+                <li> Disposer d’un casque et d’un micro correct</li>
+                <li> Ne pas être membre d’une autre structure associée à l’univers Arma </li>
+                <li> Avoir lu et assimilé l’ensemble des contenus du site </li>
+                <li> Avoir compris les objectifs et ambitions de l’équipe </li>
+                <li> Respecter les conditions requises pour jouer sur notre serveur </li>
+                <li> &Ecirc;tre disponible régulièrement le vendredi soir et le dimanche soir </li>
+                <li>
+                    <span> S'engager à respecter les minima de participation requis : </span>
+                    <ul>
+                        <li>Pour les opérateurs actifs : 2 entraînements et 2 missions par mois</li>
+                        <li>Pour les membres du pôle : participation mensuelle régulière</li>
+                        <li>Pour les recrues : 2 formations par semaine <i lang="la">en sus</i></li>
+                    </ul>
+                </li>
+            </ul>
+            <aside data-aos="fade-left" data-aos-mirror="true" data-aos-duration="1000"> <img src="./img/faces/face1.png" /> </aside>
+        </div>
+        <div class="warning" data-aos="zoom-out" data-aos-mirror="true">
+            <p>
+                Seuls 20% des candidats ayant déposé une demande d'admission atteignent le statut d'opérateur GSRI. La majorité des abandons sont dus à des problèmes de disponibilités, ou le non respect de la procédure de candidature !
+            </p>
+            <p>
+                La force du GSRI repose sur le niveau technique de ses opérateurs. Cela implique engagement et régularité de la part de ces derniers. Pour autant, la simulation militaire constitue un loisir qui passe après d'autres occupations plus importantes, comme
+                la famille, les amis ou le travail. S'il est légitime de faire passer ces occupations en priorité par rapport à un jeu vidéo, les absences répétées des membres nuisent à la progression individuelle et collective. La période de recrutement,
+                en particulier, nécessite un travail régulier d'acquisition théorique et de mise en pratique en mission. Soyez lucide sur vos disponibilités avant de vous engager.
+            </p>
+        </div>
+    </section>
 
+    <section>
+        <h2> Un processus en cinq étapes </h2>
+        <div data-aos="fade-up" data-aos-mirror="true">
 
-        <h2 class="title">
-            Les conditions
-        </h2>
-
-
-        <div class="w3-cell-row" data-aos="fade-up" data-aos-mirror="true">
-
-            <div class="w3-cell w3-cell-top">
-
+            <div class="w3-third w3-padding">
+                <h3> Dépôt de candidature </h3>
                 <p>
-                    Nous demandons aux joueurs de respecter les conditions suivantes avant de déposer une candidature :
+                    Pour cela, rendez-vous sur <a href="https://steamcommunity.com/groups/gsri_arma/discussions">le groupe steam du GSRI</a>, et créez un nouveau sujet de discussion utilisant le modèle fourni en message épinglé. Soyez simple dans vos
+                    réponses, les questions permettent de valider que votre profil correspond à l'équipe et vise à briser la glace. Cette procédure est l'opportunité de montrer que vous vous intéressez à l'équipe : essayez de vous renseigner sur l'équipe,
+                    via le site internet, le serveur Discord, les missions publiques, etc ...
                 </p>
-
-                <ul>
-                    <li> Se présenter sur le canal Discord adapté </li>
-                    <li> Disposer d’un casque et d’un micro correct</li>
-                    <li> Ne pas être membre d’une autre structure associée à l’univers Arma </li>
-                    <li> Avoir lu et assimilé l’ensemble des contenus du site </li>
-                    <li> Avoir compris les objectifs et ambitions de l’équipe </li>
-                    <li> Respecter les conditions requises pour jouer sur notre serveur </li>
-                    <li> &Ecirc;tre disponible régulièrement le vendredi soir et le dimanche soir </li>
-                    <li>
-                        <span> S'engager à respecter les minima de participation requis : </span>
-                        <ul>
-                            <li>Pour les opérateurs actifs : 2 entraînements et 2 missions par mois</li>
-                            <li>Pour les membres du pôle : participation mensuelle régulière</li>
-                            <li>Pour les recrues : 2 formations par semaine <i lang="la">en sus</i></li>
-                        </ul>
-                    </li>
-                </ul>
             </div>
-            <div class="w3-cell w3-cell-middle" style="width: 350px; padding-left: 50px;" data-aos="fade-left" data-aos-mirror="true" data-aos-duration="1000">
-                <img src="./img/face1.png" width="100%" />
+
+            <div class="w3-third w3-padding">
+                <h3> Séance découverte </h3>
+                <p>
+                    Les candidats sont invités à découvrir notre manière de jouer sur une mission test. En effet, les missions ouvertes au public ne sont pas forcément représentatives de nos missions privées. Vous serez donc invité dans une mission privée où vous serez plongé
+                    dans une expérience similaire à celle que nous vivons habituellement. Cette opération sera l'occasion pour vous de confirmer votre intérêt pour l'équipe, et pour nous d'évaluer votre personnalité.
+                </p>
             </div>
-        </div>
-    </div>
 
-    <div class="gsri-splitter w3-theme"></div>
-    <div class="gsri-region w3-justify" data-parallax="scroll">
-        <div class="parallax-slider w3-opacity-max">
-            <img src="img/zodiacs.jpg" style="width: 100%; margin-top: 400px;" />
-        </div>
-        <div class="w3-content">
-
-            <h2 class="title">
-                Un processus en cinq étapes
-            </h2>
-
-            <div class="w3-row-padding w3-stretch">
-                <h3 class="title">
-                    Etape 1 : Dépôt de candidature
-                </h3>
-                <p>
-                    La première étape consiste à déposer une candidature. Pour cela, rendez-vous sur <a href="https://steamcommunity.com/groups/gsri_arma/discussions">le groupe steam du GSRI</a>, et créez un nouveau sujet de discussion utilisant le modèle
-                    fourni en message épinglé. Soyez simple dans vos réponses, les questions permettent de valider que votre profil correspond à l'équipe et vise à briser la glace. Cette procédure est l'opportunité de montrer que vous vous intéressez
-                    à l'équipe : essayez de vous renseigner sur l'équipe, via le site internet, le serveur Discord, les missions publiques, etc ...
-                </p>
-                <p>
-                    Une fois cette démarche effectuée, <b>vous obtenez le statut de candidat</b>.
-                </p>
-
-                <h3 class="title">
-                    Etape 2 : Séance découverte
-                </h3>
-                <p>
-                    Les candidats sont contactés par un cadre de l'équipe en vue de programmer une séance de découverte. En effet, les missions ouvertes au public ne sont pas très représentatives de nos missions privées. Vous serez donc invité dans une mission privée où
-                    vous serez plongé dans une expérience similaire à celle que nous vivons habituellement. Cette opération sera l'occasion pour vous de confirmer votre intérêt pour l'équipe, et pour nous d'évaluer votre candidature. Ceci ne constitue
-                    pas un test technique : <b>il n'y a pas de condition de niveau pour rejoindre le GSRI</b>. En revanche, nous évaluons la compatilibté de votre personnalité.
-                </p>
-                <p>
-                    Si vous ne vous présentez pas à la séance de découverte, votre candidature sera automatiquement rejetée.
-                </p>
-
-                <h3 class="title">
-                    Etape 3 : Engagement définitif
-                </h3>
+            <div class="w3-third w3-padding">
+                <h3> Engagement définitif </h3>
                 <p>
                     A l'issue de la première phase, nous donnons un avis sur votre aptitude à poursuivre votre recrutement, et nous vous demadons de confirmer votre envie de poursuivre la procédure de recrutement.
-
-
-                </p>
-
-                <h3 class="title">
-                    4- Formation initiale
-                </h3>
-                <p>
-                    Si notre avis est négatif ou si vous ne souhaitez pas poursuivre, l'aventure s'arrête là. Si notre avis est positif et que vous confirmez votre envie de continuer l'aventure et de rejoindre les rangs de l'unité, vous obtenez le statut de recrue. Vous
-                    obtenez un accès partiel à nos ressources et portez le tag de l'équipe. Vous êtes listé sur le site de l'équipe en tant que recrue. Vous n'avez pas le droit de vote, mais vous pouvez exprimer votre avis dans les débats internes à l'équipe.
-                    Avec l'aide des cadres, vous décidez du type d'investissement que vous souhaitez avoir dans l'équipe au moment de votre titularisation, ce qui conditionnera votre parcours de formation. Commence alors la longue phase d'apprentissage,
-                    sous la responsabilité de vos formateurs.
-                </p>
-
-                <h3 class="title">
-                    5- Titularisation
-                </h3>
-                <p>
-                    A l'issue de votre formation, vous serez titularisé, et affecté dans la structure correspondant à vos souhaits.
                 </p>
                 <p>
-                    Une fois titularisé, vous faites partie de l'équipe au même titre que n'importe quel membre. Vous pouvez accéder à l'ensemble des ressources documentaires de l'équipe, disposez du droit de vote et êtes listé dans le tableau des affectations comme membre
-                    titulaire. Vous obtenez le droit de vote, et celui de vous présenter aux élections.
+                    Si les deux parties s'accordent sur la poursuite du recrutement, vous devenez officiellement membre de l'équipe et entammez votre parcours de formation.
                 </p>
-                <p>
-                    La titularisation ne constitue cependant pas une fin en soi, c'est seulement le début de l'aventure GSRI. D'autres formations sont disponibles pour ceux qui veulent approfondir leurs connaissances. Chacun est aussi invité à s'impliquer dans l'amélioration
-                    et le développement de l'équipe. Mais n'oubliez pas que le premier moyen de nous soutenir c'est de maintenir ses compétences à jour et de participer régulièrement aux opérations et entraînements.
-                </p>
-
             </div>
 
-            <div class="w3-row-padding w3-stretch">
-                <div class="w3-third" data-aos="fade-left" data-aos-delay="0" data-aos-mirror="true">
-                    <h3 class="title">
-                        Découverte
-                    </h3>
-                    <p>
-                        La première étape consiste à déposer une candidature sur notre groupe Steam.
-                    </p>
-                    <p>
-                        Une fois cette démarche effectuée, vous obtenez le statut de candidat. Vous serez contacté par un cadre de l'équipe en vue de programmer une séance de découverte. En effet, les missions ouvertes au public ne sont pas très représentatives de nos missions
-                        privées. Vous serez donc invité dans une mission privée où vous serez plongé dans une expérience similaire à celle que nous vivons habituellement. Cette opération sera l'occasion pour vous de confirmer votre apétence pour l'équipe,
-                        et pour nous d'évaluer votre candidature. Nous insistons sur le fait que ceci ne constitue pas un test technique : <b>il n'y a pas de condition de niveau pour rejoindre le GSRI</b>. En revanche, nous évaluons
-                        la compatilibté de votre personnalité et votre vigueur d'esprit, votre capacité à vous concentrer et à suivre les consignes.
-                    </p>
-                    <p>
-                        Si vous ne vous présentez pas à la séance de découverte, votre candidature sera automatiquement rejetée.
-                    </p>
-
-
-                </div>
-                <div class="w3-third" data-aos="fade-left" data-aos-delay="100" data-aos-mirror="true">
-                    <h3 class="title">
-                        Formation
-                    </h3>
-                    <p>
-                        A l'issue de la première phase, nous donnons un avis sur votre aptitude à poursuivre votre recrutement.
-                    </p>
-                    <p>
-                        Si notre avis est négatif ou si vous ne souhaitez pas poursuivre, l'aventure s'arrête là. Si notre avis est positif et que vous confirmez votre envie de continuer l'aventure et de rejoindre les rangs de l'unité, vous obtenez le statut de recrue. Vous
-                        obtenez un accès partiel à nos ressources et portez le tag de l'équipe. Vous êtes listé sur le site de l'équipe en tant que recrue. Vous n'avez pas le droit de vote, mais vous pouvez exprimer votre avis dans les débats internes
-                        à l'équipe. Avec l'aide des cadres, vous décidez du type d'investissement que vous souhaitez avoir dans l'équipe au moment de votre titularisation, ce qui conditionnera votre parcours de formation. Commence alors la longue phase
-                        d'apprentissage, sous la responsabilité de vos formateurs.
-                    </p>
-                    <p>
-                        A tout moment, l'une des deux parties peut décider de mettre fin à votre formation de manière unilatérale.
-                    </p>
-
-                </div>
-
-                <div class="w3-third" data-aos="fade-left" data-aos-delay="200" data-aos-mirror="true">
-                    <h3 class="title">
-                        Titularisation
-                    </h3>
-                    <p>
-                        A l'issue de votre formation, vous serez titularisé, et affecté dans la structure correspondant à vos souhaits.
-                    </p>
-                    <p>
-                        Une fois titularisé, vous faites partie de l'équipe au même titre que n'importe quel membre. Vous pouvez accéder à l'ensemble des ressources documentaires de l'équipe, disposez du droit de vote et êtes listé dans le tableau des affectations comme membre
-                        titulaire. Vous obtenez le droit de vote, et celui de vous présenter aux élections.
-                    </p>
-                    <p>
-                        La titularisation ne constitue cependant pas une fin en soi, c'est seulement le début de l'aventure GSRI. D'autres formations sont disponibles pour ceux qui veulent approfondir leurs connaissances. Chacun est aussi invité à s'impliquer dans l'amélioration
-                        et le développement de l'équipe. Mais n'oubliez pas que le premier moyen de nous soutenir c'est de maintenir ses compétences à jour et de participer régulièrement aux opérations et entraînements.
-                    </p>
-                </div>
+            <div class="w3-half w3-padding" style="clear: both;">
+                <h3> Formation </h3>
+                <p>
+                    A l'issue de votre engagement définitif, vous portez le tag de l'équipe et pouvez participer à l'ensemble des missions et entrainements réservés aux membres. En plus de ces activités, vous participez aux formations individuelles et collectives visant
+                    à vous transmettre les techniques et procédures spécifiques du GSRI.
+                </p>
+                <p>
+                    Cette formation est adaptée au niveau technique de chaque recrue et peut durer entre 1 et 4 mois selon les disponibilités des formateurs, les compétences déjà acquises, la vitesse d'apprentissage et la capacité de remise en question.
+                </p>
+                <p>
+                    A tout moment, l'une des deux parties peut décider de mettre fin à votre formation de manière unilatérale.
+                </p>
             </div>
+
+            <div class="w3-half w3-padding">
+                <h3> Titularisation </h3>
+                <p>
+                    A l'issue de votre formation, vous serez titularisé. La titularisation ne constitue cependant pas une fin en soi, c'est seulement le début de l'aventure GSRI. D'autres formations sont disponibles pour ceux qui veulent approfondir leurs connaissances.
+                    Chacun est aussi invité à s'impliquer dans l'amélioration et le développement de l'équipe.
+                </p>
+                <p>
+                    La principale responsabilité d'un opérateur titulaire, cependant, reste de maintenir ses compétences à jour et participer régulièrement aux opérations et entraînements.
+                </p>
+            </div>
+
+
         </div>
-    </div>
+    </section>
 
-    <div class="gsri-splitter w3-theme"></div>
-    <div class="gsri-region w3-justify w3-content">
 
-        <h2 class="title"> Un dernier mot d'avertissement </h2>
-        <div class="w3-margin" data-aos="zoom-out" data-aos-mirror="true">
-            <p class="striped"> &nbsp; </p>
-            <p class="w3-panel">
-                <i class="fas fa-2x fa-info-circle w3-left w3-padding"></i> Seuls 20% des candidats ayant déposé une demande d'admission atteignent le statut d'opérateur GSRI. La majorité des abandons sont dus à des problèmes de disponibilités, ou le
-                non respect de la procédure de candidature !
-            </p>
-            <p class="striped"> &nbsp; </p>
+    <section class="hero" data-image-src="./img/walls/rejoindre.jpg" data-parallax="scroll">
+        <div>
+            <a href="https://steamcommunity.com/groups/gsri_arma/discussions/0/135509472113259578/" class="main">Déposer une candidature</a>
         </div>
-        <p>
-            La force du GSRI repose sur le niveau technique de ses opérateurs. Cela implique engagement et régularité de la part de ces derniers. Pour autant, la simulation militaire constitue un loisir qui passe après d'autres occupations plus importantes, comme
-            la famille, les amis ou le travail. S'il est légitime de faire passer ces occupations en priorité par rapport à un jeu vidéo, les absences répétées des membres nuisent à la progression individuelle et collective. La période de recrutement,
-            en particulier, nécessite un travail régulier d'acquisition théorique et de mise en pratique en mission. Soyez lucide sur vos disponibilités avant de vous engager.
-        </p>
-    </div>
+    </section>
 
-    <div class="gsri-splitter w3-theme"></div>
-    <div class="hero" data-image-src="./img/rejoindre.jpg" data-parallax="scroll">
-        <header>
-            <div class="content" data-aos="zoom-in">
-                <a href="https://steamcommunity.com/groups/gsri_arma/discussions/0/135509472113259578/" class="main">Déposer une candidature</a>
-            </div>
-        </header>
-    </div>
+    <div id="menu" data-load-from="./fragments/menu.html"></div>
 
-    <div id="footer">
-        <a class="fas fa-2x fa-home" href="./#"> </a>
-        <a class="fas fa-2x fa-users" href="./#groupe"> <span class="w3-hide-small">Le groupe</span></a>
-        <a class="fas fa-2x fa-gamepad" href="./#jouer"> <span class="w3-hide-small">Jouer</span></a>
-        <a class="fas fa-2x fa-signature" href="./#rejoindre"> <span class="w3-hide-small">Rejoindre</span></a>
-        <a class="fas fa-2x fa-calendar-alt" href="./#"></a>
-    </div>
-
-    <script>
-        AOS.init();
-    </script>
 </body>
 
 

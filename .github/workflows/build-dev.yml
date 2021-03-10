@@ -27,7 +27,7 @@ jobs:
       - name: Push docker image
         run: |
           docker login docker.pkg.github.com --username team-gsri --password ${{ secrets.GITHUB_TOKEN }}
-          docker push docker.pkg.github.com/team-gsri/homepage/homepage
+          docker push docker.pkg.github.com/team-gsri/homepage/homepage:dev
           
       - name: Copy stack file
         uses: appleboy/scp-action@master

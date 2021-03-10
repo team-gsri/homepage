@@ -353,7 +353,7 @@ a {
 a.action,
 a.main,
 #monthly,
-div#contact a,
+#contact nav a,
 div#footer a {
   border: none;
   display: inline-block;
@@ -378,7 +378,7 @@ div#footer a {
 a.action,
 a.main,
 #monthly,
-div#contact a,
+#contact nav a,
 div#footer a {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -393,7 +393,7 @@ div#footer a {
 a.action:disabled,
 a.main:disabled,
 #monthly:disabled,
-div#contact a:disabled,
+#contact nav a:disabled,
 div#footer a:disabled {
   cursor: not-allowed;
   opacity: 0.3;
@@ -443,7 +443,8 @@ div#footer a:disabled {
 .w3-display-container,
 .hero,
 .gsri-region,
-.gsri-toplay {
+.gsri-toplay,
+body > header {
   position: relative;
 }
 
@@ -496,12 +497,12 @@ div#footer a:disabled {
   color: #000;
 }
 
-.w3-dropdown-hover:hover > .w3-button:first-child, .w3-dropdown-hover:hover > a.action:first-child, .w3-dropdown-hover:hover > a.main:first-child, .w3-dropdown-hover:hover > #monthly:first-child, div#contact .w3-dropdown-hover:hover > a:first-child, div#footer .w3-dropdown-hover:hover > a:first-child,
+.w3-dropdown-hover:hover > .w3-button:first-child, .w3-dropdown-hover:hover > a.action:first-child, .w3-dropdown-hover:hover > a.main:first-child, .w3-dropdown-hover:hover > #monthly:first-child, #contact nav .w3-dropdown-hover:hover > a:first-child, div#footer .w3-dropdown-hover:hover > a:first-child,
 .w3-dropdown-click:hover > .w3-button:first-child,
 .w3-dropdown-click:hover > a.action:first-child,
 .w3-dropdown-click:hover > a.main:first-child,
 .w3-dropdown-click:hover > #monthly:first-child,
-div#contact .w3-dropdown-click:hover > a:first-child,
+#contact nav .w3-dropdown-click:hover > a:first-child,
 div#footer .w3-dropdown-click:hover > a:first-child {
   background-color: #ccc;
   color: #000;
@@ -546,13 +547,13 @@ div#footer .w3-dropdown-click:hover > a:first-child {
   min-width: 100%;
 }
 
-.w3-bar-block .w3-dropdown-hover .w3-button, .w3-bar-block .w3-dropdown-hover a.action, .w3-bar-block .w3-dropdown-hover a.main, .w3-bar-block .w3-dropdown-hover #monthly, .w3-bar-block .w3-dropdown-hover div#contact a, div#contact .w3-bar-block .w3-dropdown-hover a, .w3-bar-block .w3-dropdown-hover div#footer a, div#footer .w3-bar-block .w3-dropdown-hover a,
+.w3-bar-block .w3-dropdown-hover .w3-button, .w3-bar-block .w3-dropdown-hover a.action, .w3-bar-block .w3-dropdown-hover a.main, .w3-bar-block .w3-dropdown-hover #monthly, .w3-bar-block .w3-dropdown-hover #contact nav a, #contact nav .w3-bar-block .w3-dropdown-hover a, .w3-bar-block .w3-dropdown-hover div#footer a, div#footer .w3-bar-block .w3-dropdown-hover a,
 .w3-bar-block .w3-dropdown-click .w3-button,
 .w3-bar-block .w3-dropdown-click a.action,
 .w3-bar-block .w3-dropdown-click a.main,
 .w3-bar-block .w3-dropdown-click #monthly,
-.w3-bar-block .w3-dropdown-click div#contact a,
-div#contact .w3-bar-block .w3-dropdown-click a,
+.w3-bar-block .w3-dropdown-click #contact nav a,
+#contact nav .w3-bar-block .w3-dropdown-click a,
 .w3-bar-block .w3-dropdown-click div#footer a,
 div#footer .w3-bar-block .w3-dropdown-click a {
   width: 100%;
@@ -594,7 +595,7 @@ div#footer .w3-bar-block .w3-dropdown-click a {
   overflow: hidden;
 }
 
-.w3-center .w3-bar, div#contact a .w3-bar, .w3-center div#footer, div#contact a div#footer {
+.w3-center .w3-bar, #contact nav a .w3-bar, body > section.hero > div .w3-bar, .w3-center div#footer, #contact nav a div#footer, body > section.hero > div div#footer {
   display: inline-block;
   width: auto;
 }
@@ -615,7 +616,7 @@ div#footer .w3-dropdown-click {
   float: left;
 }
 
-.w3-bar .w3-button, div#footer .w3-button, .w3-bar a.action, .w3-bar a.main, .w3-bar #monthly, div#footer #monthly, .w3-bar div#contact a, div#contact .w3-bar a, div#footer a {
+.w3-bar .w3-button, div#footer .w3-button, .w3-bar a.action, .w3-bar a.main, .w3-bar #monthly, div#footer #monthly, .w3-bar #contact nav a, #contact nav .w3-bar a, div#footer a {
   white-space: normal;
 }
 
@@ -630,7 +631,7 @@ div#footer .w3-dropdown-click {
   outline: 0;
 }
 
-.w3-bar-block.w3-center .w3-bar-item, div#contact a.w3-bar-block .w3-bar-item, .w3-bar-block.w3-center div#footer a, div#footer .w3-bar-block.w3-center a, div#contact a.w3-bar-block div#footer a, div#footer div#contact a.w3-bar-block a {
+.w3-bar-block.w3-center .w3-bar-item, #contact nav a.w3-bar-block .w3-bar-item, body > section.hero > div.w3-bar-block .w3-bar-item, .w3-bar-block.w3-center div#footer a, div#footer .w3-bar-block.w3-center a, #contact nav a.w3-bar-block div#footer a, div#footer #contact nav a.w3-bar-block a, body > section.hero > div.w3-bar-block div#footer a, div#footer body > section.hero > div.w3-bar-block a {
   text-align: center;
 }
 
@@ -649,15 +650,29 @@ div#footer .w3-dropdown-click {
 .w3-panel:after,
 .title:after,
 .gsri-unite h2:after,
+body > section h1:after,
+body > section h2:after,
+body > section h3:after,
+body > section h4:after,
+body > section h5:after,
+body > section h6:after,
 #monthly:after,
 .w3-panel:before,
 .title:before,
 .gsri-unite h2:before,
+body > section h1:before,
+body > section h2:before,
+body > section h3:before,
+body > section h4:before,
+body > section h5:before,
+body > section h6:before,
 #monthly:before,
 .w3-row:after,
+#contact nav:after,
 .gsri-card:after,
 .gsri-unite ul:after,
 .w3-row:before,
+#contact nav:before,
 .gsri-card:before,
 .gsri-unite ul:before,
 .w3-row-padding:after,
@@ -665,9 +680,13 @@ div#footer .w3-dropdown-click {
 .w3-cell-row:before,
 table tr:before,
 .hero header:before,
+body > section > div:before,
+body > section.hero:before,
 .w3-cell-row:after,
 table tr:after,
 .hero header:after,
+body > section > div:after,
+body > section.hero:after,
 .w3-clear:after,
 .w3-clear:before,
 .w3-bar:before,
@@ -685,7 +704,7 @@ div#footer:after {
 .w3-third,
 table tr td,
 table tr th,
-div#contact a,
+#contact nav a,
 .w3-twothird,
 .w3-threequarter,
 .w3-quarter {
@@ -756,7 +775,7 @@ div#contact a,
   .w3-third,
   table tr td,
   table tr th,
-  div#contact a {
+  #contact nav a {
     width: 33.33333%;
   }
   .w3-col.m5, .gsri-unite li.m5 {
@@ -837,13 +856,23 @@ div#contact a,
   margin-right: -16px;
 }
 
-.w3-content, .hero header, .title, .gsri-unite h2, ul#effectifs,
+.w3-content, .hero header, .title, .gsri-unite h2, body > section h1,
+body > section h2,
+body > section h3, body > section #monthly,
+body > section h4,
+body > section h5,
+body > section h6, #contact nav, ul#effectifs, body > section > div,
 .w3-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.w3-content, .hero header, .title, .gsri-unite h2, ul#effectifs {
+.w3-content, .hero header, .title, .gsri-unite h2, body > section h1,
+body > section h2,
+body > section h3, body > section #monthly,
+body > section h4,
+body > section h5,
+body > section h6, #contact nav, ul#effectifs, body > section > div {
   max-width: 980px;
 }
 
@@ -851,13 +880,13 @@ div#contact a,
   max-width: 1140px;
 }
 
-.w3-cell-row, table tr, .hero header {
+.w3-cell-row, table tr, .hero header, body > section > div, body > section.hero {
   display: table;
   width: 100%;
 }
 
 .w3-cell, table tr td,
-table tr th, .hero header .logo, .hero header .content, .gsri-card div {
+table tr th, .hero header .logo, .hero header .content, .gsri-card div, body > section.hero > div, body > section aside {
   display: table-cell;
 }
 
@@ -865,7 +894,7 @@ table tr th, .hero header .logo, .hero header .content, .gsri-card div {
   vertical-align: top;
 }
 
-.w3-cell-middle, .hero header .content, .gsri-card div {
+.w3-cell-middle, .hero header .content, .gsri-card div, body > section.hero > div, body > section aside {
   vertical-align: middle;
 }
 
@@ -900,75 +929,75 @@ table tr th, .hero header .logo, .hero header .content, .gsri-card div {
   .w3-modal {
     padding-top: 30px;
   }
-  .w3-dropdown-hover.w3-mobile .w3-dropdown-content, div#contact a.w3-dropdown-hover .w3-dropdown-content, .gsri-unite li.w3-dropdown-hover .w3-dropdown-content,
+  .w3-dropdown-hover.w3-mobile .w3-dropdown-content, #contact nav a.w3-dropdown-hover .w3-dropdown-content, .gsri-unite li.w3-dropdown-hover .w3-dropdown-content,
   .w3-dropdown-click.w3-mobile .w3-dropdown-content,
-  div#contact a.w3-dropdown-click .w3-dropdown-content,
+  #contact nav a.w3-dropdown-click .w3-dropdown-content,
   .gsri-unite li.w3-dropdown-click .w3-dropdown-content {
     position: relative;
   }
   .w3-hide-small, .hero header .logo, div#footer a span, .gsri-card div:first-child {
     display: none !important;
   }
-  .w3-mobile, div#contact a, .gsri-unite li {
+  .w3-mobile, #contact nav a, .gsri-unite li {
     display: block;
     width: 100% !important;
   }
-  .w3-bar-item.w3-mobile, div#contact a.w3-bar-item, div#contact div#footer a, div#footer div#contact a, div#footer a.w3-mobile, .gsri-unite li.w3-bar-item,
+  .w3-bar-item.w3-mobile, #contact nav a.w3-bar-item, #contact nav div#footer a, div#footer #contact nav a, div#footer a.w3-mobile, .gsri-unite li.w3-bar-item,
   .w3-dropdown-hover.w3-mobile,
-  div#contact a.w3-dropdown-hover,
+  #contact nav a.w3-dropdown-hover,
   .gsri-unite li.w3-dropdown-hover,
   .w3-dropdown-click.w3-mobile,
-  div#contact a.w3-dropdown-click,
+  #contact nav a.w3-dropdown-click,
   .gsri-unite li.w3-dropdown-click {
     text-align: center;
   }
   
   .w3-dropdown-hover.w3-mobile,
-  div#contact a.w3-dropdown-hover,
+  #contact nav a.w3-dropdown-hover,
   .gsri-unite li.w3-dropdown-hover,
   .w3-dropdown-hover.w3-mobile .w3-btn,
-  div#contact a.w3-dropdown-hover .w3-btn,
+  #contact nav a.w3-dropdown-hover .w3-btn,
   .gsri-unite li.w3-dropdown-hover .w3-btn,
   .w3-dropdown-hover.w3-mobile .w3-button,
-  div#contact a.w3-dropdown-hover .w3-button,
+  #contact nav a.w3-dropdown-hover .w3-button,
   .gsri-unite li.w3-dropdown-hover .w3-button,
   .w3-dropdown-hover.w3-mobile a.action,
   .gsri-unite li.w3-dropdown-hover a.action,
   .w3-dropdown-hover.w3-mobile a.main,
   .gsri-unite li.w3-dropdown-hover a.main,
   .w3-dropdown-hover.w3-mobile #monthly,
-  div#contact a.w3-dropdown-hover #monthly,
+  #contact nav a.w3-dropdown-hover #monthly,
   .gsri-unite li.w3-dropdown-hover #monthly,
-  .w3-dropdown-hover.w3-mobile div#contact a,
-  div#contact .w3-dropdown-hover.w3-mobile a,
-  div#contact a.w3-dropdown-hover a,
-  .gsri-unite li.w3-dropdown-hover div#contact a,
-  div#contact .gsri-unite li.w3-dropdown-hover a,
+  .w3-dropdown-hover.w3-mobile #contact nav a,
+  #contact nav .w3-dropdown-hover.w3-mobile a,
+  #contact nav a.w3-dropdown-hover a,
+  .gsri-unite li.w3-dropdown-hover #contact nav a,
+  #contact nav .gsri-unite li.w3-dropdown-hover a,
   .w3-dropdown-hover.w3-mobile div#footer a,
   div#footer .w3-dropdown-hover.w3-mobile a,
   .gsri-unite li.w3-dropdown-hover div#footer a,
   div#footer .gsri-unite li.w3-dropdown-hover a,
   .w3-dropdown-click.w3-mobile,
-  div#contact a.w3-dropdown-click,
+  #contact nav a.w3-dropdown-click,
   .gsri-unite li.w3-dropdown-click,
   .w3-dropdown-click.w3-mobile .w3-btn,
-  div#contact a.w3-dropdown-click .w3-btn,
+  #contact nav a.w3-dropdown-click .w3-btn,
   .gsri-unite li.w3-dropdown-click .w3-btn,
   .w3-dropdown-click.w3-mobile .w3-button,
-  div#contact a.w3-dropdown-click .w3-button,
+  #contact nav a.w3-dropdown-click .w3-button,
   .gsri-unite li.w3-dropdown-click .w3-button,
   .w3-dropdown-click.w3-mobile a.action,
   .gsri-unite li.w3-dropdown-click a.action,
   .w3-dropdown-click.w3-mobile a.main,
   .gsri-unite li.w3-dropdown-click a.main,
   .w3-dropdown-click.w3-mobile #monthly,
-  div#contact a.w3-dropdown-click #monthly,
+  #contact nav a.w3-dropdown-click #monthly,
   .gsri-unite li.w3-dropdown-click #monthly,
-  .w3-dropdown-click.w3-mobile div#contact a,
-  div#contact .w3-dropdown-click.w3-mobile a,
-  div#contact a.w3-dropdown-click a,
-  .gsri-unite li.w3-dropdown-click div#contact a,
-  div#contact .gsri-unite li.w3-dropdown-click a,
+  .w3-dropdown-click.w3-mobile #contact nav a,
+  #contact nav .w3-dropdown-click.w3-mobile a,
+  #contact nav a.w3-dropdown-click a,
+  .gsri-unite li.w3-dropdown-click #contact nav a,
+  #contact nav .gsri-unite li.w3-dropdown-click a,
   .w3-dropdown-click.w3-mobile div#footer a,
   div#footer .w3-dropdown-click.w3-mobile a,
   .gsri-unite li.w3-dropdown-click div#footer a,
@@ -1069,7 +1098,7 @@ table tr th, .hero header .logo, .hero header .content, .gsri-card div {
   bottom: 0;
 }
 
-.w3-display-middle, .hero header {
+.w3-display-middle, .hero header, body > header h1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1114,11 +1143,11 @@ table tr th, .hero header .logo, .hero header .content, .gsri-card div {
   -ms-transform: translate(-50%, 0%);
 }
 
-.w3-display-container:hover .w3-display-hover, .hero:hover .w3-display-hover, .gsri-region:hover .w3-display-hover, .gsri-toplay:hover .w3-display-hover {
+.w3-display-container:hover .w3-display-hover, .hero:hover .w3-display-hover, .gsri-region:hover .w3-display-hover, .gsri-toplay:hover .w3-display-hover, body > header:hover .w3-display-hover {
   display: block;
 }
 
-.w3-display-container:hover span.w3-display-hover, .hero:hover span.w3-display-hover, .gsri-region:hover span.w3-display-hover, .gsri-toplay:hover span.w3-display-hover {
+.w3-display-container:hover span.w3-display-hover, .hero:hover span.w3-display-hover, .gsri-region:hover span.w3-display-hover, .gsri-toplay:hover span.w3-display-hover, body > header:hover span.w3-display-hover {
   display: inline-block;
 }
 
@@ -1161,7 +1190,7 @@ table tr th, .hero header .logo, .hero header .content, .gsri-card div {
 .w3-row-padding > .w3-third,
 table tr .w3-row-padding > td,
 table tr .w3-row-padding > th,
-div#contact .w3-row-padding > a,
+#contact nav .w3-row-padding > a,
 .w3-row-padding > .w3-twothird,
 .w3-row-padding > .w3-threequarter,
 .w3-row-padding > .w3-quarter,
@@ -1174,6 +1203,12 @@ div#contact .w3-row-padding > a,
 .w3-panel,
 .title,
 .gsri-unite h2,
+body > section h1,
+body > section h2,
+body > section h3,
+body > section h4,
+body > section h5,
+body > section h6,
 #monthly {
   padding: 0.01em 16px;
 }
@@ -1182,6 +1217,12 @@ div#contact .w3-row-padding > a,
 .w3-panel,
 .title,
 .gsri-unite h2,
+body > section h1,
+body > section h2,
+body > section h3,
+body > section h4,
+body > section h5,
+body > section h6,
 #monthly {
   margin-top: 16px;
   margin-bottom: 16px;
@@ -1542,11 +1583,11 @@ div#contact .w3-row-padding > a,
   text-align: right !important;
 }
 
-.w3-justify, .gsri-region {
+.w3-justify, .gsri-region, body > section > div {
   text-align: justify !important;
 }
 
-.w3-center, div#contact a {
+.w3-center, #contact nav a, body > section.hero > div {
   text-align: center !important;
 }
 
@@ -1582,7 +1623,12 @@ div#contact .w3-row-padding > a,
   border-bottom: 6px solid #ccc !important;
 }
 
-.w3-leftbar, .title, .gsri-unite h2 {
+.w3-leftbar, .title, .gsri-unite h2, body > section h1,
+body > section h2,
+body > section h3, body > section #monthly,
+body > section h4,
+body > section h5,
+body > section h6 {
   border-left: 6px solid #ccc !important;
 }
 
@@ -1621,7 +1667,12 @@ div#contact .w3-row-padding > a,
   padding: 4px 8px !important;
 }
 
-.w3-padding, .title, .gsri-unite h2, .gsri-unite li {
+.w3-padding, .title, .gsri-unite h2, body > section h1,
+body > section h2,
+body > section h3, body > section #monthly,
+body > section h4,
+body > section h5,
+body > section h6, .gsri-unite li {
   padding: 8px 16px !important;
 }
 
@@ -1662,7 +1713,7 @@ div#contact .w3-row-padding > a,
   float: right !important;
 }
 
-.w3-button:hover, a.action:hover, a.main:hover, #monthly:hover, div#contact a:hover, div#footer a:hover {
+.w3-button:hover, a.action:hover, a.main:hover, #monthly:hover, #contact nav a:hover, div#footer a:hover {
   color: #000 !important;
   background-color: #ccc !important;
 }
@@ -2007,7 +2058,12 @@ a.action:hover {
   color: #3a3a3a !important;
 }
 
-.w3-border-amber, .title, .gsri-unite h2,
+.w3-border-amber, .title, .gsri-unite h2, body > section h1,
+body > section h2,
+body > section h3, body > section #monthly,
+body > section h4,
+body > section h5,
+body > section h6,
 .w3-hover-border-amber:hover {
   border-color: #ffc107 !important;
 }
@@ -2210,7 +2266,7 @@ a.main:hover {
   color: #ebf2f6 !important;
 }
 
-.w3-theme-l4, div#contact {
+.w3-theme-l4, #contact {
   color: black;
   background-color: #bdd2e2 !important;
 }
@@ -2311,7 +2367,7 @@ a.main:hover {
   border-color: #0b1319 !important;
 }
 
-.w3-hover-theme:hover, a.main:hover, #monthly:hover, div#contact a:hover, div#footer a:hover {
+.w3-hover-theme:hover, a.main:hover, #monthly:hover, #contact nav a:hover, div#footer a:hover {
   color: white !important;
   background-color: #0b1319 !important;
 }
@@ -2408,7 +2464,12 @@ a.main:hover {
   color: #070b0f !important;
 }
 
-.w3-theme-d5, .title, .gsri-unite h2 {
+.w3-theme-d5, .title, .gsri-unite h2, body > section h1,
+body > section h2,
+body > section h3, body > section #monthly,
+body > section h4,
+body > section h5,
+body > section h6 {
   color: white;
   background-color: #05090c !important;
 }
@@ -2553,15 +2614,15 @@ p.w3-center {
   z-index: 2000;
 }
 
-div#contact {
+#contact {
   text-align: center;
 }
 
-div#contact a {
+#contact nav a {
   text-align: left;
 }
 
-div#contact a::before {
+#contact nav a::before {
   float: left;
 }
 
@@ -2726,6 +2787,70 @@ ul#effectifs {
   background-color: #442 !important;
 }
 
-.striped {
+.striped, .warning > p:first-child,
+.warning > p:last-child {
   background: repeating-linear-gradient(-45deg, #333, #333 10px, transparent 10px, transparent 20px);
+}
+
+body > section {
+  padding: 6em 0;
+}
+
+body > section[data-parallax] {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+body > section .gsri-card h1,
+body > section .gsri-card h2,
+body > section .gsri-card h3,
+body > section .gsri-card #monthly,
+body > section .gsri-card h4,
+body > section .gsri-card h5,
+body > section .gsri-card h6 {
+  border-left: none !important;
+  background-color: transparent !important;
+}
+
+body > section aside {
+  width: 350px;
+  padding-left: 50px;
+}
+
+body > section aside img {
+  width: 100%;
+}
+
+body > section q {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  height: 4em;
+}
+
+body > header {
+  height: 40vh;
+  width: 100vw;
+}
+
+body > header h1 {
+  text-shadow: -5px 5px 10px black;
+}
+
+.warning {
+  margin-top: 3em;
+  position: relative;
+}
+
+.warning > span {
+  float: left;
+}
+
+#legal {
+  margin-top: 3em;
+}
+
+#legal p {
+  margin: 0;
+  font-size: .8em;
+  text-align: center;
 }

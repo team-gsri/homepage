@@ -7,6 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/import-load-from.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
@@ -49,110 +50,35 @@
         </a>
     </div>
 
-    <div class="gsri-splitter w3-theme"></div>
-
-    <div class="gsri-region" data-image-src="./img/rejoindre.jpg" data-parallax="scroll" id="groupe" style="background-color: rgba(0, 0, 0, 0.8);">
-        <h2 class="title">Le groupe</h2>
-        <div class="w3-content">
-
-            <a href="./doctrine.html">
-                <section class="gsri-card" data-aos="fade-right">
-                    <div>
-                        <i class="fas fa-book fa-8x"></i>
-                    </div>
-                    <div>
-                        <h3> Doctrine </h3>
-                        <p>
-                            Le GSRI est une unité d'infanterie rattachée à la <abbr title="Direction Générale de Sécurité Extérieure">DGSE</abbr>. Sa doctrine d'emploi s'articule autour de trois éléments clef : autonomie, efficacité et exigence.
-                        </p>
-                    </div>
-                </section>
-            </a>
-
-            <a href="./histoire.html">
-                <section class="gsri-card" data-aos="fade-right">
-                    <div>
-                        <i class="fas fa-history fa-8x"></i>
-                    </div>
-                    <div class="gsri-overlay">
-                        <h3> Histoire</h3>
-                        <p>
-                            Notre unité, créée en 2035, dispose d'une histoire riche, liée aux événements décrits dans la campagne &laquo;&nbsp;vent d'est&nbsp;&raquo; de Bohemia Interactive.
-                        </p>
-                    </div>
-                </section>
-            </a>
-
+    <section data-image-src="./img/walls/rejoindre.jpg" data-parallax="scroll" id="jouer">
+        <h2> Jouer </h2>
+        <div>
             <a href="./fonctionnement.html">
-                <section class="gsri-card" data-aos="fade-right">
-                    <div>
-                        <i class="fas fa-cogs fa-8x"></i>
-                    </div>
-                    <div>
-                        <h3> Fonctionnement </h3>
-                        <p>
-                            Secoué par plusieurs crises institutionnelles à partir de 2038, le GSRI se réorganise et met en place une nouvelle organisation en août 2040.
-                        </p>
-                    </div>
-                </section>
-            </a>
-
-            <a href="./effectifs.html">
-                <section class="gsri-card" data-aos="fade-right">
-                    <div>
-                        <i class="fas fa-users fa-8x"></i>
-                    </div>
-                    <div class="gsri-overlay">
-                        <h3> Effectifs </h3>
-                        <p>
-                            Les opérateurs du GSRI sont affectés de manière permanente aux unités qui le composent. Les dossiers militaires sont maintenus à jour et retracent les carrières indivudelles.
-                        </p>
-                    </div>
-                </section>
-            </a>
-
-            <a href="./partenaires.html">
-                <section class="gsri-card" data-aos="fade-right">
-                    <div>
-                        <i class="fas fa-hands-helping fa-8x"></i>
-                    </div>
-                    <div class="gsri-overlay">
-                        <h3> Partenaires </h3>
-                        <p>
-                            Le GSRI a fait le choix dès sa création d'une politique d'ouverture sur le reste de la communauté Arma 3. Nous avons noué de nombreux partenariats au cours de notre existence.
-                        </p>
-                    </div>
-                </section>
-            </a>
-
-        </div>
-    </div>
-
-    <div class="gsri-splitter w3-theme"></div>
-
-    <div class="gsri-region" data-image-src="./img/rejoindre.jpg" data-parallax="scroll" id="jouer">
-        <div class="parallax-slider w3-opacity-max">
-            <video autoplay muted loop width="100%" style="margin-top:400px;">
-                <source src="https://cdn.gsri.team:8443/videos/intervention.mp4" type="video/mp4">
-            </video>
-        </div>
-        <h2 class="title">Jouer</h2>
-        <div class="w3-content w3-row">
-
-            <a href="./regles.html">
                 <section class="gsri-card" data-aos="fade-right">
                     <div>
                         <i class="fas fa-user-check fa-8x"></i>
                     </div>
                     <div>
-                        <h3> Participer </h3>
+                        <h3> Fonctionnement </h3>
                         <p>
-                            Cette section vous explique comment vous inscrire en mission, les règles à respecter, et les procédures en vigueur au sein de l'unité.
+                            Découvrez les différents types de missions proposées au GSRI et les modalités pour pouvoir y participer. Apprenez comment vous inscrire à nos missions publiques.
                         </p>
                     </div>
                 </section>
             </a>
-
+            <a href="./regles.html">
+                <section class="gsri-card" data-aos="fade-right">
+                    <div>
+                        <i class="fas fa-file-signature fa-8x"></i>
+                    </div>
+                    <div>
+                        <h3> Règles </h3>
+                        <p>
+                            Afin de fournir la meilleure expérience de jeu possible, nous avons établi un certain nombre de règles que tous les participants doivent s'engager à respecter.
+                        </p>
+                    </div>
+                </section>
+            </a>
             <a href="./installer.html">
                 <section class="gsri-card" data-aos="fade-right">
                     <div>
@@ -166,16 +92,102 @@
                     </div>
                 </section>
             </a>
-
+            <a href="./apprendre.html">
+                <section class="gsri-card" data-aos="fade-right">
+                    <div>
+                        <i class="fas fa-book-open fa-8x"></i>
+                    </div>
+                    <div>
+                        <h3> Apprendre </h3>
+                        <p>
+                            Que vous soyiez nouveau sur Arma 3 ou un joueur plus expérimenté, retrouvez nos conseils et la description de nos procédures élémentaires afin de pouvoir vous articuler efficacement avec les autres joueurs.
+                        </p>
+                    </div>
+                </section>
+            </a>
         </div>
-    </div>
+    </section>
 
-    <div class="gsri-splitter w3-theme"></div>
 
-    <div class="gsri-region" data-image-src="img/default.jpg" data-parallax="scroll" id="rejoindre">
+    <section data-parallax="scroll" id="groupe">
+        <div class="parallax-slider">
+            <video autoplay muted loop width="100%" style="margin-top:400px;">
+                <source src="https://cdn.gsri.team:8443/videos/intervention.mp4" type="video/mp4">
+            </video>
+        </div>
+        <h2 class="title"> Le groupe </h2>
+        <div>
+            <a href="./doctrine.html">
+                <section class="gsri-card" data-aos="fade-right">
+                    <div>
+                        <i class="fas fa-book fa-8x"></i>
+                    </div>
+                    <div>
+                        <h3> Doctrine </h3>
+                        <p>
+                            Le GSRI est une unité d'infanterie rattachée à la <abbr title="Direction Générale de Sécurité Extérieure">DGSE</abbr>. Sa doctrine d'emploi s'articule autour de trois éléments clef : autonomie, efficacité et exigence.
+                        </p>
+                    </div>
+                </section>
+            </a>
+            <a href="./histoire.html">
+                <section class="gsri-card" data-aos="fade-right">
+                    <div>
+                        <i class="fas fa-history fa-8x"></i>
+                    </div>
+                    <div class="gsri-overlay">
+                        <h3> Histoire</h3>
+                        <p>
+                            Notre unité, créée en 2035, dispose d'une histoire riche, liée aux événements décrits dans la campagne &laquo;&nbsp;vent d'est&nbsp;&raquo; de Bohemia Interactive.
+                        </p>
+                    </div>
+                </section>
+            </a>
+            <a href="./organisation.html">
+                <section class="gsri-card" data-aos="fade-right">
+                    <div>
+                        <i class="fas fa-cogs fa-8x"></i>
+                    </div>
+                    <div>
+                        <h3> Organisation </h3>
+                        <p>
+                            Secoué par plusieurs crises institutionnelles à partir de 2038, le GSRI se réorganise et met en place une nouvelle organisation en août 2040.
+                        </p>
+                    </div>
+                </section>
+            </a>
+            <a href="./effectifs.html">
+                <section class="gsri-card" data-aos="fade-right">
+                    <div>
+                        <i class="fas fa-users fa-8x"></i>
+                    </div>
+                    <div class="gsri-overlay">
+                        <h3> Effectifs </h3>
+                        <p>
+                            Les opérateurs du GSRI sont affectés de manière permanente aux unités qui le composent. Les dossiers militaires sont maintenus à jour et retracent les carrières indivudelles.
+                        </p>
+                    </div>
+                </section>
+            </a>
+            <a href="./partenaires.html">
+                <section class="gsri-card" data-aos="fade-right">
+                    <div>
+                        <i class="fas fa-hands-helping fa-8x"></i>
+                    </div>
+                    <div class="gsri-overlay">
+                        <h3> Partenaires </h3>
+                        <p>
+                            Le GSRI a fait le choix dès sa création d'une politique d'ouverture sur le reste de la communauté Arma 3. Nous avons noué de nombreux partenariats au cours de notre existence.
+                        </p>
+                    </div>
+                </section>
+            </a>
+        </div>
+    </section>
+
+    <section data-image-src="./img/walls/default.jpg" data-parallax="scroll" id="rejoindre">
         <h2 class="title">Rejoindre</h2>
-        <div class="w3-row w3-content">
-
+        <div>
             <a href="./procedure.html">
                 <section class="gsri-card" data-aos="fade-right">
                     <div>
@@ -189,15 +201,12 @@
                     </div>
                 </section>
             </a>
-
         </div>
-    </div>
+    </section>
 
-    <div class="gsri-splitter w3-theme-l4"></div>
-
-    <div class="gsri-region" id="contact">
+    <section id="contact">
         <h2 class="title">Contact</h2>
-        <div class="w3-content w3-row" data-aos="zoom-out">
+        <nav data-aos="zoom-out">
 
             <a class="fab fa-2x fa-discord" href="https://discord.gg/bhMn4jd">
                 <span>Discord</span> </a>
@@ -212,28 +221,21 @@
             <a class="fas fa-2x fa-calendar-alt" href="https://cloud.gsri.team/index.php/apps/calendar/p/LPpXWBF74DgYax6x/Calendrier-GSRI">
                 <span>Calendar</span> </a>
 
+        </nav>
+        <div id="legal">
+            <p> Vidéo de l'opération Laodamie réalisée par <a href="https://www.youtube.com/channel/UCNiZuM1DWLWhYzSmOx2F5sA"> Alphoux </a> </p>
+            <p> Vidéos des opérations Bellérophon 1 et 2 réalisées par <a href="https://www.youtube.com/channel/UCEpszI1Dwm62Ov-YTTIXE3w"> Calden </a> </p>
+            <p> Tous droits réservés - Groupe Spécial de Reconnaissance et d'Intervention - &copy; 2021</p>
+            <p>
+                <a href="https://github.com/team-gsri/.github/blob/master/CODE_OF_CONDUCT_FR.md">Code de conduite</a> |
+                <a href="https://github.com/team-gsri/.github/blob/master/RGPD_FR.md">Données personnelles</a> |
+                <a href="https://github.com/team-gsri/.github/blob/master/SECURITY.md">Polique de sécurité</a>
+            </p>
         </div>
-    </div>
+    </section>
 
-    <div id="footer">
-        <a class="fas fa-2x fa-home here" href="./#"> </a>
-        <a class="fas fa-2x fa-users" href="./#groupe"> <span>Le groupe</span></a>
-        <a class="fas fa-2x fa-gamepad" href="./#jouer"> <span>Jouer</span></a>
-        <a class="fas fa-2x fa-signature" href="./#rejoindre"> <span>Rejoindre</span></a>
-        <a class="fas fa-2x fa-share-alt-square" href="./#contact"> <span>Contact</span></a>
-    </div>
+    <div id="menu" data-load-from="./fragments/menu.html"></div>
 
-    <script>
-        $('.hero').parallax({
-            naturalWidth: 1280,
-            naturalHeight: 720
-        });
-        $('#contact').parallax({
-            naturalWidth: 1280,
-            naturalHeight: 720
-        });
-        AOS.init();
-    </script>
 </body>
 
 </html>

@@ -134,18 +134,22 @@ a.main {
     @extend .w3-hover-theme;
 }
 
-div#contact {
+#contact {
     @extend .w3-theme-l4;
     text-align: center;
-    a {
-        @extend .w3-button;
-        @extend .w3-hover-theme;
-        @extend .w3-mobile;
-        @extend .w3-center;
-        @extend .w3-third;
-        text-align: left;
-        &::before {
-            float: left;
+    nav {
+        @extend .w3-content;
+        @extend .w3-row;
+        a {
+            @extend .w3-button;
+            @extend .w3-hover-theme;
+            @extend .w3-mobile;
+            @extend .w3-center;
+            @extend .w3-third;
+            text-align: left;
+            &::before {
+                float: left;
+            }
         }
     }
 }
@@ -300,4 +304,89 @@ ul#effectifs {
 
 .striped {
     background: repeating-linear-gradient(-45deg, #333, #333 10px, transparent 10px, transparent 20px);
+}
+
+body>section {
+    padding: 6em 0;
+    &[data-parallax] {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+    &>div {
+        @extend .w3-content;
+        @extend .w3-justify;
+        @extend .w3-cell-row;
+    }
+    .gsri-card {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            border-left: none!important;
+            background-color: transparent!important;
+        }
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @extend .title;
+    }
+    &.hero {
+        @extend .w3-cell-row;
+        &>div {
+            @extend .w3-center;
+            @extend .w3-cell;
+            @extend .w3-cell-middle;
+        }
+    }
+    aside {
+        @extend .w3-cell;
+        @extend .w3-cell-middle;
+        width: 350px;
+        padding-left: 50px;
+        img {
+            width: 100%;
+        }
+    }
+    q {
+        display: block;
+        text-align: center;
+        font-style: italic;
+        height: 4em;
+    }
+}
+
+body>header {
+    @extend .w3-display-container;
+    height: 40vh;
+    width: 100vw;
+    h1 {
+        @extend .w3-display-middle;
+        text-shadow: -5px 5px 10px black;
+    }
+}
+
+.warning {
+    margin-top: 3em;
+    position: relative;
+    >p:first-child,
+    >p:last-child {
+        @extend .striped;
+    }
+    >span {
+        float: left;
+    }
+}
+
+#legal {
+    margin-top: 3em;
+    p {
+        margin: 0;
+        font-size: .8em;
+        text-align: center;
+    }
 }

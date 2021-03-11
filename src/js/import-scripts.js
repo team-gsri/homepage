@@ -18,4 +18,5 @@ $(function() {
         naturalHeight: 720
     });
 
+    $('.parallax-slider').addClass('w3-opacity-max');
 });

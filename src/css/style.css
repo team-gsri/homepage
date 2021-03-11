@@ -353,7 +353,7 @@ a {
 a.action,
 a.main,
 #monthly,
-#contact nav a,
+nav a,
 div#footer a {
   border: none;
   display: inline-block;
@@ -378,7 +378,7 @@ div#footer a {
 a.action,
 a.main,
 #monthly,
-#contact nav a,
+nav a,
 div#footer a {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -393,7 +393,7 @@ div#footer a {
 a.action:disabled,
 a.main:disabled,
 #monthly:disabled,
-#contact nav a:disabled,
+nav a:disabled,
 div#footer a:disabled {
   cursor: not-allowed;
   opacity: 0.3;
@@ -497,12 +497,12 @@ body > header {
   color: #000;
 }
 
-.w3-dropdown-hover:hover > .w3-button:first-child, .w3-dropdown-hover:hover > a.action:first-child, .w3-dropdown-hover:hover > a.main:first-child, .w3-dropdown-hover:hover > #monthly:first-child, #contact nav .w3-dropdown-hover:hover > a:first-child, div#footer .w3-dropdown-hover:hover > a:first-child,
+.w3-dropdown-hover:hover > .w3-button:first-child, .w3-dropdown-hover:hover > a.action:first-child, .w3-dropdown-hover:hover > a.main:first-child, .w3-dropdown-hover:hover > #monthly:first-child, nav .w3-dropdown-hover:hover > a:first-child, div#footer .w3-dropdown-hover:hover > a:first-child,
 .w3-dropdown-click:hover > .w3-button:first-child,
 .w3-dropdown-click:hover > a.action:first-child,
 .w3-dropdown-click:hover > a.main:first-child,
 .w3-dropdown-click:hover > #monthly:first-child,
-#contact nav .w3-dropdown-click:hover > a:first-child,
+nav .w3-dropdown-click:hover > a:first-child,
 div#footer .w3-dropdown-click:hover > a:first-child {
   background-color: #ccc;
   color: #000;
@@ -547,13 +547,13 @@ div#footer .w3-dropdown-click:hover > a:first-child {
   min-width: 100%;
 }
 
-.w3-bar-block .w3-dropdown-hover .w3-button, .w3-bar-block .w3-dropdown-hover a.action, .w3-bar-block .w3-dropdown-hover a.main, .w3-bar-block .w3-dropdown-hover #monthly, .w3-bar-block .w3-dropdown-hover #contact nav a, #contact nav .w3-bar-block .w3-dropdown-hover a, .w3-bar-block .w3-dropdown-hover div#footer a, div#footer .w3-bar-block .w3-dropdown-hover a,
+.w3-bar-block .w3-dropdown-hover .w3-button, .w3-bar-block .w3-dropdown-hover a.action, .w3-bar-block .w3-dropdown-hover a.main, .w3-bar-block .w3-dropdown-hover #monthly, .w3-bar-block .w3-dropdown-hover nav a, nav .w3-bar-block .w3-dropdown-hover a, .w3-bar-block .w3-dropdown-hover div#footer a, div#footer .w3-bar-block .w3-dropdown-hover a,
 .w3-bar-block .w3-dropdown-click .w3-button,
 .w3-bar-block .w3-dropdown-click a.action,
 .w3-bar-block .w3-dropdown-click a.main,
 .w3-bar-block .w3-dropdown-click #monthly,
-.w3-bar-block .w3-dropdown-click #contact nav a,
-#contact nav .w3-bar-block .w3-dropdown-click a,
+.w3-bar-block .w3-dropdown-click nav a,
+nav .w3-bar-block .w3-dropdown-click a,
 .w3-bar-block .w3-dropdown-click div#footer a,
 div#footer .w3-bar-block .w3-dropdown-click a {
   width: 100%;
@@ -595,7 +595,7 @@ div#footer .w3-bar-block .w3-dropdown-click a {
   overflow: hidden;
 }
 
-.w3-center .w3-bar, #contact nav a .w3-bar, body > section.hero > div .w3-bar, .w3-center div#footer, #contact nav a div#footer, body > section.hero > div div#footer {
+.w3-center .w3-bar, nav .w3-bar, nav a .w3-bar, body > section.hero > div .w3-bar, .w3-center div#footer, nav div#footer, body > section.hero > div div#footer {
   display: inline-block;
   width: auto;
 }
@@ -616,7 +616,7 @@ div#footer .w3-dropdown-click {
   float: left;
 }
 
-.w3-bar .w3-button, div#footer .w3-button, .w3-bar a.action, .w3-bar a.main, .w3-bar #monthly, div#footer #monthly, .w3-bar #contact nav a, #contact nav .w3-bar a, div#footer a {
+.w3-bar .w3-button, div#footer .w3-button, .w3-bar a.action, .w3-bar a.main, .w3-bar #monthly, div#footer #monthly, .w3-bar nav a, nav .w3-bar a, div#footer a {
   white-space: normal;
 }
 
@@ -631,7 +631,7 @@ div#footer .w3-dropdown-click {
   outline: 0;
 }
 
-.w3-bar-block.w3-center .w3-bar-item, #contact nav a.w3-bar-block .w3-bar-item, body > section.hero > div.w3-bar-block .w3-bar-item, .w3-bar-block.w3-center div#footer a, div#footer .w3-bar-block.w3-center a, #contact nav a.w3-bar-block div#footer a, div#footer #contact nav a.w3-bar-block a, body > section.hero > div.w3-bar-block div#footer a, div#footer body > section.hero > div.w3-bar-block a {
+.w3-bar-block.w3-center .w3-bar-item, nav.w3-bar-block .w3-bar-item, nav a.w3-bar-block .w3-bar-item, body > section.hero > div.w3-bar-block .w3-bar-item, .w3-bar-block.w3-center div#footer a, div#footer .w3-bar-block.w3-center a, nav.w3-bar-block div#footer a, div#footer nav.w3-bar-block a, nav a.w3-bar-block div#footer a, div#footer nav a.w3-bar-block a, body > section.hero > div.w3-bar-block div#footer a, div#footer body > section.hero > div.w3-bar-block a {
   text-align: center;
 }
 
@@ -653,40 +653,40 @@ div#footer .w3-dropdown-click {
 body > section h1:after,
 body > section h2:after,
 body > section h3:after,
+body > section #monthly:after,
 body > section h4:after,
 body > section h5:after,
 body > section h6:after,
-#monthly:after,
 .w3-panel:before,
 .title:before,
 .gsri-unite h2:before,
 body > section h1:before,
 body > section h2:before,
 body > section h3:before,
+body > section #monthly:before,
 body > section h4:before,
 body > section h5:before,
 body > section h6:before,
-#monthly:before,
 .w3-row:after,
-#contact nav:after,
+nav:after,
 .gsri-card:after,
 .gsri-unite ul:after,
 .w3-row:before,
-#contact nav:before,
+nav:before,
 .gsri-card:before,
 .gsri-unite ul:before,
 .w3-row-padding:after,
 .w3-row-padding:before,
 .w3-cell-row:before,
 table tr:before,
-.hero header:before,
 body > section > div:before,
 body > section.hero:before,
+body > header > :before,
 .w3-cell-row:after,
 table tr:after,
-.hero header:after,
 body > section > div:after,
 body > section.hero:after,
+body > header > :after,
 .w3-clear:after,
 .w3-clear:before,
 .w3-bar:before,
@@ -856,23 +856,23 @@ table tr th,
   margin-right: -16px;
 }
 
-.w3-content, .hero header, .title, .gsri-unite h2, body > section h1,
+.w3-content, .title, .gsri-unite h2, body > section h1,
 body > section h2,
 body > section h3, body > section #monthly,
 body > section h4,
 body > section h5,
-body > section h6, #contact nav, ul#effectifs, body > section > div,
+body > section h6, nav, ul#effectifs, body > section > div, body > header > *,
 .w3-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.w3-content, .hero header, .title, .gsri-unite h2, body > section h1,
+.w3-content, .title, .gsri-unite h2, body > section h1,
 body > section h2,
 body > section h3, body > section #monthly,
 body > section h4,
 body > section h5,
-body > section h6, #contact nav, ul#effectifs, body > section > div {
+body > section h6, nav, ul#effectifs, body > section > div, body > header > * {
   max-width: 980px;
 }
 
@@ -880,13 +880,13 @@ body > section h6, #contact nav, ul#effectifs, body > section > div {
   max-width: 1140px;
 }
 
-.w3-cell-row, table tr, .hero header, body > section > div, body > section.hero {
+.w3-cell-row, table tr, body > section > div, body > section.hero, body > header > * {
   display: table;
   width: 100%;
 }
 
 .w3-cell, table tr td,
-table tr th, .hero header .logo, .hero header .content, .gsri-card div, body > section.hero > div, body > section aside {
+table tr th, .gsri-card div, body > section.hero > div, body > section aside, body > header > * > * {
   display: table-cell;
 }
 
@@ -894,7 +894,7 @@ table tr th, .hero header .logo, .hero header .content, .gsri-card div, body > s
   vertical-align: top;
 }
 
-.w3-cell-middle, .hero header .content, .gsri-card div, body > section.hero > div, body > section aside {
+.w3-cell-middle, .gsri-card div, body > section.hero > div, body > section aside {
   vertical-align: middle;
 }
 
@@ -935,7 +935,7 @@ table tr th, .hero header .logo, .hero header .content, .gsri-card div, body > s
   .gsri-unite li.w3-dropdown-click .w3-dropdown-content {
     position: relative;
   }
-  .w3-hide-small, .hero header .logo, div#footer a span, .gsri-card div:first-child, body > section aside {
+  .w3-hide-small, div#footer a span, .gsri-card div:first-child, body > section aside, body > header img {
     display: none !important;
   }
   .w3-mobile, #contact nav a, .gsri-unite li {
@@ -968,11 +968,11 @@ table tr th, .hero header .logo, .hero header .content, .gsri-card div, body > s
   .w3-dropdown-hover.w3-mobile #monthly,
   #contact nav a.w3-dropdown-hover #monthly,
   .gsri-unite li.w3-dropdown-hover #monthly,
-  .w3-dropdown-hover.w3-mobile #contact nav a,
-  #contact nav .w3-dropdown-hover.w3-mobile a,
+  .w3-dropdown-hover.w3-mobile nav a,
+  nav .w3-dropdown-hover.w3-mobile a,
   #contact nav a.w3-dropdown-hover a,
-  .gsri-unite li.w3-dropdown-hover #contact nav a,
-  #contact nav .gsri-unite li.w3-dropdown-hover a,
+  .gsri-unite li.w3-dropdown-hover nav a,
+  nav .gsri-unite li.w3-dropdown-hover a,
   .w3-dropdown-hover.w3-mobile div#footer a,
   div#footer .w3-dropdown-hover.w3-mobile a,
   .gsri-unite li.w3-dropdown-hover div#footer a,
@@ -993,11 +993,11 @@ table tr th, .hero header .logo, .hero header .content, .gsri-card div, body > s
   .w3-dropdown-click.w3-mobile #monthly,
   #contact nav a.w3-dropdown-click #monthly,
   .gsri-unite li.w3-dropdown-click #monthly,
-  .w3-dropdown-click.w3-mobile #contact nav a,
-  #contact nav .w3-dropdown-click.w3-mobile a,
+  .w3-dropdown-click.w3-mobile nav a,
+  nav .w3-dropdown-click.w3-mobile a,
   #contact nav a.w3-dropdown-click a,
-  .gsri-unite li.w3-dropdown-click #contact nav a,
-  #contact nav .gsri-unite li.w3-dropdown-click a,
+  .gsri-unite li.w3-dropdown-click nav a,
+  nav .gsri-unite li.w3-dropdown-click a,
   .w3-dropdown-click.w3-mobile div#footer a,
   div#footer .w3-dropdown-click.w3-mobile a,
   .gsri-unite li.w3-dropdown-click div#footer a,
@@ -1028,7 +1028,7 @@ table tr th, .hero header .logo, .hero header .content, .gsri-card div, body > s
 }
 
 @media (max-width: 992px) and (min-width: 601px) {
-  .w3-hide-medium, .hero header .logo, div#footer a span, .gsri-grade-0::before, .gsri-grade-1::before, .gsri-grade-2::before, .gsri-grade-3::before, .gsri-grade-4::before, .gsri-grade-5::before, .gsri-grade-6::before, .gsri-grade-7::before, .gsri-grade-8::before, .gsri-grade-9::before, .gsri-grade-10::before, .gsri-grade-11::before {
+  .w3-hide-medium, div#footer a span, .gsri-grade-0::before, .gsri-grade-1::before, .gsri-grade-2::before, .gsri-grade-3::before, .gsri-grade-4::before, .gsri-grade-5::before, .gsri-grade-6::before, .gsri-grade-7::before, .gsri-grade-8::before, .gsri-grade-9::before, .gsri-grade-10::before, .gsri-grade-11::before, body > header img {
     display: none !important;
   }
 }
@@ -1098,7 +1098,7 @@ table tr th, .hero header .logo, .hero header .content, .gsri-card div, body > s
   bottom: 0;
 }
 
-.w3-display-middle, .hero header, body > header h1 {
+.w3-display-middle, body > header > *, video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1206,10 +1206,10 @@ table tr .w3-row-padding > th,
 body > section h1,
 body > section h2,
 body > section h3,
+body > section #monthly,
 body > section h4,
 body > section h5,
-body > section h6,
-#monthly {
+body > section h6 {
   padding: 0.01em 16px;
 }
 
@@ -1220,10 +1220,10 @@ body > section h6,
 body > section h1,
 body > section h2,
 body > section h3,
+body > section #monthly,
 body > section h4,
 body > section h5,
-body > section h6,
-#monthly {
+body > section h6 {
   margin-top: 16px;
   margin-bottom: 16px;
 }
@@ -1587,7 +1587,7 @@ body > section h6,
   text-align: justify !important;
 }
 
-.w3-center, #contact nav a, body > section.hero > div {
+.w3-center, nav, nav a, body > section.hero > div {
   text-align: center !important;
 }
 
@@ -1642,8 +1642,8 @@ body > section h6 {
   margin-bottom: 16px !important;
 }
 
-.w3-margin, .hero header .logo img, #monthly, .gsri-card div h3,
-.gsri-card div p {
+.w3-margin, .gsri-card div h3, .gsri-card div #monthly,
+.gsri-card div p, body > header > * > * {
   margin: 16px !important;
 }
 
@@ -1709,11 +1709,11 @@ body > section h6, .gsri-unite li {
   float: left !important;
 }
 
-.w3-right, .hero header .logo {
+.w3-right {
   float: right !important;
 }
 
-.w3-button:hover, a.action:hover, a.main:hover, #monthly:hover, #contact nav a:hover, div#footer a:hover {
+.w3-button:hover, a.action:hover, a.main:hover, #monthly:hover, nav a:hover, div#footer a:hover {
   color: #000 !important;
   background-color: #ccc !important;
 }
@@ -2240,7 +2240,7 @@ a.main:hover {
   background-color: #ebf2f6 !important;
 }
 
-.w3-hover-text-theme-light:hover, .hero header #social a:hover {
+.w3-hover-text-theme-light:hover, body > header #social a:hover {
   color: #ebf2f6 !important;
 }
 
@@ -2367,7 +2367,7 @@ a.main:hover {
   border-color: #0b1319 !important;
 }
 
-.w3-hover-theme:hover, a.main:hover, #monthly:hover, #contact nav a:hover, div#footer a:hover {
+.w3-hover-theme:hover, a.main:hover, #monthly:hover, nav a:hover, div#footer a:hover {
   color: white !important;
   background-color: #0b1319 !important;
 }
@@ -2589,40 +2589,15 @@ p.w3-center {
   height: 100vh;
 }
 
-.hero header .content {
-  text-align: center;
-  padding: 3em;
-  min-width: 40em;
-}
-
-.hero header #cta a {
-  min-width: 7em;
-}
-
-.hero header #social {
-  margin-top: 1em;
-}
-
-.hero header #social a {
-  padding: 0.25em;
-  text-decoration: none;
-}
-
-#monthly {
-  position: fixed;
-  right: 1em;
-  z-index: 2000;
-}
-
 #contact {
   text-align: center;
 }
 
-#contact nav a {
+nav a {
   text-align: left;
 }
 
-#contact nav a::before {
+nav a::before {
   float: left;
 }
 
@@ -2792,10 +2767,6 @@ ul#effectifs {
   background: repeating-linear-gradient(-45deg, #333, #333 10px, transparent 10px, transparent 20px);
 }
 
-body > section[data-parallax] {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
 body > section > div {
   padding: 1em;
 }
@@ -2830,10 +2801,21 @@ body > section q {
 body > header {
   height: 40vh;
   width: 100vw;
+  text-shadow: -5px 5px 10px black;
 }
 
-body > header h1 {
-  text-shadow: -5px 5px 10px black;
+body > header > * > * {
+  text-align: center;
+}
+
+body > header #cta a {
+  min-width: 6em;
+  margin-bottom: 1em;
+}
+
+body > header #social a {
+  padding: 0.25em;
+  text-decoration: none;
 }
 
 .warning {
@@ -2856,8 +2838,5 @@ body > header h1 {
 }
 
 video {
-  height: 100%;
-  width: 100vh;
-  min-width: 100%;
-  min-height: 56.25vw;
+  min-width: 100vw;
 }

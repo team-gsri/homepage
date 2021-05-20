@@ -1,0 +1,147 @@
+body {
+  @extend .w3-theme;
+}
+
+table {
+  width: 100%;
+  border: 1px solid white;
+  tr {
+    @extend .w3-cell-row;
+    td,
+    th {
+      @extend .w3-cell;
+      text-align: center;
+      @extend .w3-third;
+    }
+    th {
+      @extend .w3-white;
+    }
+  }
+}
+
+.hero {
+  @extend .w3-display-container;
+  width: 100vw;
+  height: 100vh;
+  &>nav {
+    @extend .w3-display-middle;
+  }
+}
+
+a.action {
+  @extend .w3-button;
+  @extend .w3-transparent;
+  @extend .w3-border;
+  @extend .w3-border-white;
+  @extend .w3-hover-white;
+}
+
+a.main {
+  @extend .w3-button;
+  @extend .w3-white;
+  @extend .w3-border;
+  @extend .w3-border-white;
+  @extend .w3-hover-theme;
+}
+
+.title {
+  @extend .w3-border-amber;
+  @extend .w3-leftbar;
+  @extend .w3-padding;
+  @extend .w3-theme-d5;
+  @extend .w3-content;
+  @extend .w3-panel;
+}
+
+nav {
+  @extend .w3-content;
+  @extend .w3-row;
+  @extend .w3-center;
+  a {
+    @extend .w3-hover-text-theme-l3;
+    @extend .w3-center;
+    text-align: left;
+    &::before {
+      float: left;
+    }
+  }
+}
+
+video {
+  @extend .w3-display-middle;
+  min-width: 100vw;
+}
+
+body>header {
+  @extend .w3-display-container;
+  height: 40vh;
+  width: 100vw;
+  >* {
+    @extend .w3-display-middle;
+    @extend .w3-cell-row;
+    @extend .w3-content;
+    padding: 3em 1em;
+    >* {
+      @extend .w3-cell;
+      @extend .w3-margin;
+      text-align: center;
+    }
+  }
+  img {
+    @extend .w3-hide-small;
+    @extend .w3-hide-medium;
+  }
+}
+
+div.gsri-section {
+  padding: 3em 1em;
+  &>section {
+    @extend .w3-content;
+    @extend .w3-justify;
+  }
+  @for $i from 1 through 6 {
+    h#{$i} {
+      @extend .title;
+    }
+  }
+}
+
+.striped {
+  background: repeating-linear-gradient(-45deg, #333, #333 10px, transparent 10px, transparent 20px);
+}
+
+.warning {
+  margin-top: 3em;
+  position: relative;
+  >p:first-child,
+  >p:last-child {
+    @extend .striped;
+  }
+  >span {
+    float: left;
+  }
+}
+
+.gsri-splitter {
+  position: relative;
+  float: left;
+  width: 100vw;
+  height: 6em;
+  top: -3em;
+  z-index: 1000;
+  transform: skew(-89deg);
+  clear: both;
+}
+
+.gsri-spacer {
+  clear: both;
+}
+
+#legal {
+  margin-top: 3em;
+  p {
+    margin: 0;
+    font-size: .8em;
+    text-align: center;
+  }
+}

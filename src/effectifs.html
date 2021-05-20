@@ -7,171 +7,104 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/import-load-from.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="w3-theme">
-
+<body>
     <header data-parallax="scroll">
         <div class="parallax-slider w3-opacity-max">
             <video autoplay muted loop>
-                <source src="https://cdn.gsri.team:8443/videos/corens.mp4" type="video/mp4" />
+                <source src="https://cdn.gsri.team:8443/videos/insertion.mp4" type="video/mp4" />
             </video>
         </div>
         <h1> Tableau d'affectation du personnel </h1>
     </header>
 
-    <section>
-        <div>
-            <ul id="effectifs">
-                <li class="gsri-unite">
-                    <h2> Kilo </h2>
-                    <ul>
-                        <li class="gsri-grade-5 lead">
-                            <p class="pseudo"> Tyypal </p>
-                            <p> Chef de section </p>
-                        </li>
-                        <li class="gsri-grade-2">
-                            <p class="pseudo"> Atta </p>
-                            <p> Adjoint </p>
-                        </li>
-                    </ul>
-                </li>
-                <li class="gsri-unite">
-                    <h2>Delta 2</h2>
-                    <ul>
-                        <li class="gsri-grade-4 lead">
-                            <p class="pseudo"> Arwyn </p>
-                            <p> Chef d'équipe</p>
-                        </li>
-                        <li class="gsri-grade-2">
-                            <p class="pseudo"> Josh McFly </p>
-                        </li>
-                        <li class="gsri-grade-2">
-                            <p class="pseudo"> Phileas LX </p>
-                        </li>
-                        <li class="gsri-grade-0 vacant">
-                            <p class="pseudo"> place vacante </p>
-                        </li>
-                    </ul>
-                </li>
-                <li class="gsri-unite">
-                    <h2>Delta 3</h2>
-                    <ul>
-                        <li class="gsri-grade-4 lead">
-                            <p class="pseudo"> Syh </p>
-                            <p> Chef d'équipe </p>
-                        </li>
-                        <li class="gsri-grade-2">
-                            <p class="pseudo"> Svarog </p>
-                        </li>
-                        <li class="gsri-grade-0">
-                            <p class="pseudo"> Rhadamanthe </p>
-                        </li>
-                        <li class="gsri-grade-0 vacant">
-                            <p class="pseudo"> place vacante </p>
-                        </li>
-                    </ul>
-                </li>
-                <li class="gsri-unite">
-                    <h2> Personnels en attente d'affectation </h2>
-                    <ul>
-                        <li class="gsri-grade-2">
-                            <p class="pseudo"> Vass </p>
-                        </li>
-                        <li class="gsri-grade-0">
-                            <p class="pseudo"> FallRide </p>
-                        </li>
-                        <li class="gsri-grade-0">
-                            <p class="pseudo"> Florian Di Doute </p>
-                        </li>
-                        <li class="gsri-grade-0">
-                            <p class="pseudo"> Lolo3857 </p>
-                        </li>
-                        <li class="gsri-grade-0">
-                            <p class="pseudo"> Romzje </p>
-                        </li>
-                        <li class="gsri-grade-0">
-                            <p class="pseudo"> Skyvara </p>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <div>
-            <h2 class="title"> Auxiliaires </h2>
-            <p>
-                Les auxiliaires sont actifs et contribuent à la vie de l'équipe, mais ne participent pas aux opérations et entrainements.
-            </p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Opérateur</th>
-                        <th>Fonction</th>
-                        <th> &nbsp; </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td> Catriix </td>
-                        <td> - </td>
-                    </tr>
-                    <tr>
-                        <td> Cheitan </td>
-                        <td> Edition </td>
-                    </tr>
-                    <tr>
-                        <td> Seenri </td>
-                        <td> Modding </td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h2 class="title spacer"> Réserve </h2>
-            <p>
-                Les réservistes sont des opérateurs retirés temporairement du service actif pour des absences de moyenne durée.
-            </p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Opérateur</th>
-                        <th>Permission jusque</th>
-                        <th> &nbsp; </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Forbin</td>
-                        <td>
-                            Février 2021
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h2 class="title spacer"> Membres d'honneur </h2>
-            <p>
-                Aucun membre de l'équipe n'est actuellement mis à l'honneur.
-            </p>
-        </div>
-    </section>
-
-    <div id="footer">
-        <a class="fas fa-2x fa-home" href="./#"> </a>
-        <a class="fas fa-2x fa-users" href="./#groupe"> <span class="w3-hide-small">Le groupe</span></a>
-        <a class="fas fa-2x fa-gamepad" href="./#jouer"> <span class="w3-hide-small">Jouer</span></a>
-        <a class="fas fa-2x fa-signature" href="./#rejoindre"> <span class="w3-hide-small">Rejoindre</span></a>
-        <a class="fas fa-2x fa-calendar-alt" href="./#"></a>
+    <div class="gsri-section">
+        <section>
+            <div>
+                <ul id="effectifs">
+                    <li class="gsri-unite">
+                        <h2> Kilo </h2>
+                        <ul>
+                            <li class="gsri-grade-5 lead">
+                                <p class="pseudo"> Tyypal </p>
+                                <p> Chef de section </p>
+                            </li>
+                            <li class="gsri-grade-1">
+                                <p class="pseudo"> Atta </p>
+                                <p> Adjoint </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gsri-unite">
+                        <h2>Delta 2</h2>
+                        <ul>
+                            <li class="gsri-grade-4 lead">
+                                <p class="pseudo"> Arwyn </p>
+                                <p> Chef d'équipe</p>
+                            </li>
+                            <li class="gsri-grade-1">
+                                <p class="pseudo"> Josh McFly </p>
+                            </li>
+                            <li class="gsri-grade-1">
+                                <p class="pseudo"> Phileas LX </p>
+                            </li>
+                            <li class="gsri-grade-1">
+                                <p class="pseudo"> Cheitan </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gsri-unite">
+                        <h2>Delta 3</h2>
+                        <ul>
+                            <li class="gsri-grade-4 lead">
+                                <p class="pseudo"> Syh </p>
+                                <p> Chef d'équipe </p>
+                            </li>
+                            <li class="gsri-grade-1">
+                                <p class="pseudo"> Svarog </p>
+                            </li>
+                            <li class="gsri-grade-1">
+                                <p class="pseudo"> Rhadamanthe </p>
+                            </li>
+                            <li class="gsri-grade-0 vacant">
+                                <p class="pseudo"> place vacante </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gsri-unite">
+                        <h2> Personnels non affectés </h2>
+                        <ul>
+                            <li class="gsri-grade-1">
+                                <p class="pseudo"> Seenri </p>
+                            </li>
+                            <li class="gsri-grade-0">
+                                <p class="pseudo"> Antho </p>
+                            </li>
+                            <li class="gsri-grade-0">
+                                <p class="pseudo"> Lucas </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </div>
 
-    <script src="./js/import-scripts.js"></script>
+    <div class="gsri-section hero" data-image-src="./img/walls/rejoindre.jpg" data-parallax="scroll">
+        <nav>
+            <a href="./rejoindre.html" class="main">Comment nous rejoindre ?</a>
+        </nav>
+    </div>
+
+    <div id="menu" data-load-from="./fragments/menu.html"></div>
+
 </body>
 
 </html>

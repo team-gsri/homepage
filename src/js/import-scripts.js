@@ -1,8 +1,8 @@
 $(function() {
     AOS.init();
 
-    $('body>section').before($('<div class="gsri-splitter w3-theme"></div>'));
-    $('body>section').append($('<div style="clear: both;"></div>'));
+    $('body>div.gsri-section').before($('<div class="gsri-splitter w3-theme"></div>'));
+    $('body>div.gsri-section').append($('<div class="gsri-spacer"></div>'));
 
     $('.warning').prepend($('<span><i class="fas fa-2x fa-exclamation-triangle w3-left w3-padding"></i> &nbsp; </span>'));
     $('.warning').prepend($('<p> &nbsp; </p>'));

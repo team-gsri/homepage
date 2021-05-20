@@ -1,0 +1,20 @@
+div#footer {
+  @extend .w3-bar;
+  @extend .w3-black;
+  position: fixed;
+  z-index: 2000;
+  bottom: 0;
+  a {
+    @extend .w3-bar-item;
+    @extend .w3-button;
+    @extend .w3-hover-theme;
+    width: 20%;
+    &.here {
+      @extend .w3-theme-l2;
+    }
+    span {
+      @extend .w3-hide-small;
+      @extend .w3-hide-medium;
+    }
+  }
+}

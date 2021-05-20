@@ -1,0 +1,11 @@
+#contact {
+  @extend .w3-theme;
+  text-align: center;
+  nav a {
+    @extend .w3-button;
+    @extend .w3-mobile;
+    @extend .w3-third;
+    @extend .w3-hover-white;
+    text-align: left;
+  }
+}

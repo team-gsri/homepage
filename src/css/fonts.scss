@@ -1,0 +1,24 @@
+body {
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-size: 14pt;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Bebas Neue';
+  clear: both;
+}
+
+.fas,
+.fab {
+  >span {
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    font-weight: 300;
+  }
+}
